@@ -1,0 +1,74 @@
+============================================================
+AI CONSUMER INTELLIGENCE PLATFORM
+SPRINT 1 - DATA QUALITY REPORT
+============================================================
+
+1. DATASET OVERVIEW
+------------------------------------------------------------
+Phones in master file      : 57
+Reviews in clean file      : 3031
+Phones in SQLite database  : 57
+Reviews in SQLite database : 3031
+Orphan reviews             : 0
+
+2. PLATFORM DISTRIBUTION
+------------------------------------------------------------
+Flipkart  : 1595
+Amazon    : 1436
+
+3. QUALITY FLAGS
+------------------------------------------------------------
+Good           : 1987
+Short Review   : 777
+Very Short     : 267
+
+4. DUPLICATE CHECKS
+------------------------------------------------------------
+Duplicate review IDs       : 0
+Duplicate phone IDs        : 0
+Duplicate review texts     : 171
+
+5. MISSING VALUE CHECKS
+------------------------------------------------------------
+review_id           : 0
+phone_id            : 0
+phone_name          : 0
+platform            : 0
+review_text         : 0
+clean_review        : 0
+review_length       : 0
+word_count          : 0
+quality_flag        : 0
+is_duplicate        : 0
+
+6. REVIEW LENGTH
+------------------------------------------------------------
+Average word count         : 10.79
+Median word count          : 6.00
+Max word count             : 328
+
+7. PHONES WITHOUT REVIEWS
+------------------------------------------------------------
+- Tecno Pova 8 5G
+- LAVA Bold N2
+- LAVA Shark 2 5G
+- Itel Zeno 200
+- Itel Zeno 100
+- Lava Yuva Star 3
+
+8. TOP 10 PHONES BY REVIEW COUNT
+------------------------------------------------------------
+Samsung Galaxy F70e 5G              : 172
+Poco M8                             : 166
+iQOO Z11x 5G                        : 140
+Redmi A7 Pro                        : 135
+Oppo K14x 5G                        : 131
+Vivo T5x 5G                         : 127
+Samsung Galaxy M17e 5G              : 125
+LAVA Bold 2 5G                      : 119
+Redmi Note 15                       : 119
+Poco C85x 5G                        : 118
+
+============================================================
+REPORT COMPLETE
+============================================================
