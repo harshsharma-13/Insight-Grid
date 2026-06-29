@@ -21,6 +21,7 @@ FILES = {
     "consumer_intelligence": PROCESSED / "consumer_intelligence.csv",
     "phones_product_intelligence": PROCESSED / "phones_product_intelligence.csv",
     "phone_ai_insights": PROCESSED / "phone_ai_insights.csv",
+    "phones_product_catalog": PROCESSED / "phones_product_catalog.csv",
 }
 
 
