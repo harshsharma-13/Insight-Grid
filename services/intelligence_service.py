@@ -91,7 +91,7 @@ def get_consumer_intelligence(phone_id):
     return read_sql(query, [phone_id])
 
 
-def get_reviews(phone_id, limit=20):
+def get_reviews(phone_id, limit=5):
     """Get recent/available reviews for one phone."""
     query = """
         SELECT
@@ -120,6 +120,7 @@ def get_complete_phone_profile(phone_id):
         "aspect_summary": get_aspect_summary(phone_id),
         "consumer_intelligence": get_consumer_intelligence(phone_id),
         "reviews": get_reviews(phone_id),
+        "ai_insights": get_ai_insights(phone_id),
     }
 
 
@@ -148,6 +149,16 @@ def test_service():
 
     for key, value in profile.items():
         print(f"{key}: {len(value)} rows")
+
+
+def get_ai_insights(phone_id):
+    """Get generated AI insights for one phone."""
+    query = """
+        SELECT *
+        FROM phone_ai_insights
+        WHERE phone_id = ?
+    """
+    return read_sql(query, [phone_id])
 
 
 if __name__ == "__main__":

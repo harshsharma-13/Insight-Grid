@@ -1,20 +1,45 @@
+"""
+AI Consumer Intelligence Platform
+
+Module 13B
+Single Phone Insight Engine
+
+Purpose:
+Generate one AI-powered consumer intelligence insight for a given phone_id
+using the Intelligence Service and local Ollama model.
+"""
+
 from pathlib import Path
-import pandas as pd
+import sys
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-PROCESSED = PROJECT_ROOT / "data" / "processed"
+sys.path.append(str(PROJECT_ROOT))
 
-PHONE_SUMMARY = PROCESSED / "phone_summary.csv"
-ASPECT_SUMMARY = PROCESSED / "aspect_summary.csv"
-PLATFORM_SUMMARY = PROCESSED / "platform_summary.csv"
-OUTPUT = PROCESSED / "phone_ai_insights.csv"
-
-MIN_REVIEWS_FOR_INSIGHT = 10
-MIN_ASPECT_MENTIONS = 3
-RISK_ASPECTS = {"Heating"}
+from services.intelligence_service import get_complete_phone_profile
+from ai.providers.ollama_provider import OllamaProvider
 
 
-def insight_confidence(review_count):
+REQUIRED_KEYS = [
+    "executive_summary",
+    "consumer_verdict",
+    "top_strengths",
+    "top_pain_points",
+    "platform_insight",
+    "ideal_for",
+    "avoid_if",
+    "recommendation",
+]
+
+
+def first_row(df):
+    if df is None or df.empty:
+        return {}
+    return df.iloc[0].to_dict()
+
+
+def confidence_level(review_count: int) -> str:
+    if review_count >= 100:
+        return "Very High"
     if review_count >= 50:
         return "High"
     if review_count >= 20:
@@ -24,172 +49,310 @@ def insight_confidence(review_count):
     return "Insufficient"
 
 
-def top_aspects(df, sentiment_column, top_n=3, exclude_risks=False):
-    if df.empty:
-        return []
+def clean_list(value, fallback):
+    if isinstance(value, list):
+        items = value
+    elif value:
+        items = [str(value)]
+    else:
+        items = []
+
+    weak_terms = [
+        "neutral",
+        "no positive",
+        "insufficient",
+        "limited data",
+        "not enough",
+        "no clear",
+    ]
+
+    cleaned = []
+
+    for item in items:
+        item = str(item).strip()
+
+        if not item:
+            continue
+
+        if any(term in item.lower() for term in weak_terms):
+            continue
+
+        cleaned.append(item)
+
+    return cleaned if cleaned else [fallback]
+
+
+def clean_text(value):
+    if isinstance(value, dict):
+        parts = []
+        for key, val in value.items():
+            if isinstance(val, list):
+                val = "; ".join(str(x) for x in val)
+            parts.append(f"{key}: {val}")
+        return " ".join(parts)
+
+    if isinstance(value, list):
+        return "; ".join(str(x) for x in value)
+
+    if value is None:
+        return ""
+
+    return str(value).strip()
+
+
+def validate_result(result):
+    validated = {}
+
+    for key in REQUIRED_KEYS:
+        validated[key] = result.get(key, "")
+
+    validated["executive_summary"] = clean_text(
+        validated["executive_summary"]
+    )
+
+    validated["consumer_verdict"] = clean_text(
+        validated["consumer_verdict"]
+    )
+
+    validated["platform_insight"] = clean_text(
+        validated["platform_insight"]
+    )
+
+    validated["recommendation"] = clean_text(
+        validated["recommendation"]
+    )
+
+    validated["top_strengths"] = clean_list(
+        validated["top_strengths"],
+        "Insufficient positive evidence"
+    )
+
+    validated["top_pain_points"] = clean_list(
+        validated["top_pain_points"],
+        "No dominant pain point identified"
+    )
+
+    validated["ideal_for"] = clean_list(
+        validated["ideal_for"],
+        "General smartphone users"
+    )
+
+    validated["avoid_if"] = clean_list(
+        validated["avoid_if"],
+        "Users needing stronger evidence before purchase"
+    )
+
+    return validated
+
+
+def format_platform_data(df):
+    if df is None or df.empty:
+        return "No platform comparison data available."
+
+    lines = []
+
+    for _, row in df.iterrows():
+        lines.append(
+            f"- {row['platform']}: {int(row['review_count'])} reviews, "
+            f"{row['positive_percent']:.1f}% positive, "
+            f"{row['negative_percent']:.1f}% negative"
+        )
+
+    return "\n".join(lines)
+
+
+def format_aspect_data(df):
+    if df is None or df.empty:
+        return "No aspect data available."
 
     grouped = (
         df.groupby("aspect")
         .agg(
-            review_count=("review_count", "sum"),
-            positive_percent=("positive_percent", "mean"),
-            negative_percent=("negative_percent", "mean"),
+            mentions=("review_count", "sum"),
+            positive=("positive_percent", "mean"),
+            negative=("negative_percent", "mean"),
         )
         .reset_index()
+        .sort_values("mentions", ascending=False)
+        .head(10)
     )
 
-    grouped = grouped[grouped["review_count"] >= MIN_ASPECT_MENTIONS]
+    lines = []
 
-    if exclude_risks:
-        grouped = grouped[~grouped["aspect"].isin(RISK_ASPECTS)]
-
-    if grouped.empty:
-        return []
-
-    return (
-        grouped.sort_values(
-            by=[sentiment_column, "review_count"],
-            ascending=[False, False],
-        )
-        .head(top_n)["aspect"]
-        .tolist()
-    )
-
-
-def  executive_summary(row):
-    review_count = int(row["review_count"])
-    positive = row["positive_percent"]
-    negative = row["negative_percent"]
-
-    if review_count < MIN_REVIEWS_FOR_INSIGHT:
-        review_word = "review" if review_count == 1 else "reviews"
-
-        return (
-            f"Only {review_count} {review_word} "
-            "are available, so consumer insights should be treated "
-            "as indicative rather than conclusive."
+    for _, row in grouped.iterrows():
+        lines.append(
+            f"- {row['aspect']}: {int(row['mentions'])} mentions, "
+            f"{row['positive']:.1f}% positive, "
+            f"{row['negative']:.1f}% negative"
         )
 
-    if positive >= 80 and negative <= 15:
-        tone = "Customers show a strong positive response to this smartphone."
-    elif positive >= 65:
-        tone = "Customer response is generally positive."
-    elif negative >= 30:
-        tone = "Customer feedback shows noticeable concerns."
-    else:
-        tone = "Customer feedback is mixed or balanced."
-
-    return (
-        f"{tone} Based on {review_count} reviews, "
-        f"positive sentiment is {positive:.1f}% "
-        f"and negative sentiment is {negative:.1f}%."
-    )
-    if positive >= 80 and negative <= 15:
-        tone = "Customers show a strong positive response to this smartphone."
-    elif positive >= 65:
-        tone = "Customer response is generally positive."
-    elif negative >= 30:
-        tone = "Customer feedback shows noticeable concerns."
-    else:
-        tone = "Customer feedback is mixed or balanced."
-
-    return (
-        f"{tone} Based on {int(review_count)} reviews, positive sentiment is "
-        f"{positive:.1f}% and negative sentiment is {negative:.1f}%."
-    )
+    return "\n".join(lines)
 
 
-def recommendation(row):
-    review_count = row["review_count"]
-    positive = row["positive_percent"]
-    negative = row["negative_percent"]
+def format_reviews(df):
+    if df is None or df.empty:
+        return "No review examples available."
 
-    if review_count < MIN_REVIEWS_FOR_INSIGHT:
-        return "Insufficient review volume for a reliable recommendation."
+    lines = []
 
-    if positive >= 80 and negative <= 15:
-        return "Strong consumer response."
+    for _, row in df.head(5).iterrows():
+        review = str(row["review_text"]).replace("\n", " ").strip()
+        platform = row["platform"]
+        lines.append(f"- [{platform}] {review}")
 
-    if positive >= 65 and negative <= 25:
-        return "Generally positive response with some trade-offs."
-
-    if negative >= 30:
-        return "Consumer concerns need attention before stronger recommendation."
-
-    return "Mixed consumer response."
+    return "\n".join(lines)
 
 
-def platform_insight(df):
-    if df.empty:
-        return "No platform-level review data available."
+def build_prompt(phone_id):
+    profile = get_complete_phone_profile(phone_id)
 
-    if len(df) < 2:
-        platform = df.iloc[0]["platform"]
-        return f"Reviews are available only from {platform}, so platform comparison is not possible."
+    product = first_row(profile["profile"])
+    summary = first_row(profile["summary"])
+    consumer = first_row(profile["consumer_intelligence"])
 
-    best = df.sort_values(by="positive_percent", ascending=False).iloc[0]
-    worst = df.sort_values(by="positive_percent", ascending=True).iloc[0]
-    diff = abs(best["positive_percent"] - worst["positive_percent"])
+    if not summary:
+        return None, None
 
-    if diff < 5:
-        return "Customer sentiment is broadly consistent across Amazon and Flipkart."
-
-    return (
-        f"{best['platform']} shows stronger satisfaction than "
-        f"{worst['platform']} by about {diff:.1f} percentage points."
+    phone_name = product.get(
+        "phone_name",
+        summary.get("phone_name", "Unknown Phone")
     )
 
+    brand = product.get("brand", "")
+    price_segment = product.get("price_segment", "")
+    launch_date = product.get("launch_date", "")
 
-def main():
-    print("=" * 55)
-    print("Consumer Intelligence Platform")
-    print("Module 12 - Insight Engine v1.1")
-    print("=" * 55)
+    review_count = int(summary.get("review_count", 0))
+    confidence = confidence_level(review_count)
 
-    phone_summary = pd.read_csv(PHONE_SUMMARY)
-    aspect_summary = pd.read_csv(ASPECT_SUMMARY)
-    platform_summary = pd.read_csv(PLATFORM_SUMMARY)
+    platform_text = format_platform_data(
+        profile["platform_comparison"]
+    )
 
-    rows = []
+    aspect_text = format_aspect_data(
+        profile["aspect_summary"]
+    )
 
-    for _, phone in phone_summary.iterrows():
-        pid = phone["phone_id"]
+    review_text = format_reviews(
+        profile["reviews"]
+    )
 
-        phone_aspects = aspect_summary[aspect_summary["phone_id"] == pid]
-        phone_platforms = platform_summary[platform_summary["phone_id"] == pid]
+    prompt = f"""
+You are a Senior Smartphone Consumer Intelligence Analyst.
 
-        strengths = top_aspects(
-            phone_aspects,
-            "positive_percent",
-            exclude_risks=True
-        )
+Your audience includes product managers, consumer insight teams,
+and business decision-makers.
 
-        pain_points = top_aspects(
-            phone_aspects,
-            "negative_percent",
-            exclude_risks=False
-        )
+Use ONLY the supplied data.
+Do NOT invent specifications, prices, ratings, or product features.
+Do NOT write marketing copy.
+Do NOT overstate weak evidence.
+If review volume is low, clearly mention that insight confidence is limited.
+Platform insight must be a single plain-English paragraph, not a dictionary.
+Strengths must represent clearly positive evidence only.
+Do not use neutral, mixed, insufficient, or unclear points as strengths.
+Pain points must be specific customer concerns.
 
-        rows.append({
-            "phone_id": pid,
-            "phone_name": phone["phone_name"],
-            "review_count": phone["review_count"],
-            "insight_confidence": insight_confidence(phone["review_count"]),
-            "executive_summary": executive_summary(phone),
-            "top_strengths": ", ".join(strengths) if strengths else "Insufficient aspect data",
-            "top_pain_points": ", ".join(pain_points) if pain_points else "Insufficient aspect data",
-            "platform_insight": platform_insight(phone_platforms),
-            "recommendation": recommendation(phone),
-        })
+PHONE INFORMATION
+Phone: {phone_name}
+Brand: {brand}
+Launch date: {launch_date}
+Price segment: {price_segment}
 
-    output = pd.DataFrame(rows)
+REVIEW VOLUME
+Review count: {review_count}
+Insight confidence: {confidence}
 
-    output.to_csv(OUTPUT, index=False, encoding="utf-8-sig")
+OVERALL SENTIMENT
+Positive: {summary.get("positive_percent", 0):.1f}%
+Neutral: {summary.get("neutral_percent", 0):.1f}%
+Negative: {summary.get("negative_percent", 0):.1f}%
 
-    print("\nCreated:")
-    print(OUTPUT)
-    print(f"\nInsights generated: {len(output)}")
+CONSUMER INTELLIGENCE
+Strongest aspect: {consumer.get("strongest_aspect", "")}
+Weakest aspect: {consumer.get("weakest_aspect", "")}
+Best platform: {consumer.get("best_platform", "")}
+Recommendation label: {consumer.get("recommendation_label", "")}
+
+PLATFORM COMPARISON
+{platform_text}
+
+ASPECT ANALYSIS
+{aspect_text}
+
+REVIEW EXAMPLES
+{review_text}
+
+Return ONLY valid JSON with exactly these keys:
+executive_summary
+consumer_verdict
+top_strengths
+top_pain_points
+platform_insight
+ideal_for
+avoid_if
+recommendation
+
+Rules:
+- executive_summary: 2 short sentences.
+- consumer_verdict: one short label.
+- top_strengths: list of 3 short evidence-based strengths.
+- top_pain_points: list of 3 short evidence-based pain points.
+- platform_insight: one concise paragraph.
+- ideal_for: list of 2-3 customer types.
+- avoid_if: list of 2-3 caution points.
+- recommendation: one concise business recommendation.
+"""
+
+    metadata = {
+        "phone_id": phone_id,
+        "phone_name": phone_name,
+        "review_count": review_count,
+        "insight_confidence": confidence,
+    }
+
+    return prompt, metadata
+
+
+def generate_phone_insight(phone_id, provider=None):
+    if provider is None:
+        provider = OllamaProvider()
+
+    prompt, metadata = build_prompt(phone_id)
+
+    if prompt is None:
+        return None
+
+    try:
+        result = provider.generate_json(prompt)
+    except Exception as error:
+        result = {
+            "executive_summary": f"Insight generation failed: {error}",
+            "consumer_verdict": "Generation Failed",
+            "top_strengths": [],
+            "top_pain_points": [],
+            "platform_insight": "",
+            "ideal_for": [],
+            "avoid_if": [],
+            "recommendation": "",
+        }
+
+    insight = validate_result(result)
+
+    return {
+        **metadata,
+        "executive_summary": insight["executive_summary"],
+        "consumer_verdict": insight["consumer_verdict"],
+        "top_strengths": "; ".join(insight["top_strengths"]),
+        "top_pain_points": "; ".join(insight["top_pain_points"]),
+        "platform_insight": insight["platform_insight"],
+        "ideal_for": "; ".join(insight["ideal_for"]),
+        "avoid_if": "; ".join(insight["avoid_if"]),
+        "recommendation": insight["recommendation"],
+    }
 
 
 if __name__ == "__main__":
-    main()
+    test_phone_id = "PH055"
+    insight = generate_phone_insight(test_phone_id)
+    print(insight)
