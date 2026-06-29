@@ -1,0 +1,729 @@
+﻿phone_id,phone_name,platform,aspect,review_count,positive_count,neutral_count,negative_count,positive_percent,neutral_percent,negative_percent,avg_confidence
+PH002,Realme P4R 5G,Flipkart,Battery,7.0,5.0,1.0,1.0,71.43,14.29,14.29,0.8358
+PH002,Realme P4R 5G,Flipkart,Build Quality,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.761
+PH002,Realme P4R 5G,Flipkart,Camera,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.8361
+PH002,Realme P4R 5G,Flipkart,Charging,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.785
+PH002,Realme P4R 5G,Flipkart,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8307
+PH002,Realme P4R 5G,Flipkart,Design,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9684
+PH002,Realme P4R 5G,Flipkart,Display,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9744
+PH002,Realme P4R 5G,Flipkart,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.951
+PH002,Realme P4R 5G,Flipkart,Performance,8.0,5.0,1.0,2.0,62.5,12.5,25.0,0.8339
+PH002,Realme P4R 5G,Flipkart,Software,7.0,4.0,1.0,2.0,57.14,14.29,28.57,0.8355
+PH002,Realme P4R 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8307
+PH002,Realme P4R 5G,Flipkart,Value for Money,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.8893
+PH003,Infinix SMART 20,Flipkart,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6063
+PH003,Infinix SMART 20,Flipkart,Connectivity,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.6821
+PH003,Infinix SMART 20,Flipkart,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6063
+PH003,Infinix SMART 20,Flipkart,Value for Money,2.0,0.0,2.0,0.0,0.0,100.0,0.0,0.7203
+PH006,Oppo A6c,Flipkart,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9358
+PH006,Oppo A6c,Flipkart,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9358
+PH006,Oppo A6c,Flipkart,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9358
+PH007,Realme 16T 5G,Amazon,Battery,11.0,9.0,0.0,2.0,81.82,0.0,18.18,0.9083
+PH007,Realme 16T 5G,Amazon,Build Quality,13.0,13.0,0.0,0.0,100.0,0.0,0.0,0.969
+PH007,Realme 16T 5G,Amazon,Camera,16.0,14.0,1.0,1.0,87.5,6.25,6.25,0.8779
+PH007,Realme 16T 5G,Amazon,Charging,6.0,3.0,0.0,3.0,50.0,0.0,50.0,0.809
+PH007,Realme 16T 5G,Amazon,Connectivity,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.9112
+PH007,Realme 16T 5G,Amazon,Design,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.8057
+PH007,Realme 16T 5G,Amazon,Display,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.8981
+PH007,Realme 16T 5G,Amazon,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9665
+PH007,Realme 16T 5G,Amazon,Heating,12.0,11.0,0.0,1.0,91.67,0.0,8.33,0.9715
+PH007,Realme 16T 5G,Amazon,Performance,15.0,12.0,0.0,3.0,80.0,0.0,20.0,0.888
+PH007,Realme 16T 5G,Amazon,Software,19.0,17.0,1.0,1.0,89.47,5.26,5.26,0.8873
+PH007,Realme 16T 5G,Amazon,Speaker & Audio,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9262
+PH007,Realme 16T 5G,Amazon,Value for Money,11.0,10.0,0.0,1.0,90.91,0.0,9.09,0.9152
+PH007,Realme 16T 5G,Flipkart,Build Quality,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8322
+PH007,Realme 16T 5G,Flipkart,Design,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7193
+PH007,Realme 16T 5G,Flipkart,Display,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8322
+PH007,Realme 16T 5G,Flipkart,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7883
+PH007,Realme 16T 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9451
+PH007,Realme 16T 5G,Flipkart,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9451
+PH008,HMD Vibe 2 5G,Flipkart,Battery,19.0,16.0,0.0,3.0,84.21,0.0,15.79,0.9185
+PH008,HMD Vibe 2 5G,Flipkart,Build Quality,14.0,8.0,0.0,6.0,57.14,0.0,42.86,0.8802
+PH008,HMD Vibe 2 5G,Flipkart,Camera,16.0,9.0,1.0,6.0,56.25,6.25,37.5,0.8919
+PH008,HMD Vibe 2 5G,Flipkart,Charging,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9563
+PH008,HMD Vibe 2 5G,Flipkart,Connectivity,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.8898
+PH008,HMD Vibe 2 5G,Flipkart,Design,13.0,11.0,0.0,2.0,84.62,0.0,15.38,0.8712
+PH008,HMD Vibe 2 5G,Flipkart,Display,12.0,9.0,1.0,2.0,75.0,8.33,16.67,0.9074
+PH008,HMD Vibe 2 5G,Flipkart,Gaming,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9496
+PH008,HMD Vibe 2 5G,Flipkart,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9338
+PH008,HMD Vibe 2 5G,Flipkart,Performance,25.0,19.0,0.0,6.0,76.0,0.0,24.0,0.894
+PH008,HMD Vibe 2 5G,Flipkart,Software,15.0,11.0,0.0,4.0,73.33,0.0,26.67,0.8935
+PH008,HMD Vibe 2 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8311
+PH008,HMD Vibe 2 5G,Flipkart,Value for Money,27.0,25.0,1.0,1.0,92.59,3.7,3.7,0.9118
+PH009,Moto G37 Power,Amazon,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Amazon,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8151
+PH009,Moto G37 Power,Flipkart,Battery,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9671
+PH009,Moto G37 Power,Flipkart,Build Quality,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.9274
+PH009,Moto G37 Power,Flipkart,Camera,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.9486
+PH009,Moto G37 Power,Flipkart,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9148
+PH009,Moto G37 Power,Flipkart,Connectivity,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.8051
+PH009,Moto G37 Power,Flipkart,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.974
+PH009,Moto G37 Power,Flipkart,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9671
+PH009,Moto G37 Power,Flipkart,Performance,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.9107
+PH009,Moto G37 Power,Flipkart,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9378
+PH009,Moto G37 Power,Flipkart,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9532
+PH009,Moto G37 Power,Flipkart,Value for Money,8.0,7.0,0.0,1.0,87.5,0.0,12.5,0.9515
+PH010,Moto G37,Flipkart,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9248
+PH010,Moto G37,Flipkart,Build Quality,2.0,0.0,1.0,1.0,0.0,50.0,50.0,0.6578
+PH010,Moto G37,Flipkart,Camera,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.6832
+PH010,Moto G37,Flipkart,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9248
+PH010,Moto G37,Flipkart,Connectivity,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.838
+PH010,Moto G37,Flipkart,Heating,3.0,0.0,1.0,2.0,0.0,33.33,66.67,0.7277
+PH010,Moto G37,Flipkart,Performance,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.7796
+PH010,Moto G37,Flipkart,Software,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9876
+PH010,Moto G37,Flipkart,Value for Money,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.8856
+PH012,Oneplus Nord CE 6 Lite,Amazon,Battery,27.0,25.0,1.0,1.0,92.59,3.7,3.7,0.9252
+PH012,Oneplus Nord CE 6 Lite,Amazon,Build Quality,18.0,15.0,1.0,2.0,83.33,5.56,11.11,0.922
+PH012,Oneplus Nord CE 6 Lite,Amazon,Camera,24.0,19.0,2.0,3.0,79.17,8.33,12.5,0.8899
+PH012,Oneplus Nord CE 6 Lite,Amazon,Charging,8.0,7.0,1.0,0.0,87.5,12.5,0.0,0.8419
+PH012,Oneplus Nord CE 6 Lite,Amazon,Connectivity,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9109
+PH012,Oneplus Nord CE 6 Lite,Amazon,Design,13.0,10.0,1.0,2.0,76.92,7.69,15.38,0.8447
+PH012,Oneplus Nord CE 6 Lite,Amazon,Display,13.0,13.0,0.0,0.0,100.0,0.0,0.0,0.9611
+PH012,Oneplus Nord CE 6 Lite,Amazon,Gaming,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9461
+PH012,Oneplus Nord CE 6 Lite,Amazon,Heating,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8293
+PH012,Oneplus Nord CE 6 Lite,Amazon,Performance,23.0,20.0,2.0,1.0,86.96,8.7,4.35,0.8748
+PH012,Oneplus Nord CE 6 Lite,Amazon,Software,10.0,8.0,0.0,2.0,80.0,0.0,20.0,0.8962
+PH012,Oneplus Nord CE 6 Lite,Amazon,Speaker & Audio,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.8939
+PH012,Oneplus Nord CE 6 Lite,Amazon,Value for Money,18.0,17.0,0.0,1.0,94.44,0.0,5.56,0.8989
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9292
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Camera,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.933
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.5914
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Design,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9059
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.6039
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9292
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Performance,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.9178
+PH012,Oneplus Nord CE 6 Lite,Flipkart,Value for Money,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9157
+PH013,Poco C81,Flipkart,Performance,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.8
+PH014,Poco C81x,Flipkart,Charging,3.0,0.0,1.0,2.0,0.0,33.33,66.67,0.7348
+PH014,Poco C81x,Flipkart,Heating,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8641
+PH014,Poco C81x,Flipkart,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6003
+PH014,Poco C81x,Flipkart,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8936
+PH015,Redmi A7,Amazon,Battery,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.687
+PH015,Redmi A7,Amazon,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8956
+PH015,Redmi A7,Amazon,Camera,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.687
+PH015,Redmi A7,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8144
+PH015,Redmi A7,Amazon,Display,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.687
+PH015,Redmi A7,Amazon,Heating,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.687
+PH015,Redmi A7,Amazon,Software,2.0,0.0,1.0,1.0,0.0,50.0,50.0,0.7874
+PH015,Redmi A7,Amazon,Speaker & Audio,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.855
+PH015,Redmi A7,Amazon,Value for Money,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.687
+PH015,Redmi A7,Flipkart,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9334
+PH016,Redmi A7 Pro,Amazon,Battery,15.0,9.0,0.0,6.0,60.0,0.0,40.0,0.8461
+PH016,Redmi A7 Pro,Amazon,Build Quality,10.0,3.0,0.0,7.0,30.0,0.0,70.0,0.7976
+PH016,Redmi A7 Pro,Amazon,Camera,15.0,6.0,0.0,9.0,40.0,0.0,60.0,0.8766
+PH016,Redmi A7 Pro,Amazon,Charging,17.0,5.0,2.0,10.0,29.41,11.76,58.82,0.7853
+PH016,Redmi A7 Pro,Amazon,Connectivity,20.0,9.0,1.0,10.0,45.0,5.0,50.0,0.8343
+PH016,Redmi A7 Pro,Amazon,Design,5.0,4.0,0.0,1.0,80.0,0.0,20.0,0.9219
+PH016,Redmi A7 Pro,Amazon,Display,16.0,6.0,1.0,9.0,37.5,6.25,56.25,0.821
+PH016,Redmi A7 Pro,Amazon,Gaming,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9209
+PH016,Redmi A7 Pro,Amazon,Heating,9.0,3.0,2.0,4.0,33.33,22.22,44.44,0.8377
+PH016,Redmi A7 Pro,Amazon,Performance,32.0,11.0,3.0,18.0,34.38,9.38,56.25,0.8233
+PH016,Redmi A7 Pro,Amazon,Software,31.0,14.0,1.0,16.0,45.16,3.23,51.61,0.8715
+PH016,Redmi A7 Pro,Amazon,Speaker & Audio,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.736
+PH016,Redmi A7 Pro,Amazon,Value for Money,26.0,16.0,2.0,8.0,61.54,7.69,30.77,0.8668
+PH016,Redmi A7 Pro,Flipkart,Battery,5.0,0.0,1.0,4.0,0.0,20.0,80.0,0.7325
+PH016,Redmi A7 Pro,Flipkart,Build Quality,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.7332
+PH016,Redmi A7 Pro,Flipkart,Camera,7.0,3.0,0.0,4.0,42.86,0.0,57.14,0.7615
+PH016,Redmi A7 Pro,Flipkart,Charging,4.0,0.0,1.0,3.0,0.0,25.0,75.0,0.7884
+PH016,Redmi A7 Pro,Flipkart,Connectivity,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9242
+PH016,Redmi A7 Pro,Flipkart,Design,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.5054
+PH016,Redmi A7 Pro,Flipkart,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9268
+PH016,Redmi A7 Pro,Flipkart,Heating,7.0,1.0,2.0,4.0,14.29,28.57,57.14,0.802
+PH016,Redmi A7 Pro,Flipkart,Performance,10.0,0.0,1.0,9.0,0.0,10.0,90.0,0.8358
+PH016,Redmi A7 Pro,Flipkart,Software,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.7678
+PH016,Redmi A7 Pro,Flipkart,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.6812
+PH016,Redmi A7 Pro,Flipkart,Value for Money,8.0,1.0,2.0,5.0,12.5,25.0,62.5,0.8652
+PH017,Tecno Pop X 5G,Amazon,Build Quality,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9564
+PH017,Tecno Pop X 5G,Amazon,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8746
+PH017,Tecno Pop X 5G,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9177
+PH017,Tecno Pop X 5G,Amazon,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9676
+PH017,Tecno Pop X 5G,Amazon,Display,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9426
+PH017,Tecno Pop X 5G,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8746
+PH017,Tecno Pop X 5G,Amazon,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8746
+PH017,Tecno Pop X 5G,Amazon,Software,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9298
+PH017,Tecno Pop X 5G,Amazon,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9419
+PH017,Tecno Pop X 5G,Amazon,Value for Money,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9426
+PH018,Vivo Y05,Amazon,Connectivity,3.0,0.0,1.0,2.0,0.0,33.33,66.67,0.8977
+PH018,Vivo Y05,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9183
+PH018,Vivo Y05,Amazon,Performance,3.0,0.0,1.0,2.0,0.0,33.33,66.67,0.7447
+PH019,Oppo F33 5G,Amazon,Battery,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9421
+PH019,Oppo F33 5G,Amazon,Build Quality,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9421
+PH019,Oppo F33 5G,Amazon,Camera,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9204
+PH019,Oppo F33 5G,Amazon,Design,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.9225
+PH019,Oppo F33 5G,Amazon,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9737
+PH019,Oppo F33 5G,Amazon,Performance,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9322
+PH019,Oppo F33 5G,Amazon,Software,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9352
+PH019,Oppo F33 5G,Amazon,Value for Money,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9204
+PH019,Oppo F33 5G,Flipkart,Battery,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.857
+PH019,Oppo F33 5G,Flipkart,Build Quality,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9478
+PH019,Oppo F33 5G,Flipkart,Camera,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.7004
+PH019,Oppo F33 5G,Flipkart,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9395
+PH019,Oppo F33 5G,Flipkart,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.973
+PH019,Oppo F33 5G,Flipkart,Heating,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.4614
+PH019,Oppo F33 5G,Flipkart,Performance,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.7172
+PH019,Oppo F33 5G,Flipkart,Software,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.7004
+PH019,Oppo F33 5G,Flipkart,Value for Money,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.6874
+PH020,Vivo T5 Pro 5G,Amazon,Battery,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9768
+PH020,Vivo T5 Pro 5G,Amazon,Camera,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.977
+PH020,Vivo T5 Pro 5G,Amazon,Charging,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9768
+PH020,Vivo T5 Pro 5G,Amazon,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6432
+PH020,Vivo T5 Pro 5G,Amazon,Display,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8101
+PH020,Vivo T5 Pro 5G,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6432
+PH020,Vivo T5 Pro 5G,Amazon,Value for Money,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9261
+PH020,Vivo T5 Pro 5G,Flipkart,Battery,21.0,14.0,1.0,6.0,66.67,4.76,28.57,0.8574
+PH020,Vivo T5 Pro 5G,Flipkart,Build Quality,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.8869
+PH020,Vivo T5 Pro 5G,Flipkart,Camera,17.0,11.0,1.0,5.0,64.71,5.88,29.41,0.8945
+PH020,Vivo T5 Pro 5G,Flipkart,Charging,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.8784
+PH020,Vivo T5 Pro 5G,Flipkart,Connectivity,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.8958
+PH020,Vivo T5 Pro 5G,Flipkart,Design,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.8508
+PH020,Vivo T5 Pro 5G,Flipkart,Display,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.7804
+PH020,Vivo T5 Pro 5G,Flipkart,Heating,5.0,2.0,2.0,1.0,40.0,40.0,20.0,0.7859
+PH020,Vivo T5 Pro 5G,Flipkart,Performance,14.0,8.0,0.0,6.0,57.14,0.0,42.86,0.9282
+PH020,Vivo T5 Pro 5G,Flipkart,Software,12.0,6.0,1.0,5.0,50.0,8.33,41.67,0.8747
+PH020,Vivo T5 Pro 5G,Flipkart,Value for Money,17.0,10.0,2.0,5.0,58.82,11.76,29.41,0.8329
+PH021,Realme Narzo 100 Lite 5G,Amazon,Battery,17.0,14.0,1.0,2.0,82.35,5.88,11.76,0.8685
+PH021,Realme Narzo 100 Lite 5G,Amazon,Build Quality,9.0,7.0,1.0,1.0,77.78,11.11,11.11,0.8633
+PH021,Realme Narzo 100 Lite 5G,Amazon,Camera,19.0,13.0,3.0,3.0,68.42,15.79,15.79,0.8555
+PH021,Realme Narzo 100 Lite 5G,Amazon,Charging,5.0,0.0,1.0,4.0,0.0,20.0,80.0,0.7804
+PH021,Realme Narzo 100 Lite 5G,Amazon,Connectivity,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.8865
+PH021,Realme Narzo 100 Lite 5G,Amazon,Design,12.0,11.0,0.0,1.0,91.67,0.0,8.33,0.9033
+PH021,Realme Narzo 100 Lite 5G,Amazon,Display,15.0,12.0,1.0,2.0,80.0,6.67,13.33,0.8613
+PH021,Realme Narzo 100 Lite 5G,Amazon,Heating,13.0,11.0,0.0,2.0,84.62,0.0,15.38,0.8748
+PH021,Realme Narzo 100 Lite 5G,Amazon,Performance,23.0,14.0,0.0,9.0,60.87,0.0,39.13,0.8708
+PH021,Realme Narzo 100 Lite 5G,Amazon,Software,6.0,3.0,0.0,3.0,50.0,0.0,50.0,0.8428
+PH021,Realme Narzo 100 Lite 5G,Amazon,Speaker & Audio,4.0,2.0,1.0,1.0,50.0,25.0,25.0,0.7363
+PH021,Realme Narzo 100 Lite 5G,Amazon,Value for Money,16.0,10.0,1.0,5.0,62.5,6.25,31.25,0.8583
+PH021,Realme Narzo 100 Lite 5G,Flipkart,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9414
+PH021,Realme Narzo 100 Lite 5G,Flipkart,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9414
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Battery,6.0,2.0,1.0,3.0,33.33,16.67,50.0,0.7897
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Build Quality,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.7857
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Camera,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9417
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Charging,7.0,1.0,2.0,4.0,14.29,28.57,57.14,0.7556
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9733
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Display,4.0,0.0,0.0,4.0,0.0,0.0,100.0,0.8786
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Heating,4.0,0.0,1.0,3.0,0.0,25.0,75.0,0.6531
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Performance,9.0,2.0,1.0,6.0,22.22,11.11,66.67,0.8585
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Software,5.0,0.0,1.0,4.0,0.0,20.0,80.0,0.8516
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8674
+PH022,Ai+ Nova 2 Ultra 5G,Flipkart,Value for Money,17.0,11.0,5.0,1.0,64.71,29.41,5.88,0.8803
+PH023,Ai+ Nova 2 5G,Flipkart,Battery,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.9052
+PH023,Ai+ Nova 2 5G,Flipkart,Build Quality,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.6704
+PH023,Ai+ Nova 2 5G,Flipkart,Camera,5.0,4.0,0.0,1.0,80.0,0.0,20.0,0.8286
+PH023,Ai+ Nova 2 5G,Flipkart,Charging,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8542
+PH023,Ai+ Nova 2 5G,Flipkart,Connectivity,3.0,0.0,1.0,2.0,0.0,33.33,66.67,0.9081
+PH023,Ai+ Nova 2 5G,Flipkart,Display,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9511
+PH023,Ai+ Nova 2 5G,Flipkart,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9424
+PH023,Ai+ Nova 2 5G,Flipkart,Heating,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.8025
+PH023,Ai+ Nova 2 5G,Flipkart,Performance,6.0,1.0,0.0,5.0,16.67,0.0,83.33,0.7902
+PH023,Ai+ Nova 2 5G,Flipkart,Software,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8075
+PH023,Ai+ Nova 2 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.5696
+PH023,Ai+ Nova 2 5G,Flipkart,Value for Money,11.0,5.0,5.0,1.0,45.45,45.45,9.09,0.8036
+PH024,Redmi Note 15 SE 5G,Amazon,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9357
+PH024,Redmi Note 15 SE 5G,Amazon,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9142
+PH024,Redmi Note 15 SE 5G,Amazon,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9142
+PH024,Redmi Note 15 SE 5G,Amazon,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6568
+PH024,Redmi Note 15 SE 5G,Flipkart,Battery,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8114
+PH024,Redmi Note 15 SE 5G,Flipkart,Build Quality,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.942
+PH024,Redmi Note 15 SE 5G,Flipkart,Camera,9.0,6.0,1.0,2.0,66.67,11.11,22.22,0.8236
+PH024,Redmi Note 15 SE 5G,Flipkart,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.4576
+PH024,Redmi Note 15 SE 5G,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9614
+PH024,Redmi Note 15 SE 5G,Flipkart,Design,10.0,10.0,0.0,0.0,100.0,0.0,0.0,0.9682
+PH024,Redmi Note 15 SE 5G,Flipkart,Display,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9724
+PH024,Redmi Note 15 SE 5G,Flipkart,Gaming,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.8066
+PH024,Redmi Note 15 SE 5G,Flipkart,Heating,4.0,2.0,2.0,0.0,50.0,50.0,0.0,0.8332
+PH024,Redmi Note 15 SE 5G,Flipkart,Performance,13.0,12.0,0.0,1.0,92.31,0.0,7.69,0.931
+PH024,Redmi Note 15 SE 5G,Flipkart,Software,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.9556
+PH024,Redmi Note 15 SE 5G,Flipkart,Value for Money,11.0,9.0,1.0,1.0,81.82,9.09,9.09,0.9009
+PH025,Lava Bold N2 Lite,Amazon,Build Quality,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9887
+PH025,Lava Bold N2 Lite,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7045
+PH025,Lava Bold N2 Lite,Amazon,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7045
+PH025,Lava Bold N2 Lite,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7045
+PH025,Lava Bold N2 Lite,Amazon,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7627
+PH025,Lava Bold N2 Lite,Flipkart,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.847
+PH026,Tecno Spark 50 5G,Amazon,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8772
+PH026,Tecno Spark 50 5G,Amazon,Value for Money,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8943
+PH026,Tecno Spark 50 5G,Flipkart,Value for Money,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.7636
+PH027,Redmi 15A 5G,Amazon,Connectivity,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.7528
+PH027,Redmi 15A 5G,Amazon,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9496
+PH027,Redmi 15A 5G,Flipkart,Battery,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8912
+PH027,Redmi 15A 5G,Flipkart,Build Quality,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.892
+PH027,Redmi 15A 5G,Flipkart,Camera,7.0,2.0,1.0,4.0,28.57,14.29,57.14,0.8882
+PH027,Redmi 15A 5G,Flipkart,Charging,2.0,0.0,1.0,1.0,0.0,50.0,50.0,0.8772
+PH027,Redmi 15A 5G,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9673
+PH027,Redmi 15A 5G,Flipkart,Design,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9718
+PH027,Redmi 15A 5G,Flipkart,Display,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9173
+PH027,Redmi 15A 5G,Flipkart,Heating,2.0,0.0,1.0,1.0,0.0,50.0,50.0,0.862
+PH027,Redmi 15A 5G,Flipkart,Performance,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.9455
+PH027,Redmi 15A 5G,Flipkart,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6315
+PH027,Redmi 15A 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9431
+PH027,Redmi 15A 5G,Flipkart,Value for Money,6.0,6.0,0.0,0.0,100.0,0.0,0.0,0.869
+PH028,Vivo Y11 5G,Amazon,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9487
+PH028,Vivo Y11 5G,Amazon,Performance,6.0,1.0,0.0,5.0,16.67,0.0,83.33,0.8894
+PH029,Vivo Y21 5G,Amazon,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9374
+PH029,Vivo Y21 5G,Amazon,Build Quality,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8484
+PH029,Vivo Y21 5G,Amazon,Camera,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9348
+PH029,Vivo Y21 5G,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9374
+PH029,Vivo Y21 5G,Amazon,Speaker & Audio,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.8781
+PH029,Vivo Y21 5G,Amazon,Value for Money,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9348
+PH029,Vivo Y21 5G,Flipkart,Value for Money,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.6552
+PH030,Realme P4 Lite 5G,Amazon,Battery,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9243
+PH030,Realme P4 Lite 5G,Amazon,Build Quality,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.94
+PH030,Realme P4 Lite 5G,Amazon,Camera,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8858
+PH030,Realme P4 Lite 5G,Amazon,Charging,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.781
+PH030,Realme P4 Lite 5G,Amazon,Connectivity,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.8198
+PH030,Realme P4 Lite 5G,Amazon,Design,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8984
+PH030,Realme P4 Lite 5G,Amazon,Display,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9792
+PH030,Realme P4 Lite 5G,Amazon,Performance,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.8088
+PH030,Realme P4 Lite 5G,Amazon,Software,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.7558
+PH030,Realme P4 Lite 5G,Amazon,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8368
+PH030,Realme P4 Lite 5G,Amazon,Value for Money,5.0,3.0,1.0,1.0,60.0,20.0,20.0,0.8472
+PH030,Realme P4 Lite 5G,Flipkart,Battery,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9243
+PH030,Realme P4 Lite 5G,Flipkart,Build Quality,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.94
+PH030,Realme P4 Lite 5G,Flipkart,Camera,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8858
+PH030,Realme P4 Lite 5G,Flipkart,Charging,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.781
+PH030,Realme P4 Lite 5G,Flipkart,Connectivity,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.8198
+PH030,Realme P4 Lite 5G,Flipkart,Design,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8984
+PH030,Realme P4 Lite 5G,Flipkart,Display,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9792
+PH030,Realme P4 Lite 5G,Flipkart,Performance,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.8088
+PH030,Realme P4 Lite 5G,Flipkart,Software,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.7558
+PH030,Realme P4 Lite 5G,Flipkart,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8368
+PH030,Realme P4 Lite 5G,Flipkart,Value for Money,5.0,3.0,1.0,1.0,60.0,20.0,20.0,0.8472
+PH031,Oppo A6s 5G,Amazon,Battery,17.0,14.0,1.0,2.0,82.35,5.88,11.76,0.8676
+PH031,Oppo A6s 5G,Amazon,Build Quality,14.0,11.0,1.0,2.0,78.57,7.14,14.29,0.9116
+PH031,Oppo A6s 5G,Amazon,Camera,15.0,15.0,0.0,0.0,100.0,0.0,0.0,0.923
+PH031,Oppo A6s 5G,Amazon,Charging,9.0,7.0,1.0,1.0,77.78,11.11,11.11,0.7991
+PH031,Oppo A6s 5G,Amazon,Connectivity,5.0,3.0,2.0,0.0,60.0,40.0,0.0,0.8138
+PH031,Oppo A6s 5G,Amazon,Design,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9727
+PH031,Oppo A6s 5G,Amazon,Display,11.0,7.0,1.0,3.0,63.64,9.09,27.27,0.9263
+PH031,Oppo A6s 5G,Amazon,Heating,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9633
+PH031,Oppo A6s 5G,Amazon,Performance,24.0,22.0,0.0,2.0,91.67,0.0,8.33,0.9229
+PH031,Oppo A6s 5G,Amazon,Software,23.0,17.0,1.0,5.0,73.91,4.35,21.74,0.9067
+PH031,Oppo A6s 5G,Amazon,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9874
+PH031,Oppo A6s 5G,Amazon,Value for Money,18.0,17.0,0.0,1.0,94.44,0.0,5.56,0.9294
+PH032,Samsung Galaxy M17e 5G,Amazon,Battery,18.0,15.0,1.0,2.0,83.33,5.56,11.11,0.8045
+PH032,Samsung Galaxy M17e 5G,Amazon,Build Quality,13.0,8.0,1.0,4.0,61.54,7.69,30.77,0.8473
+PH032,Samsung Galaxy M17e 5G,Amazon,Camera,22.0,13.0,3.0,6.0,59.09,13.64,27.27,0.8446
+PH032,Samsung Galaxy M17e 5G,Amazon,Charging,5.0,2.0,0.0,3.0,40.0,0.0,60.0,0.7678
+PH032,Samsung Galaxy M17e 5G,Amazon,Connectivity,10.0,6.0,0.0,4.0,60.0,0.0,40.0,0.8681
+PH032,Samsung Galaxy M17e 5G,Amazon,Design,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9154
+PH032,Samsung Galaxy M17e 5G,Amazon,Display,18.0,7.0,7.0,4.0,38.89,38.89,22.22,0.7185
+PH032,Samsung Galaxy M17e 5G,Amazon,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9312
+PH032,Samsung Galaxy M17e 5G,Amazon,Heating,6.0,2.0,3.0,1.0,33.33,50.0,16.67,0.7558
+PH032,Samsung Galaxy M17e 5G,Amazon,Performance,28.0,11.0,4.0,13.0,39.29,14.29,46.43,0.8129
+PH032,Samsung Galaxy M17e 5G,Amazon,Software,20.0,12.0,2.0,6.0,60.0,10.0,30.0,0.8029
+PH032,Samsung Galaxy M17e 5G,Amazon,Speaker & Audio,5.0,3.0,0.0,2.0,60.0,0.0,40.0,0.9128
+PH032,Samsung Galaxy M17e 5G,Amazon,Value for Money,11.0,9.0,0.0,2.0,81.82,0.0,18.18,0.9065
+PH032,Samsung Galaxy M17e 5G,Flipkart,Battery,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.4052
+PH032,Samsung Galaxy M17e 5G,Flipkart,Build Quality,4.0,1.0,1.0,2.0,25.0,25.0,50.0,0.7445
+PH032,Samsung Galaxy M17e 5G,Flipkart,Camera,2.0,0.0,2.0,0.0,0.0,100.0,0.0,0.3995
+PH032,Samsung Galaxy M17e 5G,Flipkart,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8965
+PH032,Samsung Galaxy M17e 5G,Flipkart,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9847
+PH032,Samsung Galaxy M17e 5G,Flipkart,Heating,2.0,0.0,1.0,1.0,0.0,50.0,50.0,0.649
+PH032,Samsung Galaxy M17e 5G,Flipkart,Performance,4.0,2.0,1.0,1.0,50.0,25.0,25.0,0.7963
+PH032,Samsung Galaxy M17e 5G,Flipkart,Software,4.0,0.0,1.0,3.0,0.0,25.0,75.0,0.7099
+PH032,Samsung Galaxy M17e 5G,Flipkart,Value for Money,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.9278
+PH033,Vivo T5x 5G,Amazon,Battery,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.9483
+PH033,Vivo T5x 5G,Amazon,Build Quality,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9347
+PH033,Vivo T5x 5G,Amazon,Camera,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.9124
+PH033,Vivo T5x 5G,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7519
+PH033,Vivo T5x 5G,Amazon,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9555
+PH033,Vivo T5x 5G,Amazon,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9335
+PH033,Vivo T5x 5G,Amazon,Heating,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.8919
+PH033,Vivo T5x 5G,Amazon,Performance,12.0,4.0,0.0,8.0,33.33,0.0,66.67,0.9164
+PH033,Vivo T5x 5G,Amazon,Software,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.7793
+PH033,Vivo T5x 5G,Amazon,Speaker & Audio,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.887
+PH033,Vivo T5x 5G,Amazon,Value for Money,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.7962
+PH033,Vivo T5x 5G,Flipkart,Battery,17.0,14.0,3.0,0.0,82.35,17.65,0.0,0.8865
+PH033,Vivo T5x 5G,Flipkart,Build Quality,8.0,4.0,2.0,2.0,50.0,25.0,25.0,0.8208
+PH033,Vivo T5x 5G,Flipkart,Camera,23.0,19.0,2.0,2.0,82.61,8.7,8.7,0.9061
+PH033,Vivo T5x 5G,Flipkart,Charging,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.783
+PH033,Vivo T5x 5G,Flipkart,Connectivity,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9828
+PH033,Vivo T5x 5G,Flipkart,Design,6.0,5.0,1.0,0.0,83.33,16.67,0.0,0.9208
+PH033,Vivo T5x 5G,Flipkart,Display,12.0,6.0,2.0,4.0,50.0,16.67,33.33,0.7821
+PH033,Vivo T5x 5G,Flipkart,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.959
+PH033,Vivo T5x 5G,Flipkart,Performance,16.0,12.0,3.0,1.0,75.0,18.75,6.25,0.8472
+PH033,Vivo T5x 5G,Flipkart,Software,6.0,2.0,1.0,3.0,33.33,16.67,50.0,0.8428
+PH033,Vivo T5x 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8957
+PH033,Vivo T5x 5G,Flipkart,Value for Money,24.0,19.0,5.0,0.0,79.17,20.83,0.0,0.8624
+PH034,Oppo K14 5G,Amazon,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8687
+PH034,Oppo K14 5G,Amazon,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8687
+PH034,Oppo K14 5G,Amazon,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8687
+PH034,Oppo K14 5G,Flipkart,Battery,6.0,6.0,0.0,0.0,100.0,0.0,0.0,0.8368
+PH034,Oppo K14 5G,Flipkart,Build Quality,12.0,2.0,1.0,9.0,16.67,8.33,75.0,0.8637
+PH034,Oppo K14 5G,Flipkart,Camera,18.0,5.0,0.0,13.0,27.78,0.0,72.22,0.8595
+PH034,Oppo K14 5G,Flipkart,Charging,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.5479
+PH034,Oppo K14 5G,Flipkart,Connectivity,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.8317
+PH034,Oppo K14 5G,Flipkart,Design,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.7973
+PH034,Oppo K14 5G,Flipkart,Display,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.7784
+PH034,Oppo K14 5G,Flipkart,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9385
+PH034,Oppo K14 5G,Flipkart,Heating,6.0,2.0,2.0,2.0,33.33,33.33,33.33,0.6277
+PH034,Oppo K14 5G,Flipkart,Performance,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8434
+PH034,Oppo K14 5G,Flipkart,Software,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.6287
+PH034,Oppo K14 5G,Flipkart,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9345
+PH034,Oppo K14 5G,Flipkart,Value for Money,10.0,5.0,3.0,2.0,50.0,30.0,20.0,0.8337
+PH035,LAVA Bold 2 5G,Amazon,Battery,26.0,19.0,2.0,5.0,73.08,7.69,19.23,0.7953
+PH035,LAVA Bold 2 5G,Amazon,Build Quality,21.0,18.0,1.0,2.0,85.71,4.76,9.52,0.8503
+PH035,LAVA Bold 2 5G,Amazon,Camera,34.0,28.0,2.0,4.0,82.35,5.88,11.76,0.8369
+PH035,LAVA Bold 2 5G,Amazon,Charging,14.0,11.0,2.0,1.0,78.57,14.29,7.14,0.8156
+PH035,LAVA Bold 2 5G,Amazon,Connectivity,12.0,10.0,2.0,0.0,83.33,16.67,0.0,0.8466
+PH035,LAVA Bold 2 5G,Amazon,Design,20.0,17.0,1.0,2.0,85.0,5.0,10.0,0.8891
+PH035,LAVA Bold 2 5G,Amazon,Display,37.0,29.0,1.0,7.0,78.38,2.7,18.92,0.8652
+PH035,LAVA Bold 2 5G,Amazon,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8223
+PH035,LAVA Bold 2 5G,Amazon,Heating,13.0,7.0,3.0,3.0,53.85,23.08,23.08,0.8195
+PH035,LAVA Bold 2 5G,Amazon,Performance,37.0,34.0,2.0,1.0,91.89,5.41,2.7,0.8757
+PH035,LAVA Bold 2 5G,Amazon,Software,32.0,25.0,4.0,3.0,78.12,12.5,9.38,0.8575
+PH035,LAVA Bold 2 5G,Amazon,Speaker & Audio,13.0,11.0,1.0,1.0,84.62,7.69,7.69,0.803
+PH035,LAVA Bold 2 5G,Amazon,Value for Money,42.0,35.0,3.0,4.0,83.33,7.14,9.52,0.8688
+PH036,iQOO Z11x 5G,Amazon,Battery,19.0,14.0,2.0,3.0,73.68,10.53,15.79,0.7907
+PH036,iQOO Z11x 5G,Amazon,Build Quality,12.0,9.0,0.0,3.0,75.0,0.0,25.0,0.8711
+PH036,iQOO Z11x 5G,Amazon,Camera,16.0,9.0,0.0,7.0,56.25,0.0,43.75,0.8192
+PH036,iQOO Z11x 5G,Amazon,Charging,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.6164
+PH036,iQOO Z11x 5G,Amazon,Connectivity,5.0,2.0,1.0,2.0,40.0,20.0,40.0,0.6275
+PH036,iQOO Z11x 5G,Amazon,Design,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.92
+PH036,iQOO Z11x 5G,Amazon,Display,10.0,5.0,2.0,3.0,50.0,20.0,30.0,0.6958
+PH036,iQOO Z11x 5G,Amazon,Gaming,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.8381
+PH036,iQOO Z11x 5G,Amazon,Heating,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.7717
+PH036,iQOO Z11x 5G,Amazon,Performance,21.0,15.0,3.0,3.0,71.43,14.29,14.29,0.8045
+PH036,iQOO Z11x 5G,Amazon,Software,8.0,6.0,0.0,2.0,75.0,0.0,25.0,0.7184
+PH036,iQOO Z11x 5G,Amazon,Speaker & Audio,9.0,6.0,0.0,3.0,66.67,0.0,33.33,0.7697
+PH036,iQOO Z11x 5G,Amazon,Value for Money,19.0,11.0,4.0,4.0,57.89,21.05,21.05,0.7879
+PH036,iQOO Z11x 5G,Flipkart,Battery,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.8628
+PH036,iQOO Z11x 5G,Flipkart,Build Quality,6.0,6.0,0.0,0.0,100.0,0.0,0.0,0.9174
+PH036,iQOO Z11x 5G,Flipkart,Camera,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9269
+PH036,iQOO Z11x 5G,Flipkart,Charging,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.7535
+PH036,iQOO Z11x 5G,Flipkart,Design,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.8285
+PH036,iQOO Z11x 5G,Flipkart,Display,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.978
+PH036,iQOO Z11x 5G,Flipkart,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9284
+PH036,iQOO Z11x 5G,Flipkart,Performance,8.0,8.0,0.0,0.0,100.0,0.0,0.0,0.9148
+PH036,iQOO Z11x 5G,Flipkart,Software,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9612
+PH036,iQOO Z11x 5G,Flipkart,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9315
+PH036,iQOO Z11x 5G,Flipkart,Value for Money,9.0,9.0,0.0,0.0,100.0,0.0,0.0,0.9537
+PH037,Vivo Y51 Pro,Amazon,Battery,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9652
+PH037,Vivo Y51 Pro,Amazon,Build Quality,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9648
+PH037,Vivo Y51 Pro,Amazon,Camera,6.0,3.0,0.0,3.0,50.0,0.0,50.0,0.9393
+PH037,Vivo Y51 Pro,Amazon,Charging,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.577
+PH037,Vivo Y51 Pro,Amazon,Connectivity,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9223
+PH037,Vivo Y51 Pro,Amazon,Design,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.8212
+PH037,Vivo Y51 Pro,Amazon,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9766
+PH037,Vivo Y51 Pro,Amazon,Performance,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.8028
+PH037,Vivo Y51 Pro,Amazon,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9101
+PH037,Vivo Y51 Pro,Amazon,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9509
+PH037,Vivo Y51 Pro,Amazon,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9509
+PH037,Vivo Y51 Pro,Flipkart,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9105
+PH037,Vivo Y51 Pro,Flipkart,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9105
+PH037,Vivo Y51 Pro,Flipkart,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.846
+PH038,Poco C85x 5G,Amazon,Battery,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.975
+PH038,Poco C85x 5G,Amazon,Build Quality,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.7651
+PH038,Poco C85x 5G,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9237
+PH038,Poco C85x 5G,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9354
+PH038,Poco C85x 5G,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9237
+PH038,Poco C85x 5G,Amazon,Performance,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.896
+PH038,Poco C85x 5G,Amazon,Software,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8905
+PH038,Poco C85x 5G,Amazon,Value for Money,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9494
+PH038,Poco C85x 5G,Flipkart,Battery,11.0,9.0,1.0,1.0,81.82,9.09,9.09,0.8763
+PH038,Poco C85x 5G,Flipkart,Build Quality,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.8275
+PH038,Poco C85x 5G,Flipkart,Camera,6.0,3.0,1.0,2.0,50.0,16.67,33.33,0.703
+PH038,Poco C85x 5G,Flipkart,Charging,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8711
+PH038,Poco C85x 5G,Flipkart,Design,5.0,2.0,3.0,0.0,40.0,60.0,0.0,0.7644
+PH038,Poco C85x 5G,Flipkart,Display,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.9404
+PH038,Poco C85x 5G,Flipkart,Heating,2.0,0.0,2.0,0.0,0.0,100.0,0.0,0.6959
+PH038,Poco C85x 5G,Flipkart,Performance,13.0,9.0,2.0,2.0,69.23,15.38,15.38,0.8072
+PH038,Poco C85x 5G,Flipkart,Software,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.8307
+PH038,Poco C85x 5G,Flipkart,Speaker & Audio,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8752
+PH038,Poco C85x 5G,Flipkart,Value for Money,15.0,13.0,2.0,0.0,86.67,13.33,0.0,0.824
+PH040,Realme C83 5G,Amazon,Build Quality,5.0,2.0,0.0,3.0,40.0,0.0,60.0,0.8202
+PH040,Realme C83 5G,Amazon,Camera,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9648
+PH040,Realme C83 5G,Amazon,Charging,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9562
+PH040,Realme C83 5G,Amazon,Connectivity,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.6319
+PH040,Realme C83 5G,Amazon,Design,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.6156
+PH040,Realme C83 5G,Amazon,Display,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.4842
+PH040,Realme C83 5G,Amazon,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.882
+PH040,Realme C83 5G,Amazon,Heating,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9718
+PH040,Realme C83 5G,Amazon,Performance,9.0,5.0,0.0,4.0,55.56,0.0,44.44,0.8033
+PH040,Realme C83 5G,Amazon,Software,8.0,4.0,2.0,2.0,50.0,25.0,25.0,0.825
+PH040,Realme C83 5G,Amazon,Value for Money,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.9517
+PH040,Realme C83 5G,Flipkart,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9356
+PH040,Realme C83 5G,Flipkart,Camera,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.7711
+PH040,Realme C83 5G,Flipkart,Performance,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.5127
+PH040,Realme C83 5G,Flipkart,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8406
+PH041,Motorola Edge 70 Fusion,Amazon,Battery,6.0,4.0,2.0,0.0,66.67,33.33,0.0,0.802
+PH041,Motorola Edge 70 Fusion,Amazon,Build Quality,4.0,0.0,2.0,2.0,0.0,50.0,50.0,0.6951
+PH041,Motorola Edge 70 Fusion,Amazon,Camera,9.0,4.0,2.0,3.0,44.44,22.22,33.33,0.8615
+PH041,Motorola Edge 70 Fusion,Amazon,Charging,4.0,1.0,2.0,1.0,25.0,50.0,25.0,0.7542
+PH041,Motorola Edge 70 Fusion,Amazon,Connectivity,3.0,0.0,1.0,2.0,0.0,33.33,66.67,0.8038
+PH041,Motorola Edge 70 Fusion,Amazon,Design,2.0,0.0,2.0,0.0,0.0,100.0,0.0,0.5075
+PH041,Motorola Edge 70 Fusion,Amazon,Display,7.0,3.0,2.0,2.0,42.86,28.57,28.57,0.788
+PH041,Motorola Edge 70 Fusion,Amazon,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9745
+PH041,Motorola Edge 70 Fusion,Amazon,Heating,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8834
+PH041,Motorola Edge 70 Fusion,Amazon,Performance,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9714
+PH041,Motorola Edge 70 Fusion,Amazon,Software,10.0,4.0,2.0,4.0,40.0,20.0,40.0,0.8387
+PH041,Motorola Edge 70 Fusion,Amazon,Speaker & Audio,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.554
+PH041,Motorola Edge 70 Fusion,Amazon,Value for Money,8.0,7.0,1.0,0.0,87.5,12.5,0.0,0.8716
+PH041,Motorola Edge 70 Fusion,Flipkart,Battery,23.0,22.0,1.0,0.0,95.65,4.35,0.0,0.9436
+PH041,Motorola Edge 70 Fusion,Flipkart,Build Quality,6.0,6.0,0.0,0.0,100.0,0.0,0.0,0.975
+PH041,Motorola Edge 70 Fusion,Flipkart,Camera,25.0,23.0,1.0,1.0,92.0,4.0,4.0,0.9462
+PH041,Motorola Edge 70 Fusion,Flipkart,Charging,5.0,4.0,0.0,1.0,80.0,0.0,20.0,0.918
+PH041,Motorola Edge 70 Fusion,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9844
+PH041,Motorola Edge 70 Fusion,Flipkart,Design,15.0,15.0,0.0,0.0,100.0,0.0,0.0,0.9537
+PH041,Motorola Edge 70 Fusion,Flipkart,Display,19.0,17.0,1.0,1.0,89.47,5.26,5.26,0.9126
+PH041,Motorola Edge 70 Fusion,Flipkart,Gaming,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9654
+PH041,Motorola Edge 70 Fusion,Flipkart,Heating,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.8369
+PH041,Motorola Edge 70 Fusion,Flipkart,Performance,23.0,23.0,0.0,0.0,100.0,0.0,0.0,0.9445
+PH041,Motorola Edge 70 Fusion,Flipkart,Software,11.0,11.0,0.0,0.0,100.0,0.0,0.0,0.9637
+PH041,Motorola Edge 70 Fusion,Flipkart,Speaker & Audio,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9258
+PH041,Motorola Edge 70 Fusion,Flipkart,Value for Money,11.0,11.0,0.0,0.0,100.0,0.0,0.0,0.9658
+PH042,Realme Narzo Power 5G,Amazon,Battery,25.0,12.0,3.0,10.0,48.0,12.0,40.0,0.8389
+PH042,Realme Narzo Power 5G,Amazon,Build Quality,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.8071
+PH042,Realme Narzo Power 5G,Amazon,Camera,8.0,4.0,1.0,3.0,50.0,12.5,37.5,0.8304
+PH042,Realme Narzo Power 5G,Amazon,Charging,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.92
+PH042,Realme Narzo Power 5G,Amazon,Connectivity,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.8396
+PH042,Realme Narzo Power 5G,Amazon,Design,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9334
+PH042,Realme Narzo Power 5G,Amazon,Display,3.0,1.0,1.0,1.0,33.33,33.33,33.33,0.8687
+PH042,Realme Narzo Power 5G,Amazon,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9302
+PH042,Realme Narzo Power 5G,Amazon,Heating,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9302
+PH042,Realme Narzo Power 5G,Amazon,Performance,13.0,7.0,1.0,5.0,53.85,7.69,38.46,0.9095
+PH042,Realme Narzo Power 5G,Amazon,Software,10.0,5.0,1.0,4.0,50.0,10.0,40.0,0.8686
+PH042,Realme Narzo Power 5G,Amazon,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8334
+PH042,Realme Narzo Power 5G,Amazon,Value for Money,7.0,4.0,1.0,2.0,57.14,14.29,28.57,0.8934
+PH042,Realme Narzo Power 5G,Flipkart,Battery,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.805
+PH042,Realme Narzo Power 5G,Flipkart,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8444
+PH042,Realme Narzo Power 5G,Flipkart,Camera,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.7454
+PH042,Realme Narzo Power 5G,Flipkart,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8368
+PH042,Realme Narzo Power 5G,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.5771
+PH042,Realme Narzo Power 5G,Flipkart,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.5771
+PH042,Realme Narzo Power 5G,Flipkart,Performance,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8791
+PH042,Realme Narzo Power 5G,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8444
+PH042,Realme Narzo Power 5G,Flipkart,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9138
+PH043,Ai+ Pulse 2,Amazon,Battery,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9506
+PH043,Ai+ Pulse 2,Amazon,Build Quality,4.0,0.0,0.0,4.0,0.0,0.0,100.0,0.9248
+PH043,Ai+ Pulse 2,Amazon,Camera,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9506
+PH043,Ai+ Pulse 2,Amazon,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9492
+PH043,Ai+ Pulse 2,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9521
+PH043,Ai+ Pulse 2,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9492
+PH043,Ai+ Pulse 2,Amazon,Software,4.0,0.0,0.0,4.0,0.0,0.0,100.0,0.9046
+PH043,Ai+ Pulse 2,Amazon,Value for Money,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9412
+PH043,Ai+ Pulse 2,Flipkart,Battery,8.0,8.0,0.0,0.0,100.0,0.0,0.0,0.9469
+PH043,Ai+ Pulse 2,Flipkart,Build Quality,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.8579
+PH043,Ai+ Pulse 2,Flipkart,Camera,5.0,4.0,0.0,1.0,80.0,0.0,20.0,0.9009
+PH043,Ai+ Pulse 2,Flipkart,Charging,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.838
+PH043,Ai+ Pulse 2,Flipkart,Design,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9532
+PH043,Ai+ Pulse 2,Flipkart,Display,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9366
+PH043,Ai+ Pulse 2,Flipkart,Performance,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.8285
+PH043,Ai+ Pulse 2,Flipkart,Value for Money,14.0,12.0,2.0,0.0,85.71,14.29,0.0,0.8942
+PH044,Infinix Note Edge 5G,Flipkart,Battery,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.7083
+PH044,Infinix Note Edge 5G,Flipkart,Build Quality,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9815
+PH044,Infinix Note Edge 5G,Flipkart,Camera,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.9278
+PH044,Infinix Note Edge 5G,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8029
+PH044,Infinix Note Edge 5G,Flipkart,Design,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.9234
+PH044,Infinix Note Edge 5G,Flipkart,Display,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9531
+PH044,Infinix Note Edge 5G,Flipkart,Performance,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9864
+PH044,Infinix Note Edge 5G,Flipkart,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9857
+PH044,Infinix Note Edge 5G,Flipkart,Value for Money,8.0,6.0,1.0,1.0,75.0,12.5,12.5,0.9097
+PH045,Tecno Pova Curve 2,Amazon,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9553
+PH045,Tecno Pova Curve 2,Amazon,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7945
+PH045,Tecno Pova Curve 2,Amazon,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7945
+PH045,Tecno Pova Curve 2,Amazon,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9553
+PH045,Tecno Pova Curve 2,Flipkart,Battery,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9646
+PH045,Tecno Pova Curve 2,Flipkart,Build Quality,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8707
+PH045,Tecno Pova Curve 2,Flipkart,Camera,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9463
+PH045,Tecno Pova Curve 2,Flipkart,Charging,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9216
+PH045,Tecno Pova Curve 2,Flipkart,Connectivity,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.853
+PH045,Tecno Pova Curve 2,Flipkart,Design,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9595
+PH045,Tecno Pova Curve 2,Flipkart,Display,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.9106
+PH045,Tecno Pova Curve 2,Flipkart,Heating,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.7727
+PH045,Tecno Pova Curve 2,Flipkart,Performance,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.9371
+PH045,Tecno Pova Curve 2,Flipkart,Software,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.4395
+PH045,Tecno Pova Curve 2,Flipkart,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.5886
+PH045,Tecno Pova Curve 2,Flipkart,Value for Money,7.0,3.0,1.0,3.0,42.86,14.29,42.86,0.8702
+PH047,Oppo K14x 5G,Amazon,Battery,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.9282
+PH047,Oppo K14x 5G,Amazon,Build Quality,5.0,3.0,0.0,2.0,60.0,0.0,40.0,0.9497
+PH047,Oppo K14x 5G,Amazon,Camera,9.0,2.0,0.0,7.0,22.22,0.0,77.78,0.8708
+PH047,Oppo K14x 5G,Amazon,Charging,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.8591
+PH047,Oppo K14x 5G,Amazon,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8314
+PH047,Oppo K14x 5G,Amazon,Design,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8314
+PH047,Oppo K14x 5G,Amazon,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8314
+PH047,Oppo K14x 5G,Amazon,Gaming,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.8763
+PH047,Oppo K14x 5G,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9522
+PH047,Oppo K14x 5G,Amazon,Performance,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.9112
+PH047,Oppo K14x 5G,Amazon,Software,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8314
+PH047,Oppo K14x 5G,Amazon,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8314
+PH047,Oppo K14x 5G,Amazon,Value for Money,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.879
+PH047,Oppo K14x 5G,Flipkart,Battery,9.0,6.0,0.0,3.0,66.67,0.0,33.33,0.9376
+PH047,Oppo K14x 5G,Flipkart,Build Quality,16.0,8.0,0.0,8.0,50.0,0.0,50.0,0.9003
+PH047,Oppo K14x 5G,Flipkart,Camera,19.0,7.0,1.0,11.0,36.84,5.26,57.89,0.8458
+PH047,Oppo K14x 5G,Flipkart,Charging,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.95
+PH047,Oppo K14x 5G,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9773
+PH047,Oppo K14x 5G,Flipkart,Design,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.9078
+PH047,Oppo K14x 5G,Flipkart,Display,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.7752
+PH047,Oppo K14x 5G,Flipkart,Heating,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8858
+PH047,Oppo K14x 5G,Flipkart,Performance,8.0,6.0,0.0,2.0,75.0,0.0,25.0,0.947
+PH047,Oppo K14x 5G,Flipkart,Software,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.915
+PH047,Oppo K14x 5G,Flipkart,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9754
+PH047,Oppo K14x 5G,Flipkart,Value for Money,16.0,13.0,1.0,2.0,81.25,6.25,12.5,0.8712
+PH048,Samsung Galaxy F70e 5G,Amazon,Battery,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.9597
+PH048,Samsung Galaxy F70e 5G,Amazon,Build Quality,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.9676
+PH048,Samsung Galaxy F70e 5G,Amazon,Camera,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9561
+PH048,Samsung Galaxy F70e 5G,Amazon,Charging,5.0,1.0,0.0,4.0,20.0,0.0,80.0,0.678
+PH048,Samsung Galaxy F70e 5G,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9441
+PH048,Samsung Galaxy F70e 5G,Amazon,Gaming,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8904
+PH048,Samsung Galaxy F70e 5G,Amazon,Heating,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.9584
+PH048,Samsung Galaxy F70e 5G,Amazon,Performance,5.0,0.0,0.0,5.0,0.0,0.0,100.0,0.8937
+PH048,Samsung Galaxy F70e 5G,Amazon,Software,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.9244
+PH048,Samsung Galaxy F70e 5G,Amazon,Value for Money,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9654
+PH048,Samsung Galaxy F70e 5G,Flipkart,Battery,7.0,5.0,0.0,2.0,71.43,0.0,28.57,0.8336
+PH048,Samsung Galaxy F70e 5G,Flipkart,Build Quality,14.0,5.0,0.0,9.0,35.71,0.0,64.29,0.8818
+PH048,Samsung Galaxy F70e 5G,Flipkart,Camera,15.0,7.0,0.0,8.0,46.67,0.0,53.33,0.7911
+PH048,Samsung Galaxy F70e 5G,Flipkart,Charging,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.6559
+PH048,Samsung Galaxy F70e 5G,Flipkart,Connectivity,4.0,1.0,0.0,3.0,25.0,0.0,75.0,0.9006
+PH048,Samsung Galaxy F70e 5G,Flipkart,Design,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.8678
+PH048,Samsung Galaxy F70e 5G,Flipkart,Display,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.6494
+PH048,Samsung Galaxy F70e 5G,Flipkart,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9431
+PH048,Samsung Galaxy F70e 5G,Flipkart,Heating,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.7518
+PH048,Samsung Galaxy F70e 5G,Flipkart,Performance,22.0,10.0,1.0,11.0,45.45,4.55,50.0,0.7834
+PH048,Samsung Galaxy F70e 5G,Flipkart,Software,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.8889
+PH048,Samsung Galaxy F70e 5G,Flipkart,Speaker & Audio,5.0,2.0,0.0,3.0,40.0,0.0,60.0,0.7316
+PH048,Samsung Galaxy F70e 5G,Flipkart,Value for Money,31.0,18.0,5.0,8.0,58.06,16.13,25.81,0.8648
+PH049,Realme P4 Power,Amazon,Battery,3.0,2.0,0.0,1.0,66.67,0.0,33.33,0.7869
+PH049,Realme P4 Power,Amazon,Build Quality,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9056
+PH049,Realme P4 Power,Amazon,Charging,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9056
+PH049,Realme P4 Power,Amazon,Connectivity,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9056
+PH049,Realme P4 Power,Amazon,Display,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.7658
+PH049,Realme P4 Power,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9056
+PH049,Realme P4 Power,Amazon,Performance,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9284
+PH049,Realme P4 Power,Amazon,Software,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8471
+PH049,Realme P4 Power,Amazon,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.6666
+PH049,Realme P4 Power,Flipkart,Battery,19.0,15.0,1.0,3.0,78.95,5.26,15.79,0.8512
+PH049,Realme P4 Power,Flipkart,Build Quality,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9754
+PH049,Realme P4 Power,Flipkart,Camera,6.0,6.0,0.0,0.0,100.0,0.0,0.0,0.9813
+PH049,Realme P4 Power,Flipkart,Charging,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9555
+PH049,Realme P4 Power,Flipkart,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9854
+PH049,Realme P4 Power,Flipkart,Design,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9846
+PH049,Realme P4 Power,Flipkart,Display,8.0,8.0,0.0,0.0,100.0,0.0,0.0,0.9384
+PH049,Realme P4 Power,Flipkart,Heating,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9691
+PH049,Realme P4 Power,Flipkart,Performance,7.0,7.0,0.0,0.0,100.0,0.0,0.0,0.9665
+PH049,Realme P4 Power,Flipkart,Software,7.0,7.0,0.0,0.0,100.0,0.0,0.0,0.9361
+PH049,Realme P4 Power,Flipkart,Value for Money,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9632
+PH050,Redmi Note 15 Pro,Amazon,Battery,31.0,21.0,2.0,8.0,67.74,6.45,25.81,0.8909
+PH050,Redmi Note 15 Pro,Amazon,Build Quality,19.0,15.0,1.0,3.0,78.95,5.26,15.79,0.9099
+PH050,Redmi Note 15 Pro,Amazon,Camera,33.0,19.0,3.0,11.0,57.58,9.09,33.33,0.8802
+PH050,Redmi Note 15 Pro,Amazon,Charging,6.0,2.0,1.0,3.0,33.33,16.67,50.0,0.7901
+PH050,Redmi Note 15 Pro,Amazon,Connectivity,5.0,3.0,0.0,2.0,60.0,0.0,40.0,0.9093
+PH050,Redmi Note 15 Pro,Amazon,Design,12.0,12.0,0.0,0.0,100.0,0.0,0.0,0.9498
+PH050,Redmi Note 15 Pro,Amazon,Display,15.0,10.0,1.0,4.0,66.67,6.67,26.67,0.9036
+PH050,Redmi Note 15 Pro,Amazon,Gaming,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9092
+PH050,Redmi Note 15 Pro,Amazon,Heating,6.0,3.0,1.0,2.0,50.0,16.67,33.33,0.8695
+PH050,Redmi Note 15 Pro,Amazon,Performance,29.0,14.0,1.0,14.0,48.28,3.45,48.28,0.9
+PH050,Redmi Note 15 Pro,Amazon,Software,19.0,8.0,1.0,10.0,42.11,5.26,52.63,0.8725
+PH050,Redmi Note 15 Pro,Amazon,Speaker & Audio,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.6186
+PH050,Redmi Note 15 Pro,Amazon,Value for Money,18.0,14.0,2.0,2.0,77.78,11.11,11.11,0.8622
+PH050,Redmi Note 15 Pro,Flipkart,Build Quality,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9213
+PH050,Redmi Note 15 Pro,Flipkart,Camera,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9213
+PH050,Redmi Note 15 Pro,Flipkart,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7043
+PH051,Oppo A6 5G,Amazon,Build Quality,3.0,0.0,0.0,3.0,0.0,0.0,100.0,0.9302
+PH051,Oppo A6 5G,Amazon,Camera,4.0,2.0,0.0,2.0,50.0,0.0,50.0,0.9403
+PH051,Oppo A6 5G,Amazon,Display,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9217
+PH051,Oppo A6 5G,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9217
+PH051,Oppo A6 5G,Amazon,Performance,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9292
+PH051,Oppo A6 5G,Amazon,Speaker & Audio,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9424
+PH051,Oppo A6 5G,Flipkart,Battery,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9443
+PH051,Oppo A6 5G,Flipkart,Camera,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9443
+PH051,Oppo A6 5G,Flipkart,Performance,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.8333
+PH051,Oppo A6 5G,Flipkart,Value for Money,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9443
+PH052,Lava Blaze Duo 3 5G,Amazon,Battery,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9574
+PH052,Lava Blaze Duo 3 5G,Amazon,Build Quality,8.0,6.0,0.0,2.0,75.0,0.0,25.0,0.9367
+PH052,Lava Blaze Duo 3 5G,Amazon,Camera,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9717
+PH052,Lava Blaze Duo 3 5G,Amazon,Connectivity,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9441
+PH052,Lava Blaze Duo 3 5G,Amazon,Design,5.0,4.0,0.0,1.0,80.0,0.0,20.0,0.9411
+PH052,Lava Blaze Duo 3 5G,Amazon,Display,7.0,6.0,0.0,1.0,85.71,0.0,14.29,0.9475
+PH052,Lava Blaze Duo 3 5G,Amazon,Heating,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.9415
+PH052,Lava Blaze Duo 3 5G,Amazon,Performance,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8603
+PH052,Lava Blaze Duo 3 5G,Amazon,Software,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.9441
+PH052,Lava Blaze Duo 3 5G,Amazon,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8974
+PH052,Lava Blaze Duo 3 5G,Amazon,Value for Money,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.828
+PH053,Tecno Spark Go 3,Amazon,Battery,8.0,8.0,0.0,0.0,100.0,0.0,0.0,0.937
+PH053,Tecno Spark Go 3,Amazon,Build Quality,6.0,6.0,0.0,0.0,100.0,0.0,0.0,0.842
+PH053,Tecno Spark Go 3,Amazon,Camera,8.0,7.0,1.0,0.0,87.5,12.5,0.0,0.9136
+PH053,Tecno Spark Go 3,Amazon,Charging,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8967
+PH053,Tecno Spark Go 3,Amazon,Connectivity,11.0,8.0,1.0,2.0,72.73,9.09,18.18,0.8319
+PH053,Tecno Spark Go 3,Amazon,Design,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.8865
+PH053,Tecno Spark Go 3,Amazon,Display,9.0,8.0,0.0,1.0,88.89,0.0,11.11,0.9073
+PH053,Tecno Spark Go 3,Amazon,Heating,5.0,4.0,1.0,0.0,80.0,20.0,0.0,0.8686
+PH053,Tecno Spark Go 3,Amazon,Performance,9.0,8.0,0.0,1.0,88.89,0.0,11.11,0.9389
+PH053,Tecno Spark Go 3,Amazon,Software,12.0,10.0,1.0,1.0,83.33,8.33,8.33,0.902
+PH053,Tecno Spark Go 3,Amazon,Speaker & Audio,2.0,1.0,1.0,0.0,50.0,50.0,0.0,0.6575
+PH053,Tecno Spark Go 3,Amazon,Value for Money,11.0,9.0,1.0,1.0,81.82,9.09,9.09,0.8501
+PH053,Tecno Spark Go 3,Flipkart,Software,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7214
+PH053,Tecno Spark Go 3,Flipkart,Value for Money,2.0,0.0,0.0,2.0,0.0,0.0,100.0,0.8364
+PH054,Samsung Galaxy A07 5G,Amazon,Battery,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.8594
+PH054,Samsung Galaxy A07 5G,Amazon,Build Quality,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9841
+PH054,Samsung Galaxy A07 5G,Amazon,Camera,5.0,5.0,0.0,0.0,100.0,0.0,0.0,0.9532
+PH054,Samsung Galaxy A07 5G,Amazon,Connectivity,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.7872
+PH054,Samsung Galaxy A07 5G,Amazon,Design,3.0,2.0,1.0,0.0,66.67,33.33,0.0,0.7617
+PH054,Samsung Galaxy A07 5G,Amazon,Heating,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9536
+PH054,Samsung Galaxy A07 5G,Amazon,Performance,4.0,4.0,0.0,0.0,100.0,0.0,0.0,0.9454
+PH054,Samsung Galaxy A07 5G,Amazon,Software,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.4283
+PH054,Samsung Galaxy A07 5G,Amazon,Value for Money,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.947
+PH055,Poco M8,Amazon,Battery,15.0,9.0,1.0,5.0,60.0,6.67,33.33,0.8425
+PH055,Poco M8,Amazon,Build Quality,7.0,5.0,1.0,1.0,71.43,14.29,14.29,0.8516
+PH055,Poco M8,Amazon,Camera,13.0,8.0,1.0,4.0,61.54,7.69,30.77,0.7989
+PH055,Poco M8,Amazon,Charging,5.0,2.0,0.0,3.0,40.0,0.0,60.0,0.8025
+PH055,Poco M8,Amazon,Connectivity,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.9516
+PH055,Poco M8,Amazon,Design,10.0,8.0,0.0,2.0,80.0,0.0,20.0,0.8786
+PH055,Poco M8,Amazon,Display,11.0,6.0,1.0,4.0,54.55,9.09,36.36,0.7868
+PH055,Poco M8,Amazon,Gaming,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.3795
+PH055,Poco M8,Amazon,Heating,6.0,3.0,1.0,2.0,50.0,16.67,33.33,0.8382
+PH055,Poco M8,Amazon,Performance,17.0,10.0,1.0,6.0,58.82,5.88,35.29,0.8617
+PH055,Poco M8,Amazon,Software,13.0,6.0,0.0,7.0,46.15,0.0,53.85,0.8563
+PH055,Poco M8,Amazon,Speaker & Audio,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.6656
+PH055,Poco M8,Amazon,Value for Money,15.0,11.0,2.0,2.0,73.33,13.33,13.33,0.8637
+PH055,Poco M8,Flipkart,Battery,12.0,10.0,0.0,2.0,83.33,0.0,16.67,0.9055
+PH055,Poco M8,Flipkart,Build Quality,9.0,7.0,0.0,2.0,77.78,0.0,22.22,0.9344
+PH055,Poco M8,Flipkart,Camera,13.0,12.0,0.0,1.0,92.31,0.0,7.69,0.904
+PH055,Poco M8,Flipkart,Charging,3.0,3.0,0.0,0.0,100.0,0.0,0.0,0.9087
+PH055,Poco M8,Flipkart,Connectivity,1.0,0.0,1.0,0.0,0.0,100.0,0.0,0.8918
+PH055,Poco M8,Flipkart,Design,9.0,8.0,1.0,0.0,88.89,11.11,0.0,0.9225
+PH055,Poco M8,Flipkart,Display,12.0,11.0,0.0,1.0,91.67,0.0,8.33,0.9674
+PH055,Poco M8,Flipkart,Gaming,1.0,0.0,0.0,1.0,0.0,0.0,100.0,0.7288
+PH055,Poco M8,Flipkart,Heating,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9476
+PH055,Poco M8,Flipkart,Performance,15.0,14.0,0.0,1.0,93.33,0.0,6.67,0.9283
+PH055,Poco M8,Flipkart,Software,9.0,8.0,0.0,1.0,88.89,0.0,11.11,0.9494
+PH055,Poco M8,Flipkart,Speaker & Audio,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9381
+PH055,Poco M8,Flipkart,Value for Money,19.0,17.0,2.0,0.0,89.47,10.53,0.0,0.9041
+PH056,Redmi Note 15,Amazon,Battery,12.0,9.0,1.0,2.0,75.0,8.33,16.67,0.7991
+PH056,Redmi Note 15,Amazon,Build Quality,18.0,14.0,1.0,3.0,77.78,5.56,16.67,0.8704
+PH056,Redmi Note 15,Amazon,Camera,26.0,19.0,0.0,7.0,73.08,0.0,26.92,0.852
+PH056,Redmi Note 15,Amazon,Charging,7.0,5.0,1.0,1.0,71.43,14.29,14.29,0.8244
+PH056,Redmi Note 15,Amazon,Connectivity,9.0,6.0,1.0,2.0,66.67,11.11,22.22,0.8183
+PH056,Redmi Note 15,Amazon,Design,18.0,16.0,0.0,2.0,88.89,0.0,11.11,0.8893
+PH056,Redmi Note 15,Amazon,Display,12.0,9.0,1.0,2.0,75.0,8.33,16.67,0.8135
+PH056,Redmi Note 15,Amazon,Gaming,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9552
+PH056,Redmi Note 15,Amazon,Heating,8.0,5.0,1.0,2.0,62.5,12.5,25.0,0.8227
+PH056,Redmi Note 15,Amazon,Performance,18.0,12.0,1.0,5.0,66.67,5.56,27.78,0.8696
+PH056,Redmi Note 15,Amazon,Software,18.0,9.0,2.0,7.0,50.0,11.11,38.89,0.8627
+PH056,Redmi Note 15,Amazon,Speaker & Audio,8.0,6.0,0.0,2.0,75.0,0.0,25.0,0.8539
+PH056,Redmi Note 15,Amazon,Value for Money,26.0,18.0,3.0,5.0,69.23,11.54,19.23,0.8592
+PH056,Redmi Note 15,Flipkart,Build Quality,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9815
+PH056,Redmi Note 15,Flipkart,Camera,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.9696
+PH056,Redmi Note 15,Flipkart,Design,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.881
+PH056,Redmi Note 15,Flipkart,Performance,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9815
+PH056,Redmi Note 15,Flipkart,Software,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9873
+PH056,Redmi Note 15,Flipkart,Value for Money,4.0,3.0,0.0,1.0,75.0,0.0,25.0,0.9265
+PH057,Oppo A6 Pro 5G,Amazon,Battery,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.925
+PH057,Oppo A6 Pro 5G,Amazon,Build Quality,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.8563
+PH057,Oppo A6 Pro 5G,Amazon,Camera,9.0,5.0,0.0,4.0,55.56,0.0,44.44,0.8748
+PH057,Oppo A6 Pro 5G,Amazon,Charging,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9828
+PH057,Oppo A6 Pro 5G,Amazon,Connectivity,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9033
+PH057,Oppo A6 Pro 5G,Amazon,Design,2.0,1.0,0.0,1.0,50.0,0.0,50.0,0.9024
+PH057,Oppo A6 Pro 5G,Amazon,Display,2.0,2.0,0.0,0.0,100.0,0.0,0.0,0.976
+PH057,Oppo A6 Pro 5G,Amazon,Heating,3.0,1.0,0.0,2.0,33.33,0.0,66.67,0.8911
+PH057,Oppo A6 Pro 5G,Amazon,Performance,6.0,5.0,0.0,1.0,83.33,0.0,16.67,0.9448
+PH057,Oppo A6 Pro 5G,Amazon,Software,6.0,3.0,0.0,3.0,50.0,0.0,50.0,0.8768
+PH057,Oppo A6 Pro 5G,Amazon,Speaker & Audio,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.9828
+PH057,Oppo A6 Pro 5G,Amazon,Value for Money,6.0,4.0,0.0,2.0,66.67,0.0,33.33,0.8909
+PH057,Oppo A6 Pro 5G,Flipkart,Software,1.0,1.0,0.0,0.0,100.0,0.0,0.0,0.8124
