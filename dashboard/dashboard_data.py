@@ -61,3 +61,81 @@ def get_brand_distribution():
         GROUP BY brand
         ORDER BY count DESC
     """)
+
+def get_phone_options():
+    return read_sql("""
+        SELECT phone_id, phone_name
+        FROM phones
+        ORDER BY phone_name
+    """)
+
+
+def get_phone_catalog(phone_id):
+    return read_sql("""
+        SELECT
+            c.phone_id,
+            c.phone_name,
+            c.smartprix_link,
+            c.image_filename,
+            c.image_local_path,
+
+            COALESCE(s.brand, p.brand) AS brand,
+            s.launch_date,
+
+            s.display,
+            s.display_type,
+            s.refresh_rate,
+            s.resolution,
+            s.processor,
+            s.ram,
+            s.storage,
+            s.battery,
+            s.charging,
+            s.rear_camera,
+            s.front_camera,
+            s.android_version,
+            s.supports_5g,
+            s.nfc,
+            s.bluetooth,
+            s.wifi,
+            s.weight,
+
+            p.flipkart_price,
+            p.amazon_price,
+            p.flipkart_rating,
+            p.amazon_rating,
+            p.price_segment,
+            p.chipset_brand,
+            p.battery_segment
+
+        FROM phones_product_catalog c
+        LEFT JOIN phones_specifications s
+            ON c.phone_id = s.phone_id
+        LEFT JOIN phones_product_intelligence p
+            ON c.phone_id = p.phone_id
+        WHERE c.phone_id = ?
+    """, [phone_id])
+
+
+def get_phone_ai_insight(phone_id):
+    return read_sql("""
+        SELECT *
+        FROM phone_ai_insights
+        WHERE phone_id = ?
+    """, [phone_id])
+
+
+def get_phone_sentiment_summary(phone_id):
+    return read_sql("""
+        SELECT *
+        FROM phone_summary
+        WHERE phone_id = ?
+    """, [phone_id])
+
+
+def get_phone_platform_summary(phone_id):
+    return read_sql("""
+        SELECT *
+        FROM platform_summary
+        WHERE phone_id = ?
+    """, [phone_id])
