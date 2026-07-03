@@ -14,7 +14,17 @@ def read_sql(query, params=None):
 
 def get_kpis():
     total_phones = read_sql("SELECT COUNT(*) AS count FROM phones").iloc[0]["count"]
-    total_reviews = read_sql("SELECT COUNT(*) AS count FROM reviews").iloc[0]["count"]
+
+    total_reviews = read_sql("""
+        SELECT COUNT(*) AS count
+        FROM reviews
+    """).iloc[0]["count"]
+
+    usable_reviews = read_sql("""
+        SELECT COUNT(*) AS count
+        FROM reviews
+        WHERE is_duplicate = 0
+    """).iloc[0]["count"]
 
     phones_with_insights = read_sql(
         "SELECT COUNT(*) AS count FROM phone_ai_insights"
@@ -27,6 +37,7 @@ def get_kpis():
     return {
         "total_phones": int(total_phones),
         "total_reviews": int(total_reviews),
+        "usable_reviews": int(usable_reviews),
         "phones_with_insights": int(phones_with_insights),
         "avg_positive": round(float(avg_positive), 1),
     }
@@ -139,3 +150,26 @@ def get_phone_platform_summary(phone_id):
         FROM platform_summary
         WHERE phone_id = ?
     """, [phone_id])
+
+
+def get_featured_phones(limit=4):
+    return read_sql("""
+        SELECT
+            s.phone_id,
+            s.phone_name,
+            sp.brand,
+            c.image_local_path,
+            ai.consumer_verdict,
+            s.review_count,
+            s.positive_percent,
+            s.negative_percent
+        FROM phone_summary s
+        LEFT JOIN phones_specifications sp
+            ON s.phone_id = sp.phone_id
+        LEFT JOIN phones_product_catalog c
+            ON s.phone_id = c.phone_id
+        LEFT JOIN phone_ai_insights ai
+            ON s.phone_id = ai.phone_id
+        ORDER BY s.positive_percent DESC, s.review_count DESC
+        LIMIT ?
+    """, [limit])
