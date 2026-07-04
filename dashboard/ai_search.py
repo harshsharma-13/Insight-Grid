@@ -456,13 +456,11 @@ No phones matched the query constraints clearly. Try relaxing the budget or usin
 
     try:
         answer = ask_ollama(prompt)
-    except Exception as error:
-        answer = f"""
-### AI Search unavailable
+    except Exception:
+    return """
+## AI Search unavailable at the moment
 
-Error: `{error}`
+The AI search assistant is currently unavailable in the deployed version.
 
-Make sure Ollama is running and `{MODEL}` is available.
-"""
-
-    return answer, candidates.head(8)
+Please use the platform modules below to explore phones, reviews, recommendations, and competitive insights.
+""", pd.DataFrame()
