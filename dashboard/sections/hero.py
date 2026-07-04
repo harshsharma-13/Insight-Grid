@@ -4,9 +4,9 @@ def render():
     st.title("AI-Powered Consumer & Market Intelligence Platform")
 
     st.write(
-        "Transform smartphone reviews into actionable intelligence for Product, Marketing, Sales and Research teams."
+        "Explore smartphones, analyze customer reviews, compare competitors, and turn consumer insights into product decisions."
     )
 
     st.info(
-        "Voice of Customer • Market Intelligence • Competitive Intelligence • AI Recommendations"
+        "Product Discovery • Review Intelligence • Competitive Intelligence • Data-Backed Recommendations"
     )
