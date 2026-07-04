@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 
-from dashboard_data import read_sql
+from dashboard_data import read_sql, normalize_brands
 
 
 ASPECT_KEYWORDS = {
@@ -50,7 +50,7 @@ def get_review_dataset():
             ON r.phone_id = pi.phone_id
     """)
 
-    df["brand"] = df["brand"].replace({"LAVA": "Lava"})
+    df = normalize_brands(df)
     df["review_text"] = df["review_text"].fillna("")
     df["clean_review"] = df["clean_review"].fillna("")
     df["search_text"] = (

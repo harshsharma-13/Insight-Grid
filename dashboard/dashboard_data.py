@@ -1,5 +1,53 @@
 import sqlite3
 import pandas as pd
+
+BRAND_NORMALIZATION = {
+    "LAVA": "Lava",
+    "lava": "Lava",
+    "Moto": "Motorola",
+    "MOTO": "Motorola",
+    "moto": "Motorola",
+}
+
+
+def normalize_brands(df):
+    if df is None or df.empty:
+        return df
+
+    if "brand" not in df.columns:
+        return df
+
+    df = df.copy()
+    df["brand"] = df["brand"].astype(str).str.strip()
+    df["brand"] = df["brand"].replace(BRAND_NORMALIZATION)
+
+    return df
+
+
+SEGMENT_LABELS = {
+    "Entry": "Entry (≤ ₹10,000)",
+    "Budget": "Budget (₹10,001–₹15,000)",
+    "Lower Mid Range": "Lower Mid Range (₹15,001–₹20,000)",
+    "Upper Mid Range": "Upper Mid Range (₹20,001–₹30,000)",
+    "Premium": "Premium (> ₹30,000)",
+
+    # Compatibility with older labels still present in some modules/data
+    "Mid-range": "Mid-range (₹15,001–₹25,000)",
+    "Upper Mid-range": "Upper Mid-range (> ₹25,000)",
+}
+
+
+def segment_label(value):
+    if value is None or pd.isna(value):
+        return "Segment unavailable"
+
+    value = str(value).strip()
+
+    if not value or value.lower() == "nan":
+        return "Segment unavailable"
+
+    return SEGMENT_LABELS.get(value, value)
+
 from config import DB_PATH
 
 
@@ -113,6 +161,7 @@ def get_phone_catalog(phone_id):
 
             p.flipkart_price,
             p.amazon_price,
+            p.launch_price,
             p.flipkart_rating,
             p.amazon_rating,
             p.price_segment,

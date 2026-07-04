@@ -1,5 +1,6 @@
 import streamlit as st
 
+from components.ui.navbar import navbar
 from config import APP_TITLE, DEFAULT_PAGE_ICON
 from dashboard_data import get_kpis, get_featured_phones
 from ai_search import answer_search_query
@@ -40,6 +41,8 @@ st.set_page_config(
 )
 
 load_css()
+
+navbar()
 
 # ============================
 # Load datasets

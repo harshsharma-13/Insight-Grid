@@ -52,8 +52,11 @@ def phone_tile(phone, key_prefix="phone"):
         if reviews is not None:
             st.caption(f"{int(reviews)} reviews analysed")
 
-        st.button(
-            "View Details →",
+        if st.button(
+            "View Details",
             use_container_width=True,
-            key=f"{key_prefix}_view_{phone_id}",
-        )
+            key=f"view_{phone_id}",
+        ):
+            st.session_state["selected_phone_id"] = phone_id
+            st.session_state["selected_phone_name"] = phone_name
+            st.switch_page("pages/📱_Phone_Explorer.py")

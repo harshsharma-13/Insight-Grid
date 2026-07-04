@@ -1,6 +1,6 @@
 import pandas as pd
 
-from dashboard_data import read_sql
+from dashboard_data import read_sql, normalize_brands
 
 
 PAIN_POINT_KEYWORDS = {
@@ -36,7 +36,7 @@ def clean(value):
 
 
 def get_consumer_dataset():
-    return read_sql("""
+    df = read_sql("""
         SELECT
             s.phone_id,
             s.phone_name,
@@ -63,6 +63,9 @@ def get_consumer_dataset():
         LEFT JOIN phone_ai_insights ai
             ON s.phone_id = ai.phone_id
     """)
+
+
+    return normalize_brands(df)
 
 
 def _contains(text, keywords):

@@ -1,7 +1,13 @@
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
 from components.ui.section import section_title
+from dashboard_data import segment_label
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 USE_CASES = [
@@ -21,6 +27,29 @@ def _price(value):
     return f"₹{float(value):,.0f}"
 
 
+def _image_path(value):
+    if value is None or pd.isna(value):
+        return None
+
+    value = str(value).strip()
+
+    if not value or value.lower() == "nan":
+        return None
+
+    full_path = PROJECT_ROOT / value
+
+    if full_path.exists():
+        return str(full_path)
+
+    return None
+
+
+def _go_to_details(row):
+    st.session_state["selected_phone_id"] = row["phone_id"]
+    st.session_state["selected_phone_name"] = row["phone_name"]
+    st.switch_page("pages/📱_Phone_Explorer.py")
+
+
 def _result_card(
     row,
     rank,
@@ -30,9 +59,17 @@ def _result_card(
     use_case=None,
 ):
     with st.container(border=True):
-        top_left, top_right = st.columns([4, 1])
+        img_col, info_col, score_col = st.columns([1.2, 4, 1.4])
 
-        with top_left:
+        with img_col:
+            image = _image_path(row.get("image_local_path"))
+
+            if image:
+                st.image(image, use_container_width=True)
+            else:
+                st.info("No image")
+
+        with info_col:
             if rank == 1:
                 badge = "🥇 Best Match"
             elif rank == 2:
@@ -43,57 +80,40 @@ def _result_card(
                 badge = f"#{rank}"
 
             st.caption(badge)
-
-            st.markdown(
-                f"### {row['phone_name']}"
-            )
+            st.markdown(f"### {row['phone_name']}")
 
             st.caption(
                 f"{row['brand']} • "
-                f"{row.get('price_segment', 'Segment unavailable')} • "
+                f"{segment_label(row.get('price_segment'))} • "
                 f"{_price(row.get('launch_price'))}"
             )
 
-        with top_right:
+            st.markdown("**Why it ranks well**")
+            st.write(get_phone_reason(row, use_case))
+
+            warning = get_phone_warning(row)
+
+            if warning:
+                with st.expander("Things to consider"):
+                    st.write(warning)
+
+        with score_col:
             st.metric(
                 "Match Score",
                 f"{row[score_column]:.1f}/100",
             )
 
-        m1, m2, m3 = st.columns(3)
-
-        with m1:
             st.metric(
                 "Positive",
                 f"{row['positive_percent']}%",
             )
 
-        with m2:
-            st.metric(
-                "Reviews",
-                f"{int(row['review_count']):,}",
-            )
-
-        with m3:
-            st.metric(
-                "Negative",
-                f"{row['negative_percent']}%",
-            )
-
-        st.markdown("**Why it ranks well**")
-
-        st.write(
-            get_phone_reason(
-                row,
-                use_case,
-            )
-        )
-
-        warning = get_phone_warning(row)
-
-        if warning:
-            with st.expander("Things to consider"):
-                st.write(warning)
+            if st.button(
+                "View Details",
+                key=f"finder_view_{row['phone_id']}_{rank}_{score_column}",
+                use_container_width=True,
+            ):
+                _go_to_details(row)
 
 
 def render(
@@ -123,10 +143,6 @@ def render(
         ]
     )
 
-    # ==================================================
-    # USE CASE FINDER
-    # ==================================================
-
     with tab1:
         st.markdown("### Find the Best Phone for Your Needs")
 
@@ -144,11 +160,7 @@ def render(
                 key="finder_use_case",
             )
 
-        valid_prices = (
-            df["launch_price"]
-            .dropna()
-            .astype(float)
-        )
+        valid_prices = df["launch_price"].dropna().astype(float)
 
         if valid_prices.empty:
             maximum_available = 50000
@@ -194,25 +206,14 @@ def render(
             limit=5,
         )
 
-        st.info(
-            build_use_case_summary(
-                results,
-                use_case,
-            )
-        )
+        st.info(build_use_case_summary(results, use_case))
 
         if results.empty:
-            st.warning(
-                "No matching phones found. Try increasing the budget."
-            )
-
+            st.warning("No matching phones found. Try increasing the budget.")
         else:
             st.markdown("### Top Recommendations")
 
-            for index, (_, row) in enumerate(
-                results.iterrows(),
-                start=1,
-            ):
+            for index, (_, row) in enumerate(results.iterrows(), start=1):
                 _result_card(
                     row=row,
                     rank=index,
@@ -221,10 +222,6 @@ def render(
                     get_phone_warning=get_phone_warning,
                     use_case=use_case,
                 )
-
-    # ==================================================
-    # BUDGET FINDER
-    # ==================================================
 
     with tab2:
         st.markdown("### Best Phones Within Your Budget")
@@ -247,10 +244,7 @@ def render(
             )
 
         with b2:
-            default_max = min(
-                25000,
-                max(maximum_available, 25000),
-            )
+            default_max = min(25000, max(maximum_available, 25000))
 
             max_budget = st.number_input(
                 "Maximum Price",
@@ -262,9 +256,7 @@ def render(
             )
 
         if min_budget > max_budget:
-            st.warning(
-                "Minimum price cannot be greater than maximum price."
-            )
+            st.warning("Minimum price cannot be greater than maximum price.")
             return
 
         budget_results = recommend_by_budget(
@@ -274,94 +266,15 @@ def render(
             limit=10,
         )
 
-        st.info(
-            build_budget_summary(
-                budget_results,
-                max_budget,
-            )
-        )
+        st.info(build_budget_summary(budget_results, max_budget))
 
         if budget_results.empty:
-            st.warning(
-                "No phones were found in this price range."
-            )
-
+            st.warning("No phones were found in this price range.")
         else:
             st.markdown("### Recommended Phones")
 
-            display_table = budget_results[
-                [
-                    "phone_name",
-                    "brand",
-                    "launch_price",
-                    "price_segment",
-                    "positive_percent",
-                    "negative_percent",
-                    "review_count",
-                    "value_score",
-                ]
-            ].copy()
-
-            display_table = display_table.rename(
-                columns={
-                    "phone_name": "Phone",
-                    "brand": "Brand",
-                    "launch_price": "Price",
-                    "price_segment": "Segment",
-                    "positive_percent": "Positive %",
-                    "negative_percent": "Negative %",
-                    "review_count": "Reviews",
-                    "value_score": "Value Score",
-                }
-            )
-
-            display_table.insert(
-                0,
-                "Rank",
-                range(
-                    1,
-                    len(display_table) + 1,
-                ),
-            )
-
-            st.dataframe(
-                display_table,
-                use_container_width=True,
-                hide_index=True,
-                column_config={
-                    "Rank": st.column_config.NumberColumn(
-                        "Rank",
-                        width="small",
-                    ),
-                    "Price": st.column_config.NumberColumn(
-                        "Price",
-                        format="₹%d",
-                    ),
-                    "Positive %": st.column_config.ProgressColumn(
-                        "Positive %",
-                        format="%.1f%%",
-                        min_value=0,
-                        max_value=100,
-                    ),
-                    "Negative %": st.column_config.ProgressColumn(
-                        "Negative %",
-                        format="%.1f%%",
-                        min_value=0,
-                        max_value=100,
-                    ),
-                    "Value Score": st.column_config.ProgressColumn(
-                        "Value Score",
-                        format="%.1f",
-                        min_value=0,
-                        max_value=100,
-                    ),
-                },
-            )
-
-            st.markdown("### Top 3 Detailed Recommendations")
-
             for index, (_, row) in enumerate(
-                budget_results.head(3).iterrows(),
+                budget_results.head(10).iterrows(),
                 start=1,
             ):
                 _result_card(

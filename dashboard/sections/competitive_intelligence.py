@@ -2,17 +2,7 @@ import streamlit as st
 import plotly.express as px
 
 from components.ui.section import section_title
-
-
-SEGMENT_DISPLAY = {
-    "Entry": "Entry (≤ ₹10,000)",
-    "Budget": "Budget (₹10,001–₹15,000)",
-    "Lower Mid Range": "Lower Mid Range (₹15,001–₹20,000)",
-    "Upper Mid Range": "Upper Mid Range (₹20,001–₹30,000)",
-    "Mid-range": "Mid-range (₹15,001–₹25,000)",
-    "Premium": "Premium (> ₹30,000)",
-    "Upper Mid-range": "Upper Mid-range (> ₹25,000)",
-}
+from dashboard_data import segment_label
 
 
 def render(
@@ -24,7 +14,7 @@ def render(
     build_competitive_summary,
     compare_brands,
     build_competitive_recommendation,
-    
+
 ):
     section_title(
         "🏆 Competitive Intelligence",
@@ -263,6 +253,29 @@ def render(
         st.caption("No segment-level competitive data available.")
 
     else:
+        segment_order = {
+            "Entry": 1,
+            "Budget": 2,
+            "Lower Mid Range": 3,
+            "Upper Mid Range": 4,
+            "Premium": 5,
+        }
+
+        segments = segments.copy()
+
+        segments["_sort_order"] = (
+            segments["segment"]
+            .map(segment_order)
+            .fillna(999)
+        )
+
+        segments = (
+            segments
+            .sort_values("_sort_order")
+            .drop(columns="_sort_order")
+            .reset_index(drop=True)
+        )
+
         segment_cols = st.columns(len(segments))
 
         for col, (_, row) in zip(
@@ -270,20 +283,63 @@ def render(
             segments.iterrows(),
         ):
             with col:
-                with st.container(border=True):
 
-                    segment_name = SEGMENT_DISPLAY.get(
-                        row["segment"],
-                        row["segment"],
+                with st.container(
+                    border=True,
+                    height=280,
+                ):
+                    segment_name = segment_label(
+                        row["segment"]
                     )
 
-                    st.markdown(f"### {segment_name}")
-
-                    st.metric(
-                        "Leading Brand",
-                        row["leader"],
-                        f"{row['positive']}% positive sentiment",
+                    # Segment title
+                    st.markdown(
+                        f"""
+                        <div style="
+                            height: 75px;
+                            display: flex;
+                            align-items: flex-start;
+                        ">
+                            <div style="
+                                margin: 0;
+                                font-size: 20px;
+                                font-weight: 650;
+                                line-height: 1.3;
+                            ">
+                                {segment_name}
+                            </div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
                     )
+
+                    # Brand card
+                    with st.container(border=True):
+
+                        st.caption("Leading Brand")
+
+                        st.markdown(
+                            f"#### {row['leader']}"
+                        )
+
+                        st.markdown(
+                            f"""
+                            <span style="
+                                display: inline-block;
+                                background: #174C35;
+                                color: #4ADE80;
+                                border-radius: 999px;
+                                padding: 4px 9px;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 1.2;
+                                white-space: nowrap;
+                            ">
+                                ↑ {row['positive']}% positive sentiment
+                            </span>
+                            """,
+                            unsafe_allow_html=True,
+                        )
 
     # --------------------------------------------------
     # COMPETITIVE OPPORTUNITIES

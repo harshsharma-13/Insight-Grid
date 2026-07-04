@@ -4,6 +4,7 @@ import streamlit as st
 import plotly.express as px
 
 from components.style_loader import load_css
+from components.ui.navbar import navbar
 from components.ui.insight_tile import insight_tile, list_insight_tile
 from dashboard_data import (
     get_phone_options,
@@ -22,6 +23,28 @@ st.set_page_config(
 )
 
 load_css()
+
+navbar()
+
+
+def format_price(value):
+    if value is None or pd.isna(value):
+        return "Not available"
+
+    try:
+        cleaned = (
+            str(value)
+            .replace("₹", "")
+            .replace("Rs.", "")
+            .replace("Rs", "")
+            .replace(",", "")
+            .strip()
+        )
+
+        return f"₹ {float(cleaned):,.0f}"
+
+    except (ValueError, TypeError):
+        return "Not available"
 
 
 def clean(value):
@@ -89,11 +112,25 @@ st.markdown("## 📱 Phone Explorer")
 st.caption("Explore specifications, review intelligence, AI analysis and platform performance.")
 
 phones = get_phone_options()
+
+phone_options = phones["phone_name"].tolist()
 phone_map = dict(zip(phones["phone_name"], phones["phone_id"]))
 
+requested_phone = st.session_state.pop(
+    "selected_phone_name",
+    None,
+)
+
+default_index = 0
+
+if requested_phone and requested_phone in phone_options:
+    default_index = phone_options.index(requested_phone)
+
 selected_phone = st.selectbox(
-    "Search / Select Phone",
-    list(phone_map.keys())
+    "Select Phone",
+    phone_options,
+    index=default_index,
+    key="phone_explorer_selector",
 )
 
 phone_id = phone_map[selected_phone]
@@ -109,79 +146,81 @@ summary_row = summary.iloc[0] if not summary.empty else None
 
 st.divider()
 
-hero_left, hero_right = st.columns([1, 2])
+st.divider()
 
-with hero_left:
-    if catalog_row is not None:
-        image = load_phone_image(catalog_row.get("image_local_path"))
-        if image:
-            st.image(image, use_container_width=True)
+with st.container(border=True):
+    hero_left, hero_right = st.columns([0.9, 2.2])
+
+    with hero_left:
+        if catalog_row is not None:
+            image = load_phone_image(catalog_row.get("image_local_path"))
+            if image:
+                st.image(image, use_container_width=True)
+            else:
+                st.info("Image not available")
         else:
             st.info("Image not available")
-    else:
-        st.info("Image not available")
 
-with hero_right:
-    st.markdown(f"# {selected_phone}")
+    with hero_right:
+        st.markdown(f"# {selected_phone}")
 
-    if catalog_row is not None:
-        st.caption(
-            f"{clean(catalog_row.get('brand'))} • "
-            f"{clean(catalog_row.get('price_segment'))} • "
-            f"{clean(catalog_row.get('android_version'))}"
-        )
+        if catalog_row is not None:
+            st.caption(
+                f"{clean(catalog_row.get('brand'))} • "
+                f"{clean(catalog_row.get('price_segment'))} • "
+                f"{clean(catalog_row.get('android_version'))}"
+            )
 
-    if insight_row is not None:
-        st.markdown(f"### {verdict_label(insight_row.get('consumer_verdict'))}")
+        if insight_row is not None:
+            st.markdown(f"### {verdict_label(insight_row.get('consumer_verdict'))}")
 
-    top_cols = st.columns(4)
+        k1, k2, k3, k4 = st.columns(4)
 
-    with top_cols[0]:
-        metric_card(
-            "Reviews Analysed",
-            insight_row.get("review_count") if insight_row is not None else "NA",
-            "💬",
-        )
+        with k1:
+            with st.container(border=True, height=155):
+                st.markdown("💬 Reviews Analysed")
+                st.markdown(f"### {clean(insight_row.get('review_count')) if insight_row is not None else 'NA'}")
 
-    with top_cols[1]:
-        metric_card(
-            "Insight Confidence",
-            insight_row.get("insight_confidence") if insight_row is not None else "NA",
-            "🤖",
-        )
+        with k2:
+            with st.container(border=True, height=155):
+                st.markdown("🤖 Insight Confidence")
+                st.markdown(f"### {clean(insight_row.get('insight_confidence')) if insight_row is not None else 'NA'}")
 
-    with top_cols[2]:
-        metric_card(
-            "Amazon Rating",
-            catalog_row.get("amazon_rating") if catalog_row is not None else "NA",
-            "⭐",
-        )
+        with k3:
+            with st.container(border=True, height=155):
+                st.markdown("⭐ Amazon Rating")
+                st.markdown(f"### {clean(catalog_row.get('amazon_rating')) if catalog_row is not None else 'NA'}")
 
-    with top_cols[3]:
-        metric_card(
-            "Flipkart Rating",
-            catalog_row.get("flipkart_rating") if catalog_row is not None else "NA",
-            "⭐",
-        )
+        with k4:
+            with st.container(border=True, height=155):
+                st.markdown("⭐ Flipkart Rating")
+                st.markdown(f"### {clean(catalog_row.get('flipkart_rating')) if catalog_row is not None else 'NA'}")
 
-    price_cols = st.columns(2)
+        if catalog_row is not None and clean(catalog_row.get("smartprix_link")) != "Not available":
+            st.link_button(
+                "View on Smartprix ↗",
+                catalog_row["smartprix_link"],
+                use_container_width=False,
+            )
 
-    with price_cols[0]:
-        metric_card(
-            "Amazon Price",
-            catalog_row.get("amazon_price") if catalog_row is not None else "NA",
-            "🛒",
-        )
+st.markdown("### Pricing")
 
-    with price_cols[1]:
-        metric_card(
-            "Flipkart Price",
-            catalog_row.get("flipkart_price") if catalog_row is not None else "NA",
-            "🛍️",
-        )
+p1, p2, p3 = st.columns(3)
 
-    if catalog_row is not None and clean(catalog_row.get("smartprix_link")) != "Not available":
-        st.link_button("Open Smartprix Page", catalog_row["smartprix_link"])
+with p1:
+    with st.container(border=True, height=150):
+        st.markdown("🚀 Launch Price")
+        st.markdown(f"### {format_price(catalog_row.get('launch_price') if catalog_row is not None else None)}")
+
+with p2:
+    with st.container(border=True, height=150):
+        st.markdown("🛒 Amazon Price")
+        st.markdown(f"### {format_price(catalog_row.get('amazon_price') if catalog_row is not None else None)}")
+
+with p3:
+    with st.container(border=True, height=150):
+        st.markdown("🛍️ Flipkart Price")
+        st.markdown(f"### {format_price(catalog_row.get('flipkart_price') if catalog_row is not None else None)}")
 
 st.divider()
 

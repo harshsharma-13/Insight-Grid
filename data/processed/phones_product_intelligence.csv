@@ -1,58 +1,58 @@
-﻿phone_id,phone_name,brand,launch_date,display,processor,battery,camera,ram,storage,os,flipkart_price,amazon_price,flipkart_rating,amazon_rating,price_last_updated,image_url,image_local_path,smartprix_url,spec_source_url,enrichment_status,last_updated,notes,price_segment,chipset_brand,battery_segment,display_type,refresh_rate,supports_5g
-PH001,Tecno Pova 8 5G,Tecno,18-Jun-2026,,,,,,,,"₹29,999","₹29,999",Not yet rated,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Pova 8 5G,Upper Mid Range,,,,,Yes
-PH002,Realme P4R 5G,Realme,10-Jun-2026,,,,,,,,"₹18,999",21450,4.6/5,Not Listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme P4R 5G,Lower Mid Range,,,,,Yes
-PH003,Infinix SMART 20,Infinix,08-Jun-2026,,,,,,,,"₹12,499","₹12,499",3.9/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Infinix SMART 20,Budget,,,,,No
-PH004,LAVA Bold N2,Lava,03-Jun-2026,,,,,,,,"₹12,499","₹12,499",Not yet rated,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Bold N2 5G,Budget,,,,,No
-PH005,LAVA Shark 2 5G,Lava,10-Jun-2026,,,,,,,,,,Not Listed,Not Listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Shark 2 5G,Premium,,,,,Yes
-PH006,Oppo A6c,Oppo,26-May-2026,,,,,,,,"₹12,999","₹13,999",4/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6c,Budget,,,,,No
-PH007,Realme 16T 5G,Realme,26-May-2026,,,,,,,,"₹25,999",,3.8/5,Not Listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme 16T 5G,Upper Mid Range,,,,,Yes
-PH008,HMD Vibe 2 5G,HMD,21-May-2026,,,,,,,,"₹12,999",,4.6/5,Not Listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: HMD Vibe 2 5G,Budget,,,,,Yes
-PH009,Moto G37 Power,Motorola,19-May-2026,,,,,,,,"₹15,999","₹15,999",4.2/5,3/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Moto G37 Power,Lower Mid Range,,,,,No
-PH010,Moto G37,Motorola,19-May-2026,,,,,,,,"₹13,999",14999,4.3/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Moto G37,Budget,,,,,No
-PH011,Itel Zeno 200,Itel,08-May-2026,,,,,,,,"₹9,999","₹9,999",Not yet rated,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Itel Zeno 200,Entry,,,,,No
-PH012,Oneplus Nord CE 6 Lite,OnePlus,07-May-2026,,,,,,,,24999,"₹25,999",4.2/5,4.3/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: OnePlus Nord CE 6 Lite,Upper Mid Range,,,,,No
-PH013,Poco C81,Poco,25-Apr-2026,,,,,,,,11999,11600,3.8/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco C81,Budget,,,,,No
-PH014,Poco C81x,Poco,25-Apr-2026,,,,,,,,10999,"₹9,999",4/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco C81x,Budget,,,,,No
-PH015,Redmi A7,Redmi,23-Apr-2026,,,,,,,,11499,11499,4.1/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi A7,Budget,,,,,No
-PH016,Redmi A7 Pro,Redmi,23-Apr-2026,,,,,,,,13500,12999,3.8/5,3.4/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi A7 Pro,Budget,,,,,No
-PH017,Tecno Pop X 5G,Tecno,22-Apr-2026,,,,,,,,18990,16500,out of stock,3.4/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Pop X 5G,Lower Mid Range,,,,,Yes
-PH018,Vivo Y05,Vivo,18-Apr-2026,,,,,,,,12999,12999,3.7/5,3.4/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y05,Budget,,,,,No
-PH019,Oppo F33 5G,Oppo,17-Apr-2026,,,,,,,,34999,"₹29,999",4.3/5,3.3/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo F33 5G,Premium,,,,,Yes
-PH020,Vivo T5 Pro 5G,Vivo,17-Apr-2026,,,,,,,,32999,33900,4.5/5,4.1/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo T5 Pro 5G,Premium,,,,,Yes
-PH021,Realme Narzo 100 Lite 5G,Realme,16-Apr-2026,,,,,,,,14500,14999,4.1/5,4.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme Narzo 100 Lite 5G,Budget,,,,,Yes
-PH022,Ai+ Nova 2 Ultra 5G,Ai+,09-Apr-2026,,,,,,,,"₹17,999",,4.2/5,Not Listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Ai+ Nova 2 Ultra 5G,Lower Mid Range,,,,,Yes
-PH023,Ai+ Nova 2 5G,Ai+,09-Apr-2026,,,,,,,,11999,13000,4.4/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Ai+ Nova 2 5G,Budget,,,,,Yes
-PH024,Redmi Note 15 SE 5G,Redmi,07-Apr-2026,,,,,,,,"₹22,999",21449,4.4/5,4.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi Note 15 SE 5G,Upper Mid Range,,,,,Yes
-PH025,Lava Bold N2 Lite,Lava,46135,,,,,,,,,8699,Not Listed,3.2/7,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Bold N2 Lite,Entry,,,,,No
-PH026,Tecno Spark 50 5G,Tecno,46115,,,,,,,,18999,18999,Not yet rated,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Spark 50 5G,Lower Mid Range,,,,,Yes
-PH027,Redmi 15A 5G,Redmi,46093,,,,,,,,14999,14859,3.9/5,Not yet rated,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi 15A 5G,Budget,,,,,Yes
-PH028,Vivo Y11 5G,Vivo,24-Mar-2026,,,,,,,,"₹14,999","₹14,999",4.1/5,3.7/40,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y11 5G,Budget,,,,,Yes
-PH029,Vivo Y21 5G,Vivo,24-Mar-2026,,,,,,,,18999,17990,4.0/5,3.3/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y21 5G,Lower Mid Range,,,,,Yes
-PH030,Realme P4 Lite 5G,Realme,20-Mar-2026,,,,,,,,13999,"₹14,390",4.3/5,4.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme P4 Lite 5G,Budget,,,,,Yes
-PH031,Oppo A6s 5G,Oppo,18-Mar-2026,,,,,,,,20999,20999,4.4/5,4.3/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6s 5G,Upper Mid Range,,,,,Yes
-PH032,Samsung Galaxy M17e 5G,Samsung,18-Mar-2026,,,,,,,,"₹13,498",12999,4.0/5,4.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Samsung Galaxy M17e 5G,Budget,,,,,Yes
-PH033,Vivo T5x 5G,Vivo,17-Mar-2026,,,,,,,,"₹22,499","₹22,499",4.4/5,4.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo T5x 5G,Upper Mid Range,,,,,Yes
-PH034,Oppo K14 5G,Oppo,18-Mar-2026,,,,,,,,"₹19,999","₹19,999",4.4/5,4.5/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo K14 5G,Lower Mid Range,,,,,Yes
-PH035,LAVA Bold 2 5G,Lava,13-Mar-2026,,,,,,,,17990,"₹15,499",4.1/5,4.1/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Bold 2 5G,Lower Mid Range,,,,,Yes
-PH036,iQOO Z11x 5G,iQOO,13-Mar-2026,,,,,,,,"₹22,999","₹22,999",4.3/5,4.2/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: iQOO Z11x 5G,Upper Mid Range,,,,,Yes
-PH037,Vivo Y51 Pro,Vivo,12-Mar-2026,,,,,,,,30999,,4.3/5,Not listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y51 Pro,Premium,,,,,No
-PH038,Poco C85x 5G,Poco,11-Mar-2026,,,,,,,,"₹12,499",13999,4.1/5,3.6/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco C85x 5G,Budget,,,,,Yes
-PH039,Itel Zeno 100,Itel,07-Mar-2026,,,,,,,,"₹8,899",,Not yet rated,Not listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Itel Zeno 100,Entry,,,,,No
-PH040,Realme C83 5G,Realme,07-Mar-2026,,,,,,,,16400,14499,4.1/5,4.4/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme C83 5G,Lower Mid Range,,,,,Yes
-PH041,Motorola Edge 70 Fusion,Motorola,07-Mar-2026,,,,,,,,29999,"₹26,999",4.4/5,4.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Motorola Edge 70 Fusion,Upper Mid Range,,,,,No
-PH042,Realme Narzo Power 5G,Realme,06-Mar-2026,,,,,,,,28999,,4.0/5,Not Listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme Narzo Power 5G,Upper Mid Range,,,,,Yes
-PH043,Ai+ Pulse 2,Ai+,03-Mar-2026,,,,,,,,10499,10500,4.3/5,1.0/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Ai+ Pulse 2,Budget,,,,,No
-PH044,Infinix Note Edge 5G,Infinix,10-Feb-2026,,,,,,,,22999,,4.3/5,Not listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Infinix Note Edge 5G,Upper Mid Range,,,,,Yes
-PH045,Tecno Pova Curve 2,Tecno,04-Feb-2026,,,,,,,,29999,25899,4.1/5,3.6/7,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Pova Curve 2,Upper Mid Range,,,,,No
-PH046,Lava Yuva Star 3,Lava,03-Feb-2026,,,,,,,,12899,,3.4/5,Not listed,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Yuva Star 3,Budget,,,,,No
-PH047,Oppo K14x 5G,Oppo,01-Feb-2026,,,,,,,,15999,15600,4.4/5,3.8/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo K14x 5G,Lower Mid Range,,,,,Yes
-PH048,Samsung Galaxy F70e 5G,Samsung,31-Jan-2026,,,,,,,,13499,13179,4.3/5,3.5/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Samsung Galaxy F70e 5G,Budget,,,,,Yes
-PH049,Realme P4 Power,Realme,29-Jan-2026,,,,,,,,29499,26999,4.4/5,"4,2/5",2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme P4 Power,Upper Mid Range,,,,,No
-PH050,Redmi Note 15 Pro,Redmi,29-Jan-2026,,,,,,,,31011,"₹31,999",4.2/5,3.9/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi Note 15 Pro,Premium,,,,,No
-PH051,Oppo A6 5G,Oppo,11-Jan-2026,,,,,,,,23999,23999,4.0/5,4.5/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6 5G,Upper Mid Range,,,,,Yes
-PH052,Lava Blaze Duo 3 5G,Lava,10-Jan-2026,,,,,,,,19999,25999,3.8/5,3.7/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Blaze Duo 3 5G,Lower Mid Range,,,,,Yes
-PH053,Tecno Spark Go 3,Tecno,07-Jan-2026,,,,,,,,11999,11500,4.0/5,4.6/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Spark Go 3,Budget,,,,,No
-PH054,Samsung Galaxy A07 5G,Samsung,05-Feb-2026,,,,,,,,15499,15999,3.7/5,4.2/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Samsung Galaxy A07 5G,Lower Mid Range,,,,,Yes
-PH055,Poco M8,Poco,08-Jan-2026,,,,,,,,19999,19990,4.3/5,4.1/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco M8,Lower Mid Range,,,,,No
-PH056,Redmi Note 15,Redmi,06-Jan-2026,,,,,,,,25497,"₹26,999",4.4/5,4.1/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi Note 15,Upper Mid Range,,,,,No
-PH057,Oppo A6 Pro 5G,Oppo,06-Jan-2026,,,,,,,,"₹28,999",28999,4.4/5,4.3/5,2026-06-29,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6 Pro 5G,Upper Mid Range,,,,,Yes
+﻿phone_id,phone_name,brand,launch_date,launch_price,display,processor,battery,camera,ram,storage,os,flipkart_price,amazon_price,flipkart_rating,amazon_rating,price_last_updated,image_url,image_local_path,smartprix_url,spec_source_url,enrichment_status,last_updated,notes,price_segment,chipset_brand,battery_segment,display_type,refresh_rate,supports_5g
+PH001,Tecno Pova 8 5G,Tecno,18-Jun-26,"₹ 29,999",,,,,,,,"₹ 29,999","₹ 29,999",Not yet rated,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Pova 8 5G,Upper Mid Range,,,,,Yes
+PH002,Realme P4R 5G,Realme,10-Jun-26,"₹ 18,999",,,,,,,,"₹ 18,999","₹ 21,450",4.6/5,Not Listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme P4R 5G,Lower Mid Range,,,,,Yes
+PH003,Infinix SMART 20,Infinix,08-Jun-26,"₹ 12,499",,,,,,,,"₹ 12,499","₹ 12,499",3.9/5,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Infinix SMART 20,Budget,,,,,No
+PH004,LAVA Bold N2,Lava,03-Jun-26,"₹ 11,999",,,,,,,,"₹ 12,499","₹ 12,499",Not yet rated,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Bold N2 5G,Budget,,,,,No
+PH005,LAVA Shark 2 5G,Lava,10-Jun-26,"₹ 11,999",,,,,,,,,,Not Listed,Not Listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Shark 2 5G,Premium,,,,,Yes
+PH006,Oppo A6c,Oppo,26-May-26,"₹ 13,999",,,,,,,,"₹ 12,999","₹ 13,999",04-May,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6c,Budget,,,,,No
+PH007,Realme 16T 5G,Realme,26-May-26,"₹ 23,999",,,,,,,,"₹ 25,999",,3.8/5,Not Listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme 16T 5G,Upper Mid Range,,,,,Yes
+PH008,HMD Vibe 2 5G,HMD,21-May-26,"₹ 10,999",,,,,,,,"₹ 12,999",,4.6/5,Not Listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: HMD Vibe 2 5G,Budget,,,,,Yes
+PH009,Moto G37 Power,Motorola,19-May-26,"₹ 15,999",,,,,,,,"₹ 15,999","₹ 15,999",4.2/5,03-May,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Moto G37 Power,Lower Mid Range,,,,,No
+PH010,Moto G37,Motorola,19-May-26,"₹ 13,999",,,,,,,,"₹ 13,999","₹ 14,999",4.3/5,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Moto G37,Budget,,,,,No
+PH011,Itel Zeno 200,Itel,08-May-26,"₹ 9,999",,,,,,,,"₹ 9,999","₹ 9,999",Not yet rated,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Itel Zeno 200,Entry,,,,,No
+PH012,Oneplus Nord CE 6 Lite,OnePlus,07-May-26,"₹ 20,999",,,,,,,,"₹ 24,999","₹ 25,999",4.2/5,4.3/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: OnePlus Nord CE 6 Lite,Upper Mid Range,,,,,No
+PH013,Poco C81,Poco,25-Apr-26,"₹ 10,999",,,,,,,,"₹ 11,999","₹ 11,600",3.8/5,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco C81,Budget,,,,,No
+PH014,Poco C81x,Poco,25-Apr-26,"₹ 9,999",,,,,,,,"₹ 10,999","₹ 9,999",04-May,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco C81x,Budget,,,,,No
+PH015,Redmi A7,Redmi,23-Apr-26,"₹ 10,499",,,,,,,,"₹ 11,499","₹ 11,499",4.1/5,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi A7,Budget,,,,,No
+PH016,Redmi A7 Pro,Redmi,23-Apr-26,"₹ 11,499",,,,,,,,"₹ 13,500","₹ 12,999",3.8/5,3.4/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi A7 Pro,Budget,,,,,No
+PH017,Tecno Pop X 5G,Tecno,22-Apr-26,"₹ 15,998",,,,,,,,"₹ 18,990","₹ 16,500",out of stock,3.4/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Pop X 5G,Lower Mid Range,,,,,Yes
+PH018,Vivo Y05,Vivo,18-Apr-26,"₹ 12,999",,,,,,,,"₹ 12,999","₹ 12,999",3.7/5,3.4/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y05,Budget,,,,,No
+PH019,Oppo F33 5G,Oppo,17-Apr-26,"₹ 29,999",,,,,,,,"₹ 34,999","₹ 29,999",4.3/5,3.3/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo F33 5G,Premium,,,,,Yes
+PH020,Vivo T5 Pro 5G,Vivo,17-Apr-26,"₹ 29,999",,,,,,,,"₹ 32,999","₹ 33,900",4.5/5,4.1/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo T5 Pro 5G,Premium,,,,,Yes
+PH021,Realme Narzo 100 Lite 5G,Realme,16-Apr-26,"₹ 13,500",,,,,,,,"₹ 14,500","₹ 14,999",4.1/5,4.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme Narzo 100 Lite 5G,Budget,,,,,Yes
+PH022,Ai+ Nova 2 Ultra 5G,Ai+,09-Apr-26,"₹ 18,999",,,,,,,,"₹ 17,999",,4.2/5,Not Listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Ai+ Nova 2 Ultra 5G,Lower Mid Range,,,,,Yes
+PH023,Ai+ Nova 2 5G,Ai+,09-Apr-26,"₹ 10,999",,,,,,,,"₹ 11,999","₹ 13,000",4.4/5,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Ai+ Nova 2 5G,Budget,,,,,Yes
+PH024,Redmi Note 15 SE 5G,Redmi,07-Apr-26,"₹ 20,999",,,,,,,,"₹ 22,999","₹ 21,449",4.4/5,4.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi Note 15 SE 5G,Upper Mid Range,,,,,Yes
+PH025,Lava Bold N2 Lite,Lava,46135,"₹ 7,999",,,,,,,,,"₹ 8,699",Not Listed,3.2/7,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Bold N2 Lite,Entry,,,,,No
+PH026,Tecno Spark 50 5G,Tecno,46115,"₹ 16,999",,,,,,,,"₹ 18,999","₹ 18,999",Not yet rated,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Spark 50 5G,Lower Mid Range,,,,,Yes
+PH027,Redmi 15A 5G,Redmi,46093,"₹ 12,999",,,,,,,,"₹ 14,999","₹ 14,859",3.9/5,Not yet rated,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi 15A 5G,Budget,,,,,Yes
+PH028,Vivo Y11 5G,Vivo,24-Mar-26,"₹ 14,999",,,,,,,,"₹ 14,999","₹ 14,999",4.1/5,3.7/40,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y11 5G,Budget,,,,,Yes
+PH029,Vivo Y21 5G,Vivo,24-Mar-26,"₹ 18,999",,,,,,,,"₹ 18,999","₹ 17,990",4.0/5,3.3/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y21 5G,Lower Mid Range,,,,,Yes
+PH030,Realme P4 Lite 5G,Realme,20-Mar-26,"₹ 11,999",,,,,,,,"₹ 13,999","₹ 14,390",4.3/5,4.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme P4 Lite 5G,Budget,,,,,Yes
+PH031,Oppo A6s 5G,Oppo,18-Mar-26,"₹ 18,999",,,,,,,,"₹ 20,999","₹ 20,999",4.4/5,4.3/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6s 5G,Upper Mid Range,,,,,Yes
+PH032,Samsung Galaxy M17e 5G,Samsung,18-Mar-26,"₹ 11,999",,,,,,,,"₹ 13,498","₹ 12,999",4.0/5,4.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Samsung Galaxy M17e 5G,Budget,,,,,Yes
+PH033,Vivo T5x 5G,Vivo,17-Mar-26,"₹ 18,999",,,,,,,,"₹ 22,499","₹ 22,499",4.4/5,4.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo T5x 5G,Upper Mid Range,,,,,Yes
+PH034,Oppo K14 5G,Oppo,18-Mar-26,"₹ 17,999",,,,,,,,"₹ 19,999","₹ 19,999",4.4/5,4.5/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo K14 5G,Lower Mid Range,,,,,Yes
+PH035,LAVA Bold 2 5G,Lava,13-Mar-26,"₹ 14,999",,,,,,,,"₹ 17,990","₹ 15,499",4.1/5,4.1/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Bold 2 5G,Lower Mid Range,,,,,Yes
+PH036,iQOO Z11x 5G,iQOO,13-Mar-26,"₹ 18,999",,,,,,,,"₹ 22,999","₹ 22,999",4.3/5,4.2/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: iQOO Z11x 5G,Upper Mid Range,,,,,Yes
+PH037,Vivo Y51 Pro,Vivo,12-Mar-26,"₹ 24,999",,,,,,,,"₹ 30,999",,4.3/5,Not listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Vivo Y51 Pro,Premium,,,,,No
+PH038,Poco C85x 5G,Poco,11-Mar-26,"₹ 10,999",,,,,,,,"₹ 12,499","₹ 13,999",4.1/5,3.6/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco C85x 5G,Budget,,,,,Yes
+PH039,Itel Zeno 100,Itel,07-Mar-26,"₹ 6,999",,,,,,,,"₹ 8,899",,Not yet rated,Not listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Itel Zeno 100,Entry,,,,,No
+PH040,Realme C83 5G,Realme,07-Mar-26,"₹ 13,499",,,,,,,,"₹ 16,400","₹ 14,499",4.1/5,4.4/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme C83 5G,Lower Mid Range,,,,,Yes
+PH041,Motorola Edge 70 Fusion,Motorola,07-Mar-26,"₹ 26,999",,,,,,,,"₹ 29,999","₹ 26,999",4.4/5,4.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Motorola Edge 70 Fusion,Upper Mid Range,,,,,No
+PH042,Realme Narzo Power 5G,Realme,06-Mar-26,"₹ 26,999",,,,,,,,"₹ 28,999",,4.0/5,Not Listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme Narzo Power 5G,Upper Mid Range,,,,,Yes
+PH043,Ai+ Pulse 2,Ai+,03-Mar-26,"₹ 6,000",,,,,,,,"₹ 10,499","₹ 10,500",4.3/5,1.0/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Ai+ Pulse 2,Budget,,,,,No
+PH044,Infinix Note Edge 5G,Infinix,10-Feb-26,"₹ 21,999",,,,,,,,"₹ 22,999",,4.3/5,Not listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Infinix Note Edge 5G,Upper Mid Range,,,,,Yes
+PH045,Tecno Pova Curve 2,Tecno,04-Feb-26,"₹ 27,999",,,,,,,,"₹ 29,999","₹ 25,899",4.1/5,3.6/7,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Pova Curve 2,Upper Mid Range,,,,,No
+PH046,Lava Yuva Star 3,Lava,03-Feb-26,"₹ 9,899",,,,,,,,"₹ 12,899",,3.4/5,Not listed,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Yuva Star 3,Budget,,,,,No
+PH047,Oppo K14x 5G,Oppo,01-Feb-26,"₹ 14,999",,,,,,,,"₹ 15,999","₹ 15,600",4.4/5,3.8/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo K14x 5G,Lower Mid Range,,,,,Yes
+PH048,Samsung Galaxy F70e 5G,Samsung,31-Jan-26,"₹ 11,999",,,,,,,,"₹ 13,499","₹ 13,179",4.3/5,3.5/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Samsung Galaxy F70e 5G,Budget,,,,,Yes
+PH049,Realme P4 Power,Realme,29-Jan-26,"₹ 25,999",,,,,,,,"₹ 29,499","₹ 26,999",4.4/5,"4,2/5",29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Realme P4 Power,Upper Mid Range,,,,,No
+PH050,Redmi Note 15 Pro,Redmi,29-Jan-26,"₹ 29,999",,,,,,,,"₹ 31,011","₹ 31,999",4.2/5,3.9/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi Note 15 Pro,Premium,,,,,No
+PH051,Oppo A6 5G,Oppo,11-Jan-26,"₹ 17,999",,,,,,,,"₹ 23,999","₹ 23,999",4.0/5,4.5/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6 5G,Upper Mid Range,,,,,Yes
+PH052,Lava Blaze Duo 3 5G,Lava,10-Jan-26,"₹ 16,999",,,,,,,,"₹ 19,999","₹ 25,999",3.8/5,3.7/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Lava Blaze Duo 3 5G,Lower Mid Range,,,,,Yes
+PH053,Tecno Spark Go 3,Tecno,07-Jan-26,"₹ 8,999",,,,,,,,"₹ 11,999","₹ 11,500",4.0/5,4.6/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Tecno Spark Go 3,Budget,,,,,No
+PH054,Samsung Galaxy A07 5G,Samsung,05-Feb-26,"₹ 15,999",,,,,,,,"₹ 15,499","₹ 15,999",3.7/5,4.2/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Samsung Galaxy A07 5G,Lower Mid Range,,,,,Yes
+PH055,Poco M8,Poco,08-Jan-26,"₹ 14,999",,,,,,,,"₹ 19,999","₹ 19,990",4.3/5,4.1/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Poco M8,Lower Mid Range,,,,,No
+PH056,Redmi Note 15,Redmi,06-Jan-26,"₹ 22,999",,,,,,,,"₹ 25,497","₹ 26,999",4.4/5,4.1/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Redmi Note 15,Upper Mid Range,,,,,No
+PH057,Oppo A6 Pro 5G,Oppo,06-Jan-26,"₹ 21,999",,,,,,,,"₹ 28,999","₹ 28,999",4.4/5,4.3/5,29-06-2026,,,,Smartphones research data.xlsx,Pending,,Research file name: Oppo A6 Pro 5G,Upper Mid Range,,,,,Yes

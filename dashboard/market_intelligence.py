@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 
-from dashboard_data import read_sql
+from dashboard_data import read_sql, normalize_brands
 
 
 PAIN_POINT_KEYWORDS = {
@@ -82,12 +82,8 @@ def get_market_dataset():
             ON s.phone_id = ai.phone_id
     """)
 
-    df["brand"] = df["brand"].replace({
-        "LAVA": "Lava",
-        "Moto": "Motorola",
-    })
 
-    return df
+    return normalize_brands(df)
 
 def add_price_segment(df):
     df = df.copy()

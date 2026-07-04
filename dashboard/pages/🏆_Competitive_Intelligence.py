@@ -1,6 +1,7 @@
 import streamlit as st
 
 from components.style_loader import load_css
+from components.ui.navbar import navbar
 
 from competitive_intelligence import (
     get_competitive_dataset,
@@ -25,6 +26,8 @@ st.set_page_config(
 )
 
 load_css()
+
+navbar()
 
 
 competitive_intelligence(

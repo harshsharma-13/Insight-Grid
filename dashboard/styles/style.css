@@ -159,3 +159,12 @@ section[data-testid="stSidebar"] {
     line-height: 1.85;
     font-size: 0.95rem;
 }
+
+/* Phone Explorer card consistency */
+[data-testid="stMetricValue"] {
+    font-size: 28px;
+}
+
+div[data-testid="stVerticalBlock"] div[data-testid="stVerticalBlockBorderWrapper"] {
+    min-height: 140px;
+}

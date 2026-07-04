@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 
 from components.style_loader import load_css
+from components.ui.navbar import navbar
 from ai_compare import build_context, compare_question
 from dashboard_data import (
     get_phone_options,
@@ -15,6 +16,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 st.set_page_config(page_title="Compare Phones", page_icon="⚖️", layout="wide")
 load_css()
+
+navbar()
 
 
 def clean(value):

@@ -1,58 +1,58 @@
-﻿phone_id,phone_name,smartprix_link,image_filename,image_local_path,image_status,image_match_type
-PH001,Tecno Pova 8 5G,https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d,tecno-pova-8-5g.jpg,assets/phone_images/tecno-pova-8-5g.jpg,Found,Exact
-PH002,Realme P4R 5G,https://www.smartprix.com/mobiles/realme-p4r-5g-ppd11xf05zc2,realme-p4r-5g.jpg,assets/phone_images/realme-p4r-5g.jpg,Found,Exact
-PH003,Infinix SMART 20,https://www.smartprix.com/mobiles/infinix-smart-20-ppd1hr2rwk9y,infinix-smart-20.jpg,assets/phone_images/infinix-smart-20.jpg,Found,Exact
-PH004,LAVA Bold N2,https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx,lava-bold-n2-5g.jpg,assets/phone_images/lava-bold-n2-5g.jpg,Found,Contains
-PH005,LAVA Shark 2 5G,https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44,lava-shark-2-5g.jpg,assets/phone_images/lava-shark-2-5g.jpg,Found,Exact
-PH006,Oppo A6c,https://www.smartprix.com/mobiles/oppo-a6c-ppd1b2vvn41l,oppo-a6c-4g.jpg,assets/phone_images/oppo-a6c-4g.jpg,Found,Contains
-PH007,Realme 16T 5G,https://www.smartprix.com/mobiles/realme-16t-5g-ppd18kz6oazl,realme-16t-5g.jpg,assets/phone_images/realme-16t-5g.jpg,Found,Exact
-PH008,HMD Vibe 2 5G,https://www.smartprix.com/mobiles/hmd-vibe-2-5g-ppd1vmboj6a8,hmd-vibe-2-5g.jpg,assets/phone_images/hmd-vibe-2-5g.jpg,Found,Exact
-PH009,Moto G37 Power,https://www.smartprix.com/mobiles/motorola-moto-g37-power-ppd1w91daysx,motorola-moto-g37-power.jpg,assets/phone_images/motorola-moto-g37-power.jpg,Found,Contains
-PH010,Moto G37,https://www.smartprix.com/mobiles/motorola-moto-g37-ppd1va77lc8s,motorola-moto-g37-power.jpg,assets/phone_images/motorola-moto-g37-power.jpg,Found,Contains
-PH011,Itel Zeno 200,https://www.smartprix.com/mobiles/itel-zeno-200-ppd1mnsjgm39,itel-zeno-200.jpg,assets/phone_images/itel-zeno-200.jpg,Found,Exact
-PH012,Oneplus Nord CE 6 Lite,https://www.smartprix.com/mobiles/oneplus-nord-ce-6-lite-ppd1g3giwwva,oneplus-nord-ce-6-lite.jpg,assets/phone_images/oneplus-nord-ce-6-lite.jpg,Found,Exact
-PH013,Poco C81,https://www.smartprix.com/mobiles/poco-c81-ppd16td5skp4,poco-c81.jpg,assets/phone_images/poco-c81.jpg,Found,Exact
-PH014,Poco C81x,https://www.smartprix.com/mobiles/poco-c81x-ppd1lq32d6ze,poco-c81x.jpg,assets/phone_images/poco-c81x.jpg,Found,Exact
-PH015,Redmi A7,https://www.smartprix.com/mobiles/xiaomi-redmi-a7-4g-ppd1hkpvjsoe,xiaomi-redmi-a7-4g.jpg,assets/phone_images/xiaomi-redmi-a7-4g.jpg,Found,Contains
-PH016,Redmi A7 Pro,https://www.smartprix.com/mobiles/xiaomi-redmi-a7-pro-5g-ppd1cnmjcowe,xiaomi-redmi-a7-pro.jpg,assets/phone_images/xiaomi-redmi-a7-pro.jpg,Found,Contains
-PH017,Tecno Pop X 5G,https://www.smartprix.com/mobiles/tecno-pop-x-5g-ppd1gj0661me,tecno-pop-x-5g.jpg,assets/phone_images/tecno-pop-x-5g.jpg,Found,Exact
-PH018,Vivo Y05,https://www.smartprix.com/mobiles/vivo-y05-ppd12gn69s3c,vivo-y05.jpg,assets/phone_images/vivo-y05.jpg,Found,Exact
-PH019,Oppo F33 5G,https://www.smartprix.com/mobiles/oppo-f33-ppd18kxqpob7,oppo-f33.jpg,assets/phone_images/oppo-f33.jpg,Found,Contains
-PH020,Vivo T5 Pro 5G,https://www.smartprix.com/mobiles/vivo-t5-pro-ppd1jr3xj863,vivo-t5-pro.jpg,assets/phone_images/vivo-t5-pro.jpg,Found,Contains
-PH021,Realme Narzo 100 Lite 5G,https://www.smartprix.com/mobiles/realme-narzo-100-lite-ppd1pmwn763b,realme-narzo-100-lite.jpg,assets/phone_images/realme-narzo-100-lite.jpg,Found,Contains
-PH022,Ai+ Nova 2 Ultra 5G,https://www.smartprix.com/mobiles/ai-nova-2-ultra-ppd1hlvx6m0g,ai-nova-2-ultra.jpg,assets/phone_images/ai-nova-2-ultra.jpg,Found,Contains
-PH023,Ai+ Nova 2 5G,https://www.smartprix.com/mobiles/ai-nova-2-ppd1i8rdcplq,ai-nova-2.jpg,assets/phone_images/ai-nova-2.jpg,Found,Contains
-PH024,Redmi Note 15 SE 5G,https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-5g-special-edition-ppd103v7vlm2,xiaomi-redmi-note-15-se-5g.jpg,assets/phone_images/xiaomi-redmi-note-15-se-5g.jpg,Found,Contains
-PH025,Lava Bold N2 Lite,https://www.smartprix.com/mobiles/lava-bold-n2-lite-ppd1ewkb36sc,lava-bold-n2-lite.jpg,assets/phone_images/lava-bold-n2-lite.jpg,Found,Exact
-PH026,Tecno Spark 50 5G,https://www.smartprix.com/mobiles/tecno-spark-50-ppd1v1623nbx,tecno-spark-50-5g.jpg,assets/phone_images/tecno-spark-50-5g.jpg,Found,Exact
-PH027,Redmi 15A 5G,https://www.smartprix.com/mobiles/xiaomi-redmi-15a-5g-ppd16k3r1eha,xiaomi-redmi-15a-5g.jpg,assets/phone_images/xiaomi-redmi-15a-5g.jpg,Found,Contains
-PH028,Vivo Y11 5G,https://www.smartprix.com/mobiles/vivo-y11-5g-ppd1r02w1sdu,vivo-y11-5g.jpg,assets/phone_images/vivo-y11-5g.jpg,Found,Exact
-PH029,Vivo Y21 5G,https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9,vivo-y21-5g.jpg,assets/phone_images/vivo-y21-5g.jpg,Found,Exact
-PH030,Realme P4 Lite 5G,https://www.smartprix.com/mobiles/realme-p4-lite-5g-ppd1u3wmqsvk,realme-p4-lite-5g.jpg,assets/phone_images/realme-p4-lite-5g.jpg,Found,Exact
-PH031,Oppo A6s 5G,https://www.smartprix.com/mobiles/oppo-a6s-5g-ppd19g7fx6k4,oppo-a6s-5g.jpg,assets/phone_images/oppo-a6s-5g.jpg,Found,Exact
-PH032,Samsung Galaxy M17e 5G,https://www.smartprix.com/mobiles/samsung-galaxy-m17e-ppd159q5wrb0,samsung-galaxy-m17e.jpg,assets/phone_images/samsung-galaxy-m17e.jpg,Found,Contains
-PH033,Vivo T5x 5G,https://www.smartprix.com/mobiles/vivo-t5x-5g-ppd1rtf1u89r,vivo-t5x-5g.jpg,assets/phone_images/vivo-t5x-5g.jpg,Found,Exact
-PH034,Oppo K14 5G,https://www.smartprix.com/mobiles/oppo-k14-ppd18o79qj03,oppo-k14.jpg,assets/phone_images/oppo-k14.jpg,Found,Contains
-PH035,LAVA Bold 2 5G,https://www.smartprix.com/mobiles/lava-bold-2-ppd12dj4kdtl,lava-bold-2-5g.jpg,assets/phone_images/lava-bold-2-5g.jpg,Found,Exact
-PH036,iQOO Z11x 5G,https://www.smartprix.com/mobiles/iqoo-z11x-ppd1ol60m05r,iqoo-z11x.jpg,assets/phone_images/iqoo-z11x.jpg,Found,Contains
-PH037,Vivo Y51 Pro,https://www.smartprix.com/mobiles/vivo-y51-pro-ppd12ifxgzf9,vivo-y51-pro.jpg,assets/phone_images/vivo-y51-pro.jpg,Found,Exact
-PH038,Poco C85x 5G,https://www.smartprix.com/mobiles/poco-c85x-ppd1hf7smzlw,poco-c85x.jpg,assets/phone_images/poco-c85x.jpg,Found,Contains
-PH039,Itel Zeno 100,https://www.smartprix.com/mobiles/itel-zeno-100-ppd191303ucd,itel-zeno-100.jpg,assets/phone_images/itel-zeno-100.jpg,Found,Exact
-PH040,Realme C83 5G,https://www.smartprix.com/mobiles/realme-c83-5g-ppd1867s4tap,realme-c83-5g.jpg,assets/phone_images/realme-c83-5g.jpg,Found,Exact
-PH041,Motorola Edge 70 Fusion,https://www.smartprix.com/mobiles/motorola-edge-70-fusion-ppd1ktx4v2b3,motorola-edge-70-fusion.jpg,assets/phone_images/motorola-edge-70-fusion.jpg,Found,Exact
-PH042,Realme Narzo Power 5G,https://www.smartprix.com/mobiles/realme-narzo-power-5g-ppd12xzlzeqo,realme-narzo-power-5.jpg,assets/phone_images/realme-narzo-power-5.jpg,Found,Contains
-PH043,Ai+ Pulse 2,https://www.smartprix.com/mobiles/ai-pulse-2-ppd1bla1zgt4,ai-pulse-2.jpg,assets/phone_images/ai-pulse-2.jpg,Found,Exact
-PH044,Infinix Note Edge 5G,https://www.smartprix.com/mobiles/infinix-note-edge-ppd1kf4qybbv,infinix-note-edge-5g.jpg,assets/phone_images/infinix-note-edge-5g.jpg,Found,Exact
-PH045,Tecno Pova Curve 2,https://www.smartprix.com/mobiles/tecno-pova-curve-2-ppd1628rzej3,tecno-pova-curve-2.jpg,assets/phone_images/tecno-pova-curve-2.jpg,Found,Exact
-PH046,Lava Yuva Star 3,https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba,lava-yuva-star-3.jpg,assets/phone_images/lava-yuva-star-3.jpg,Found,Exact
-PH047,Oppo K14x 5G,https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba,oppo-k14x-5g.jpg,assets/phone_images/oppo-k14x-5g.jpg,Found,Exact
-PH048,Samsung Galaxy F70e 5G,https://www.smartprix.com/mobiles/samaung-galaxy-f70e-ppd1z0fqsy0z,samsung-galaxy-a07-5g.jpg,assets/phone_images/samsung-galaxy-a07-5g.jpg,Found,Fuzzy 0.88
-PH049,Realme P4 Power,https://www.smartprix.com/mobiles/realme-p4-power-5g-ppd1g2rnb2hl,realme-p4-power-5g.jpg,assets/phone_images/realme-p4-power-5g.jpg,Found,Contains
-PH050,Redmi Note 15 Pro,https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-pro-ppd1qlloghfg,xiaomi-redmi-note-15-pro.jpg,assets/phone_images/xiaomi-redmi-note-15-pro.jpg,Found,Contains
-PH051,Oppo A6 5G,https://www.smartprix.com/mobiles/oppo-a6-5g-ppd1w8ogtisz,oppo-a6-5g.jpg,assets/phone_images/oppo-a6-5g.jpg,Found,Exact
-PH052,Lava Blaze Duo 3 5G,https://www.smartprix.com/mobiles/lava-blaze-duo-3-ppd1o5e6uwhh,lava-blaze-duo-3-5g.jpg,assets/phone_images/lava-blaze-duo-3-5g.jpg,Found,Exact
-PH053,Tecno Spark Go 3,https://www.smartprix.com/mobiles/tecno-spark-go-3-ppd14d94on3z,tecno-spark-go-3.jpg,assets/phone_images/tecno-spark-go-3.jpg,Found,Exact
-PH054,Samsung Galaxy A07 5G,https://www.smartprix.com/mobiles/samsung-galaxy-a07-5g-ppd1l9e8wv61,samsung-galaxy-a07-5g.jpg,assets/phone_images/samsung-galaxy-a07-5g.jpg,Found,Exact
-PH055,Poco M8,https://www.smartprix.com/mobiles/poco-m8-ppd1t4l0hpfr,poco-m8.jpg,assets/phone_images/poco-m8.jpg,Found,Exact
-PH056,Redmi Note 15,https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-ppd1nya0l7ja,xiaomi-redmi-note-15-pro.jpg,assets/phone_images/xiaomi-redmi-note-15-pro.jpg,Found,Contains
-PH057,Oppo A6 Pro 5G,https://www.smartprix.com/mobiles/oppo-a6-pro-ppd14vheuq5t,oppo-a6-pro-5g.jpg,assets/phone_images/oppo-a6-pro-5g.jpg,Found,Exact
+﻿phone_id,phone_name,smartprix_link,image_filename,image_local_path,image_status,image_match_type,launch_price
+PH001,Tecno Pova 8 5G,https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d,tecno-pova-8-5g.jpg,assets/phone_images/tecno-pova-8-5g.jpg,Found,Exact,"₹ 29,999"
+PH002,Realme P4R 5G,https://www.smartprix.com/mobiles/realme-p4r-5g-ppd11xf05zc2,realme-p4r-5g.jpg,assets/phone_images/realme-p4r-5g.jpg,Found,Exact,"₹ 18,999"
+PH003,Infinix SMART 20,https://www.smartprix.com/mobiles/infinix-smart-20-ppd1hr2rwk9y,infinix-smart-20.jpg,assets/phone_images/infinix-smart-20.jpg,Found,Exact,"₹ 12,499"
+PH004,LAVA Bold N2,https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx,lava-bold-n2-5g.jpg,assets/phone_images/lava-bold-n2-5g.jpg,Found,Contains,"₹ 11,999"
+PH005,LAVA Shark 2 5G,https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44,lava-shark-2-5g.jpg,assets/phone_images/lava-shark-2-5g.jpg,Found,Exact,"₹ 11,999"
+PH006,Oppo A6c,https://www.smartprix.com/mobiles/oppo-a6c-ppd1b2vvn41l,oppo-a6c-4g.jpg,assets/phone_images/oppo-a6c-4g.jpg,Found,Contains,"₹ 13,999"
+PH007,Realme 16T 5G,https://www.smartprix.com/mobiles/realme-16t-5g-ppd18kz6oazl,realme-16t-5g.jpg,assets/phone_images/realme-16t-5g.jpg,Found,Exact,"₹ 23,999"
+PH008,HMD Vibe 2 5G,https://www.smartprix.com/mobiles/hmd-vibe-2-5g-ppd1vmboj6a8,hmd-vibe-2-5g.jpg,assets/phone_images/hmd-vibe-2-5g.jpg,Found,Exact,"₹ 10,999"
+PH009,Moto G37 Power,https://www.smartprix.com/mobiles/motorola-moto-g37-power-ppd1w91daysx,motorola-moto-g37-power.jpg,assets/phone_images/motorola-moto-g37-power.jpg,Found,Contains,"₹ 15,999"
+PH010,Moto G37,https://www.smartprix.com/mobiles/motorola-moto-g37-ppd1va77lc8s,motorola-moto-g37-power.jpg,assets/phone_images/motorola-moto-g37-power.jpg,Found,Contains,"₹ 13,999"
+PH011,Itel Zeno 200,https://www.smartprix.com/mobiles/itel-zeno-200-ppd1mnsjgm39,itel-zeno-200.jpg,assets/phone_images/itel-zeno-200.jpg,Found,Exact,"₹ 9,999"
+PH012,Oneplus Nord CE 6 Lite,https://www.smartprix.com/mobiles/oneplus-nord-ce-6-lite-ppd1g3giwwva,oneplus-nord-ce-6-lite.jpg,assets/phone_images/oneplus-nord-ce-6-lite.jpg,Found,Exact,"₹ 20,999"
+PH013,Poco C81,https://www.smartprix.com/mobiles/poco-c81-ppd16td5skp4,poco-c81.jpg,assets/phone_images/poco-c81.jpg,Found,Exact,"₹ 10,999"
+PH014,Poco C81x,https://www.smartprix.com/mobiles/poco-c81x-ppd1lq32d6ze,poco-c81x.jpg,assets/phone_images/poco-c81x.jpg,Found,Exact,"₹ 9,999"
+PH015,Redmi A7,https://www.smartprix.com/mobiles/xiaomi-redmi-a7-4g-ppd1hkpvjsoe,xiaomi-redmi-a7-4g.jpg,assets/phone_images/xiaomi-redmi-a7-4g.jpg,Found,Contains,"₹ 10,499"
+PH016,Redmi A7 Pro,https://www.smartprix.com/mobiles/xiaomi-redmi-a7-pro-5g-ppd1cnmjcowe,xiaomi-redmi-a7-pro.jpg,assets/phone_images/xiaomi-redmi-a7-pro.jpg,Found,Contains,"₹ 11,499"
+PH017,Tecno Pop X 5G,https://www.smartprix.com/mobiles/tecno-pop-x-5g-ppd1gj0661me,tecno-pop-x-5g.jpg,assets/phone_images/tecno-pop-x-5g.jpg,Found,Exact,"₹ 15,998"
+PH018,Vivo Y05,https://www.smartprix.com/mobiles/vivo-y05-ppd12gn69s3c,vivo-y05.jpg,assets/phone_images/vivo-y05.jpg,Found,Exact,"₹ 12,999"
+PH019,Oppo F33 5G,https://www.smartprix.com/mobiles/oppo-f33-ppd18kxqpob7,oppo-f33.jpg,assets/phone_images/oppo-f33.jpg,Found,Contains,"₹ 29,999"
+PH020,Vivo T5 Pro 5G,https://www.smartprix.com/mobiles/vivo-t5-pro-ppd1jr3xj863,vivo-t5-pro.jpg,assets/phone_images/vivo-t5-pro.jpg,Found,Contains,"₹ 29,999"
+PH021,Realme Narzo 100 Lite 5G,https://www.smartprix.com/mobiles/realme-narzo-100-lite-ppd1pmwn763b,realme-narzo-100-lite.jpg,assets/phone_images/realme-narzo-100-lite.jpg,Found,Contains,"₹ 13,500"
+PH022,Ai+ Nova 2 Ultra 5G,https://www.smartprix.com/mobiles/ai-nova-2-ultra-ppd1hlvx6m0g,ai-nova-2-ultra.jpg,assets/phone_images/ai-nova-2-ultra.jpg,Found,Contains,"₹ 18,999"
+PH023,Ai+ Nova 2 5G,https://www.smartprix.com/mobiles/ai-nova-2-ppd1i8rdcplq,ai-nova-2.jpg,assets/phone_images/ai-nova-2.jpg,Found,Contains,"₹ 10,999"
+PH024,Redmi Note 15 SE 5G,https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-5g-special-edition-ppd103v7vlm2,xiaomi-redmi-note-15-se-5g.jpg,assets/phone_images/xiaomi-redmi-note-15-se-5g.jpg,Found,Contains,"₹ 20,999"
+PH025,Lava Bold N2 Lite,https://www.smartprix.com/mobiles/lava-bold-n2-lite-ppd1ewkb36sc,lava-bold-n2-lite.jpg,assets/phone_images/lava-bold-n2-lite.jpg,Found,Exact,"₹ 7,999"
+PH026,Tecno Spark 50 5G,https://www.smartprix.com/mobiles/tecno-spark-50-ppd1v1623nbx,tecno-spark-50-5g.jpg,assets/phone_images/tecno-spark-50-5g.jpg,Found,Exact,"₹ 16,999"
+PH027,Redmi 15A 5G,https://www.smartprix.com/mobiles/xiaomi-redmi-15a-5g-ppd16k3r1eha,xiaomi-redmi-15a-5g.jpg,assets/phone_images/xiaomi-redmi-15a-5g.jpg,Found,Contains,"₹ 12,999"
+PH028,Vivo Y11 5G,https://www.smartprix.com/mobiles/vivo-y11-5g-ppd1r02w1sdu,vivo-y11-5g.jpg,assets/phone_images/vivo-y11-5g.jpg,Found,Exact,"₹ 14,999"
+PH029,Vivo Y21 5G,https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9,vivo-y21-5g.jpg,assets/phone_images/vivo-y21-5g.jpg,Found,Exact,"₹ 18,999"
+PH030,Realme P4 Lite 5G,https://www.smartprix.com/mobiles/realme-p4-lite-5g-ppd1u3wmqsvk,realme-p4-lite-5g.jpg,assets/phone_images/realme-p4-lite-5g.jpg,Found,Exact,"₹ 11,999"
+PH031,Oppo A6s 5G,https://www.smartprix.com/mobiles/oppo-a6s-5g-ppd19g7fx6k4,oppo-a6s-5g.jpg,assets/phone_images/oppo-a6s-5g.jpg,Found,Exact,"₹ 18,999"
+PH032,Samsung Galaxy M17e 5G,https://www.smartprix.com/mobiles/samsung-galaxy-m17e-ppd159q5wrb0,samsung-galaxy-m17e.jpg,assets/phone_images/samsung-galaxy-m17e.jpg,Found,Contains,"₹ 11,999"
+PH033,Vivo T5x 5G,https://www.smartprix.com/mobiles/vivo-t5x-5g-ppd1rtf1u89r,vivo-t5x-5g.jpg,assets/phone_images/vivo-t5x-5g.jpg,Found,Exact,"₹ 18,999"
+PH034,Oppo K14 5G,https://www.smartprix.com/mobiles/oppo-k14-ppd18o79qj03,oppo-k14.jpg,assets/phone_images/oppo-k14.jpg,Found,Contains,"₹ 17,999"
+PH035,LAVA Bold 2 5G,https://www.smartprix.com/mobiles/lava-bold-2-ppd12dj4kdtl,lava-bold-2-5g.jpg,assets/phone_images/lava-bold-2-5g.jpg,Found,Exact,"₹ 14,999"
+PH036,iQOO Z11x 5G,https://www.smartprix.com/mobiles/iqoo-z11x-ppd1ol60m05r,iqoo-z11x.jpg,assets/phone_images/iqoo-z11x.jpg,Found,Contains,"₹ 18,999"
+PH037,Vivo Y51 Pro,https://www.smartprix.com/mobiles/vivo-y51-pro-ppd12ifxgzf9,vivo-y51-pro.jpg,assets/phone_images/vivo-y51-pro.jpg,Found,Exact,"₹ 24,999"
+PH038,Poco C85x 5G,https://www.smartprix.com/mobiles/poco-c85x-ppd1hf7smzlw,poco-c85x.jpg,assets/phone_images/poco-c85x.jpg,Found,Contains,"₹ 10,999"
+PH039,Itel Zeno 100,https://www.smartprix.com/mobiles/itel-zeno-100-ppd191303ucd,itel-zeno-100.jpg,assets/phone_images/itel-zeno-100.jpg,Found,Exact,"₹ 6,999"
+PH040,Realme C83 5G,https://www.smartprix.com/mobiles/realme-c83-5g-ppd1867s4tap,realme-c83-5g.jpg,assets/phone_images/realme-c83-5g.jpg,Found,Exact,"₹ 13,499"
+PH041,Motorola Edge 70 Fusion,https://www.smartprix.com/mobiles/motorola-edge-70-fusion-ppd1ktx4v2b3,motorola-edge-70-fusion.jpg,assets/phone_images/motorola-edge-70-fusion.jpg,Found,Exact,"₹ 26,999"
+PH042,Realme Narzo Power 5G,https://www.smartprix.com/mobiles/realme-narzo-power-5g-ppd12xzlzeqo,realme-narzo-power-5.jpg,assets/phone_images/realme-narzo-power-5.jpg,Found,Contains,"₹ 26,999"
+PH043,Ai+ Pulse 2,https://www.smartprix.com/mobiles/ai-pulse-2-ppd1bla1zgt4,ai-pulse-2.jpg,assets/phone_images/ai-pulse-2.jpg,Found,Exact,"₹ 6,000"
+PH044,Infinix Note Edge 5G,https://www.smartprix.com/mobiles/infinix-note-edge-ppd1kf4qybbv,infinix-note-edge-5g.jpg,assets/phone_images/infinix-note-edge-5g.jpg,Found,Exact,"₹ 21,999"
+PH045,Tecno Pova Curve 2,https://www.smartprix.com/mobiles/tecno-pova-curve-2-ppd1628rzej3,tecno-pova-curve-2.jpg,assets/phone_images/tecno-pova-curve-2.jpg,Found,Exact,"₹ 27,999"
+PH046,Lava Yuva Star 3,https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba,lava-yuva-star-3.jpg,assets/phone_images/lava-yuva-star-3.jpg,Found,Exact,"₹ 9,899"
+PH047,Oppo K14x 5G,https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba,oppo-k14x-5g.jpg,assets/phone_images/oppo-k14x-5g.jpg,Found,Exact,"₹ 14,999"
+PH048,Samsung Galaxy F70e 5G,https://www.smartprix.com/mobiles/samaung-galaxy-f70e-ppd1z0fqsy0z,samsung-galaxy-a07-5g.jpg,assets/phone_images/samsung-galaxy-a07-5g.jpg,Found,Fuzzy 0.88,"₹ 11,999"
+PH049,Realme P4 Power,https://www.smartprix.com/mobiles/realme-p4-power-5g-ppd1g2rnb2hl,realme-p4-power-5g.jpg,assets/phone_images/realme-p4-power-5g.jpg,Found,Contains,"₹ 25,999"
+PH050,Redmi Note 15 Pro,https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-pro-ppd1qlloghfg,xiaomi-redmi-note-15-pro.jpg,assets/phone_images/xiaomi-redmi-note-15-pro.jpg,Found,Contains,"₹ 29,999"
+PH051,Oppo A6 5G,https://www.smartprix.com/mobiles/oppo-a6-5g-ppd1w8ogtisz,oppo-a6-5g.jpg,assets/phone_images/oppo-a6-5g.jpg,Found,Exact,"₹ 17,999"
+PH052,Lava Blaze Duo 3 5G,https://www.smartprix.com/mobiles/lava-blaze-duo-3-ppd1o5e6uwhh,lava-blaze-duo-3-5g.jpg,assets/phone_images/lava-blaze-duo-3-5g.jpg,Found,Exact,"₹ 16,999"
+PH053,Tecno Spark Go 3,https://www.smartprix.com/mobiles/tecno-spark-go-3-ppd14d94on3z,tecno-spark-go-3.jpg,assets/phone_images/tecno-spark-go-3.jpg,Found,Exact,"₹ 8,999"
+PH054,Samsung Galaxy A07 5G,https://www.smartprix.com/mobiles/samsung-galaxy-a07-5g-ppd1l9e8wv61,samsung-galaxy-a07-5g.jpg,assets/phone_images/samsung-galaxy-a07-5g.jpg,Found,Exact,"₹ 15,999"
+PH055,Poco M8,https://www.smartprix.com/mobiles/poco-m8-ppd1t4l0hpfr,poco-m8.jpg,assets/phone_images/poco-m8.jpg,Found,Exact,"₹ 14,999"
+PH056,Redmi Note 15,https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-ppd1nya0l7ja,xiaomi-redmi-note-15-pro.jpg,assets/phone_images/xiaomi-redmi-note-15-pro.jpg,Found,Contains,"₹ 22,999"
+PH057,Oppo A6 Pro 5G,https://www.smartprix.com/mobiles/oppo-a6-pro-ppd14vheuq5t,oppo-a6-pro-5g.jpg,assets/phone_images/oppo-a6-pro-5g.jpg,Found,Exact,"₹ 21,999"

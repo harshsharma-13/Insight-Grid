@@ -1,6 +1,7 @@
 import streamlit as st
 
 from components.style_loader import load_css
+from components.ui.navbar import navbar
 
 from phone_finder import (
     get_phone_finder_dataset,
@@ -24,6 +25,8 @@ st.set_page_config(
 )
 
 load_css()
+
+navbar()
 
 
 phone_finder(

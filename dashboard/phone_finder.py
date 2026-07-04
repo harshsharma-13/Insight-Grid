@@ -1,6 +1,6 @@
 import pandas as pd
 
-from dashboard_data import read_sql
+from dashboard_data import read_sql, normalize_brands
 
 
 USE_CASE_RULES = {
@@ -81,6 +81,7 @@ def get_phone_finder_dataset():
             pi.price_segment,
             pi.flipkart_price,
             pi.amazon_price,
+            pc.image_local_path,
 
             ai.top_strengths,
             ai.top_pain_points,
@@ -95,14 +96,11 @@ def get_phone_finder_dataset():
             ON s.phone_id = sp.phone_id
         LEFT JOIN phones_product_intelligence pi
             ON s.phone_id = pi.phone_id
+        LEFT JOIN phones_product_catalog pc
+            ON s.phone_id = pc.phone_id
         LEFT JOIN phone_ai_insights ai
             ON s.phone_id = ai.phone_id
     """)
-
-    df["brand"] = df["brand"].replace({
-        "LAVA": "Lava",
-        "Moto": "Motorola",
-    })
 
     df["flipkart_price_num"] = df["flipkart_price"].apply(_price_to_number)
     df["amazon_price_num"] = df["amazon_price"].apply(_price_to_number)
@@ -111,7 +109,7 @@ def get_phone_finder_dataset():
         ["flipkart_price_num", "amazon_price_num"]
     ].min(axis=1)
 
-    return df
+    return normalize_brands(df)
 
 
 def recommend_by_use_case(df, use_case, budget=None, limit=5):

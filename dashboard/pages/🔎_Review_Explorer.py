@@ -1,6 +1,7 @@
 import streamlit as st
 
 from components.style_loader import load_css
+from components.ui.navbar import navbar
 from review_themes import theme_cluster_reviews
 
 from review_explorer import (
@@ -20,6 +21,8 @@ st.set_page_config(
 )
 
 load_css()
+
+navbar()
 
 review_explorer(
     get_review_dataset,

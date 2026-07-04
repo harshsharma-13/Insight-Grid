@@ -1,6 +1,6 @@
 import pandas as pd
 
-from dashboard_data import read_sql
+from dashboard_data import read_sql, normalize_brands
 
 
 STRENGTH_CATEGORIES = {
@@ -202,12 +202,7 @@ def get_competitive_dataset():
     """)
 
 
-    df["brand"] = df["brand"].replace({
-        "LAVA": "Lava",
-        "Moto": "Motorola",
-    })
-
-    return df
+    return normalize_brands(df)
 
 def brand_leaderboard(df):
     if df.empty:
