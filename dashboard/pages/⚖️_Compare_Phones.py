@@ -26,6 +26,25 @@ def clean(value):
     value = str(value).strip()
     return "Not available" if value == "" or value.lower() == "nan" else value
 
+def format_price(value):
+    if value is None or pd.isna(value):
+        return "Not available"
+
+    try:
+        cleaned = (
+            str(value)
+            .replace("₹", "")
+            .replace("Rs.", "")
+            .replace("Rs", "")
+            .replace(",", "")
+            .strip()
+        )
+
+        return f"₹ {float(cleaned):,.0f}"
+
+    except (ValueError, TypeError):
+        return "Not available"
+
 
 def split_items(text):
     if text is None or pd.isna(text):
@@ -162,46 +181,113 @@ def phone_header(phone_name, data):
     insight = data["insight"]
     summary = data["summary"]
 
-    with st.container(border=True):
-        if catalog is not None:
-            image = load_image(catalog.get("image_local_path"))
-            if image:
-                st.image(image, width=230)
+    with st.container(
+        border=True,
+        height=780,
+    ):
+        # ----------------------------------
+        # IMAGE AREA
+        # ----------------------------------
+
+        with st.container(
+            border=False,
+            height=320,
+        ):
+            if catalog is not None:
+                image = load_image(
+                    catalog.get("image_local_path")
+                )
+
+                if image:
+                    st.image(
+                        image,
+                        width=220,
+                    )
+                else:
+                    st.info("Image not available")
+
+            else:
+                st.info("Image not available")
+
+
+        # ----------------------------------
+        # PHONE IDENTITY
+        # ----------------------------------
 
         st.markdown(f"### {phone_name}")
 
         if catalog is not None:
-            st.caption(f"{clean(catalog.get('brand'))} • {clean(catalog.get('price_segment'))}")
+            st.caption(
+                f"{clean(catalog.get('brand'))} • "
+                f"{clean(catalog.get('price_segment'))}"
+            )
 
         if insight is not None:
-            st.markdown(f"**{clean(insight.get('consumer_verdict'))}**")
+            st.markdown(
+                f"**{clean(insight.get('consumer_verdict'))}**"
+            )
+        else:
+            st.markdown(
+                "**Consumer verdict unavailable**"
+            )
+
+
+        # ----------------------------------
+        # SENTIMENT + REVIEWS
+        # ----------------------------------
 
         c1, c2 = st.columns(2)
 
         with c1:
+            positive_value = (
+                f"{summary.get('positive_percent'):.1f}%"
+                if summary is not None
+                and pd.notna(
+                    summary.get("positive_percent")
+                )
+                else "NA"
+            )
+
             st.metric(
                 "Positive",
-                f"{summary.get('positive_percent'):.1f}%" if summary is not None else "NA",
+                positive_value,
             )
 
         with c2:
             st.metric(
                 "Reviews",
-                clean(insight.get("review_count")) if insight is not None else "NA",
+                clean(
+                    insight.get("review_count")
+                )
+                if insight is not None
+                else "NA",
             )
+
+
+        # ----------------------------------
+        # PRICES
+        # ----------------------------------
 
         p1, p2 = st.columns(2)
 
         with p1:
             st.metric(
                 "Amazon",
-                clean(catalog.get("amazon_price")) if catalog is not None else "NA",
+                format_price(
+                    catalog.get("amazon_price")
+                    if catalog is not None
+                    else None
+                ),
             )
 
         with p2:
             st.metric(
                 "Flipkart",
-                clean(catalog.get("flipkart_price")) if catalog is not None else "NA",
+                format_price(
+                    catalog.get("flipkart_price")
+                    if catalog is not None
+                    else None
+                ),
             )
 
 
