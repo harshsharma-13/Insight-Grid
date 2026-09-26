@@ -1,252 +1,133 @@
-# Insight Grid · Consumer Intelligence
+# Insight Grid
 
-An end-to-end consumer intelligence and decision-support platform for the smartphone market, built using customer reviews, product specifications, pricing data, sentiment analysis, and AI-generated insights.
+**A consumer-intelligence platform for exploring India’s smartphone market through product specifications, pricing, customer reviews, sentiment, and competitive evidence.**
 
-The platform transforms fragmented smartphone review data into structured insights for product teams, market researchers, competitive intelligence teams, and consumers.
+[Open the live platform](https://insight-grid.sharmaharsh0328.chatgpt.site)
 
-## Insight Grid
+Insight Grid began as an internship project built in Streamlit and has since evolved into a responsive, portfolio-ready research platform. It turns scattered product and review data into a navigable system for comparing phones, investigating customer concerns, understanding brands, and identifying product opportunities.
 
-The project now includes a portfolio-ready web experience in `web/` alongside the original Streamlit prototype. Insight Grid is organized as seven persistent ribbon tabs—Overview, Phones, Reviews, Finder, Compare, Intelligence, and Actions—and uses one shared evidence and scoring layer rather than page-specific calculations.
+In simple terms, it brings three kinds of information together—**what a phone offers, what it costs, and what customers say about it**—and turns them into useful answers. A user can move from a broad market view to a specific brand, phone, concern, or review without losing the evidence behind the insight.
 
-The v2 architecture has three parts:
+It is designed to answer questions such as:
 
-- `intelligence/`: normalized queries, transparent scoring, evidence confidence, competitive aggregation, and action prioritization
-- `api/`: a versioned FastAPI read API for health, products, reviews, recommendations, comparisons, brand intelligence, and actions
-- `web/`: a responsive Vinext/React platform with command search and a portable data snapshot generated from the same intelligence engine
+- What are customers praising or criticizing about a phone or brand?
+- Which phones best fit a budget or use case, and why?
+- How do two devices compare beyond their specification sheets?
+- Which customer problems appear repeatedly across products?
+- What should a product or research team investigate next?
 
-The Streamlit application remains available as the original prototype and data exploration environment.
+## Current dataset
 
-## Overview
+| Coverage | Current snapshot |
+| --- | ---: |
+| Smartphone models | 62 |
+| Brands | 14 |
+| Source reviews | 3,031 |
+| Usable reviews after deduplication | 2,813 |
+| Review sources | Amazon and Flipkart |
 
-Smartphone brands and product teams receive large volumes of customer feedback across e-commerce platforms. Extracting meaningful insights manually is difficult because reviews are unstructured, repetitive, and distributed across multiple products and competitors.
+The catalog includes launch prices, marketplace prices where available, product images, and detailed specifications. Specifications are maintained through an API-assisted Smartprix import and validation workflow.
 
-Insight Grid converts this data into a structured intelligence system that supports:
+## What the platform does
 
-- Market-level analysis
-- Product-level exploration
-- Review investigation
-- Competitive benchmarking
-- Consumer pain-point analysis
-- Product action recommendations
-- Use-case-based phone recommendations
-- Budget-based phone discovery
+Insight Grid is organized into seven persistent sections:
 
-## Platform Modules
+- **Overview** — market health, leading products, customer signals, brand positioning, and high-level findings.
+- **Phones** — a detailed product explorer covering pricing, specifications, ratings, sentiment, review evidence, and product-level intelligence.
+- **Reviews** — full-text search and filtering by brand, phone, platform, and sentiment, with links back to the relevant product.
+- **Finder** — evidence-based recommendations for budgets and use cases such as gaming, camera, battery, productivity, entertainment, and value.
+- **Compare** — side-by-side phone comparison across specifications, pricing, customer response, and available evidence.
+- **Intelligence** — brand and market readouts grounded in the underlying product and review dataset.
+- **Actions** — recurring issues translated into prioritized product opportunities with affected brands, phones, and supporting reviews.
 
-### Home Dashboard
+The platform also includes a dataset-grounded assistant that can answer product and brand questions using the available evidence and show the supporting records behind its response.
 
-Provides a high-level overview of the smartphone market dataset, including:
+## How the intelligence works
 
-- Market health indicators
-- Executive market summary
-- Customer pain points
-- Customer-loved features
-- Consumer intelligence
-- Customer voice analysis
-- Segment overview
-- Competitive landscape
-- Featured phones
-- AI-powered phone search
+```text
+Product catalog + customer reviews
+                 ↓
+Cleaning, normalization, and deduplication
+                 ↓
+RoBERTa review sentiment classification
+                 ↓
+Product, brand, platform, and market aggregation
+                 ↓
+Transparent scoring and evidence retrieval
+                 ↓
+Exploration, comparison, recommendations, and actions
+```
 
-### Phone Explorer
+The production sentiment layer uses `cardiffnlp/twitter-roberta-base-sentiment-latest`. Sentiment labels are combined with review volume, product specifications, prices, ratings, issue frequency, and evidence confidence; they are not treated as a complete decision on their own.
 
-Provides a detailed 360-degree view of an individual smartphone.
+Several safeguards keep results consistent across the platform:
 
-Features include:
+- one normalized identity for every brand and phone;
+- one duplicate policy shared by the database, API, and website snapshot;
+- common scoring and aggregation logic instead of separate calculations on each page;
+- traceable review evidence for product and intelligence claims;
+- explicit handling of unavailable values rather than invented specifications or prices.
 
-- Product image and device information
-- Launch price
-- Amazon and Flipkart pricing
-- Platform ratings
-- Review volume
-- AI insight confidence
-- Consumer verdict
-- Product overview
-- AI-generated analysis
-- Technical specifications
-- Platform-level information
+## Architecture
 
-Phones can also be opened directly from recommendation cards and other parts of the platform.
+The project has four main layers:
 
-### Review Explorer
+| Layer | Purpose |
+| --- | --- |
+| `data/` | Source, processed, catalog, and SQLite datasets |
+| `intelligence/` | Shared queries, scoring, aggregation, confidence, and recommendation logic |
+| `api/` | FastAPI endpoints for products, reviews, comparisons, recommendations, intelligence, and actions |
+| `web/` | Public React and TypeScript interface, maintained as its own nested Git project |
 
-Allows users to investigate the underlying customer review evidence.
+The original Streamlit dashboard remains in `dashboard/` as the first working prototype and an additional local exploration interface.
 
-Users can explore reviews by:
+## Technology
 
-- Phone
-- Brand
-- Platform
-- Sentiment
-- Review content
+- **Frontend:** React 19, TypeScript, Vinext, Vite, Tailwind CSS
+- **Backend:** Python, FastAPI, SQLite, SQL
+- **Data:** pandas and structured CSV/JSON processing
+- **NLP:** Hugging Face Transformers, PyTorch, CardiffNLP RoBERTa
+- **Visualization:** Plotly and custom responsive interface components
+- **Hosting:** Cloudflare-based ChatGPT Sites deployment
 
-This module helps connect high-level insights back to the original voice of the customer.
-
-### Phone Finder
-
-The Phone Finder is a recommendation engine designed around two practical consumer decisions.
-
-#### Best Phone by Use Case
-
-Ranks smartphones for use cases such as:
-
-- Gaming
-- Camera and Social Media
-- Battery and Daily Use
-- Work and Productivity
-- Entertainment
-- Value for Money
-
-Recommendations combine use-case relevance, customer sentiment, complaint risk, and available review evidence.
-
-#### Budget Recommendations
-
-Ranks phones within a selected price range using:
-
-- Positive sentiment
-- Negative sentiment risk
-- Review evidence strength
-- Value-oriented scoring logic
-
-Each recommendation includes a match score, explanation, considerations, and direct access to the Phone Explorer.
-
-### Compare Phones
-
-Supports side-by-side comparison of smartphones using product specifications, pricing information, sentiment indicators, and consumer intelligence.
-
-The module is designed to make differences between competing devices easier to evaluate.
-
-### Competitive Intelligence
-
-Provides brand-level and segment-level market intelligence.
-
-Features include:
-
-- Brand performance leaderboard
-- Competitive positioning
-- Segment leaders
-- Brand strengths
-- Brand weaknesses
-- Competitive benchmarking
-- Sentiment comparison
-- Market positioning insights
-
-Brand names are normalized across the platform to prevent duplicate brand identities caused by inconsistent source naming.
-
-### Product Action Center
-
-Converts recurring consumer pain points into structured product actions.
-
-The module identifies:
-
-- Recurring issues
-- Affected phones
-- Affected brands
-- Issue severity
-- Review evidence
-- Recommended actions
-- Expected business impact
-
-This module is designed to help connect customer feedback with product improvement priorities.
-
-## Intelligence Flow
-
-The platform follows a structured intelligence flow:
-
-**Raw Customer Reviews → Data Cleaning and Deduplication → Sentiment Analysis → Product-Level Aggregation → AI Insight Generation → Market and Competitive Intelligence → Recommendation and Decision Support**
-
-## Data Architecture
-
-The platform uses a structured SQLite database containing datasets for:
-
-- Smartphone catalog
-- Product specifications
-- Product intelligence
-- Customer reviews
-- Phone-level sentiment summaries
-- AI-generated phone insights
-
-The dashboard uses modular SQL queries and analytical functions to transform these datasets into market intelligence and recommendation outputs.
-
-## Technology Stack
-
-- Python
-- FastAPI
-- Streamlit
-- SQLite
-- Pandas
-- SQL
-- React and TypeScript
-- Vinext and Cloudflare Workers
-- Sentiment Analysis
-- AI-generated product intelligence
-- HTML and CSS for interface customization
-
-## Project Structure
+## Repository map
 
 ```text
 AI-Consumer-Intelligence-Platform/
-│
-├── api/                    # Versioned intelligence API
-├── intelligence/           # Shared analytical engine and taxonomy
-├── scripts/                # Data snapshot/export utilities
-├── web/                    # Insight Grid web platform
-├── dashboard/
-│   ├── app.py
-│   ├── dashboard_data.py
-│   ├── market_intelligence.py
-│   ├── competitive_intelligence.py
-│   ├── consumer_intelligence.py
-│   ├── phone_finder.py
-│   ├── review_explorer.py
-│   ├── ai_search.py
-│   │
-│   ├── components/
-│   │   ├── ui/
-│   │   └── style_loader.py
-│   │
-│   ├── sections/
-│   │
-│   └── pages/
-│       ├── Phone Explorer
-│       ├── Review Explorer
-│       ├── Phone Finder
-│       ├── Compare Phones
-│       ├── Competitive Intelligence
-│       └── Product Action Center
-│
-├── data/
+├── api/                 # Read API over the shared intelligence layer
+├── assets/              # Product images and visual assets
+├── dashboard/           # Original Streamlit application
+├── data/                # Catalog, processed datasets, and SQLite database
+├── database/            # Database build and loading utilities
+├── docs/                # Catalog and import workflow documentation
+├── intelligence/        # Reusable intelligence and scoring engine
+├── preprocessing/       # Data cleaning and catalog enrichment pipeline
+├── reports/             # Dataset audits and catalog import records
+├── scripts/             # Imports, exports, checks, and maintenance tools
+├── web/                 # Public React application (separate nested repository)
 ├── requirements.txt
 └── README.md
 ```
 
-## Running the Project Locally
+## Run locally
 
-Install the required dependencies:
+### 1. Python environment
 
 ```bash
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application:
-
-```bash
-streamlit run dashboard/app.py
-```
-
-Run the v2 intelligence API:
+### 2. Intelligence API
 
 ```bash
 uvicorn api.main:app --reload --port 8000
 ```
 
-Export a fresh portable web snapshot after changing the database:
+### 3. Public web interface
 
-```bash
-python scripts/export_web_snapshot.py
-```
-
-Run the Insight Grid interface:
+Node.js 22.13 or newer and pnpm are required.
 
 ```bash
 cd web
@@ -254,78 +135,64 @@ pnpm install
 pnpm dev
 ```
 
-## Navigation Structure
+### 4. Original Streamlit prototype
 
-The platform uses a website-style horizontal navigation system organized around three stages:
+```bash
+streamlit run dashboard/app.py
+```
 
-### Explore
+## Data maintenance
 
-- Phone Explorer
-- Review Explorer
-- Phone Finder
+The catalog workflow separates collection from approval so a new record does not silently enter the live dataset.
 
-### Analyze
+```bash
+# Prepare or inspect a phone import
+python scripts/phone_import_pipeline.py --help
 
-- Compare Phones
-- Competitive Intelligence
+# Regenerate the portable website snapshot after approved data changes
+python scripts/export_web_snapshot.py
 
-### Act
+# Verify database, snapshot, review, brand, and routing contracts
+python scripts/verify_reliability.py
+```
 
-- Product Action Center
+API credentials are read from local environment configuration and are not stored in Git.
 
-This creates a natural user journey from exploration to analysis and finally to action.
+## Quality checks
 
-## Key Design Principles
+The current checkpoint is validated through:
 
-### Evidence-Based Intelligence
+- catalog repair and import tests;
+- brand and product identity checks;
+- duplicate-review and database consistency checks;
+- website linting and production builds;
+- navigation, accessibility, evidence, and dataset contract tests;
+- a full reliability check across 62 phones, 14 brands, and 3,031 reviews.
 
-Insights are connected to underlying customer reviews and product data rather than being presented as isolated AI outputs.
+Run the website suite with:
 
-### Consistency
+```bash
+cd web
+pnpm run check
+```
 
-Brand normalization, segment labels, price formatting, and recommendation logic are standardized across modules.
+Run the production Python checks with:
 
-### Decision Support
+```bash
+python -m unittest scripts.test_catalog_repairs scripts.test_catalog_verification_queue scripts.test_phone_import_pipeline
+python scripts/verify_reliability.py
+```
 
-The platform is designed to answer practical questions such as:
+## Project status
 
-- What are customers complaining about?
-- Which brands perform best in each price segment?
-- Which phones are strongest for a specific use case?
-- What should product teams improve?
-- How does one phone compare with competitors?
-- What evidence supports a recommendation?
+The core research experience, public interface, catalog workflow, and shared intelligence layer are operational. The next phase is focused on:
 
-### Modular Architecture
+- expanding the verified phone catalog;
+- adding repeatable review ingestion for newly added models;
+- tracking price and market changes over time;
+- strengthening dataset-grounded assistant evaluation;
+- improving frontend performance as the dataset grows.
 
-Data retrieval, analytical logic, interface components, and page rendering are separated into reusable modules to make the platform easier to maintain and extend.
+## Background
 
-## Future Scope
-
-Potential future extensions include:
-
-- Time-series sentiment tracking
-- Automated competitor launch monitoring
-- Review topic modeling
-- Aspect-based sentiment analysis
-- Price movement tracking
-- Automated market intelligence reports
-- Conversational analytics assistant
-- Scheduled data refresh pipelines
-
-## Project Status
-
-Core platform development is complete.
-
-Validated areas include:
-
-- Cross-page navigation
-- Phone-level routing
-- Brand normalization
-- Segment consistency
-- Price formatting
-- Recommendation consistency
-- Module compilation
-- Dashboard functionality
-
-The current phase focuses on deployment readiness and final presentation.
+This is a personal portfolio project developed from an internship learning exercise. Its goal is to demonstrate how data engineering, NLP, product thinking, and interface design can be combined into a useful internal-research-style product—not merely a collection of charts.
