@@ -14,7 +14,6 @@ from market_intelligence import (
 )
 from components.style_loader import load_css
 from components.ui.search import ai_search_box
-from components.ui.section import section_title
 from components.ui.phone_tile import phone_tile
 from components.ui.summary_tiles import summary_tile
 from sections.hero import render as hero
@@ -42,7 +41,7 @@ st.set_page_config(
 
 load_css()
 
-navbar()
+navbar("overview")
 
 # ============================
 # Load datasets
@@ -51,23 +50,26 @@ navbar()
 kpis = get_kpis()
 market_df = get_market_dataset()
 
-hero()
+hero(
+    kpis,
+    market_df["brand"].dropna().nunique(),
+)
 
 query = ai_search_box()
 
 if query:
 
-    st.markdown("## 🤖 AI Search Results")
-    st.caption(f"Query: {query}")
+    st.markdown('<div class="analysis-panel-title">Intelligence response</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="analysis-panel-caption">Query · {query}</div>', unsafe_allow_html=True)
 
     with st.spinner("Searching specifications, review sentiment and AI insights..."):
         answer, candidates = answer_search_query(query)
 
-    with st.container(border=True):
+    with st.container(key="search_response", border=True):
         st.markdown(answer)
 
     if not candidates.empty:
-        st.markdown("### Recommended Phones")
+        st.markdown('<div class="analysis-panel-title">Recommended phones</div>', unsafe_allow_html=True)
 
         for i in range(0, len(candidates), 4):
             cols = st.columns(4)
@@ -87,8 +89,6 @@ summary = build_market_summary(market_df)
 
 executive_summary(summary)
 
-filter_col1, filter_col2 = st.columns(2)
-
 brands = ["All"] + sorted([b for b in market_df["brand"].dropna().unique().tolist() if b])
 segment_labels = {
     "All": "All",
@@ -100,14 +100,18 @@ segment_labels = {
 
 segments = list(segment_labels.keys())
 
-with filter_col1:
-    selected_brand = st.selectbox("Filter by Brand", brands)
+with st.container(key="filter_toolbar"):
+    st.markdown('<div class="filter-label">Signal scope</div>', unsafe_allow_html=True)
+    filter_col1, filter_col2 = st.columns(2)
 
-with filter_col2:
-    selected_segment_label = st.selectbox(
-    "Filter by Segment",
-    [segment_labels[s] for s in segments],
-)
+    with filter_col1:
+        selected_brand = st.selectbox("Brand", brands)
+
+    with filter_col2:
+        selected_segment_label = st.selectbox(
+            "Price segment",
+            [segment_labels[s] for s in segments],
+        )
 
 selected_segment = {
     label: key for key, label in segment_labels.items()
@@ -167,34 +171,28 @@ with s4:
         "#3B82F6",
     )
 
+st.markdown('<div class="analysis-panel-title">Intelligence workspaces</div>', unsafe_allow_html=True)
+st.markdown('<div class="analysis-panel-caption">Move between customer, segment, brand and product-level views without losing the market context.</div>', unsafe_allow_html=True)
 
-
-
-consumer_intelligence(
-    market_df,
-    get_consumer_dataset,
-    pain_point_intelligence,
-    feature_intelligence,
-    build_consumer_brief,
+customer_tab, segment_tab, brand_tab, product_tab = st.tabs(
+    ["Customer signals", "Price segments", "Brand landscape", "Product watchlist"]
 )
 
+with customer_tab:
+    customer_voice(pain_df, love_df)
+    consumer_intelligence(
+        market_df,
+        get_consumer_dataset,
+        pain_point_intelligence,
+        feature_intelligence,
+        build_consumer_brief,
+    )
 
-customer_voice(
-    pain_df,
-    love_df,
-)
+with segment_tab:
+    segment_overview(market_df, get_segment_overview)
 
+with brand_tab:
+    competitive_landscape(market_df, get_brand_landscape)
 
-segment_overview(
-    market_df,
-    get_segment_overview,
-)
-
-competitive_landscape(
-    market_df,
-    get_brand_landscape,
-)
-
-featured_phones(
-    get_featured_phones
-)
+with product_tab:
+    featured_phones(get_featured_phones)

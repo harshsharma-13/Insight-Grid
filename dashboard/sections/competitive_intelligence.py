@@ -1,7 +1,8 @@
 import streamlit as st
 import plotly.express as px
 
-from components.ui.section import section_title
+from components.ui.kpi_tile import kpi_tile
+from components.ui.page_header import executive_brief, page_header
 from dashboard_data import segment_label
 
 
@@ -16,12 +17,18 @@ def render(
     build_competitive_recommendation,
 
 ):
-    section_title(
-        "🏆 Competitive Intelligence",
-        "Benchmark brands, compare market position and identify competitive opportunities.",
-    )
-
     df = get_competitive_dataset()
+
+    page_header(
+        "Market strategy workspace",
+        "Competitive Intelligence",
+        "Benchmark brands, understand market position and identify the clearest competitive openings.",
+        context=[
+            f"{df['brand'].nunique()} brands" if not df.empty else "",
+            f"{df['phone_id'].nunique()} phones" if not df.empty else "",
+            "Sentiment benchmark",
+        ],
+    )
 
     if df.empty:
         st.info("Competitive intelligence data is not available yet.")
@@ -36,13 +43,17 @@ def render(
     # EXECUTIVE BRIEF
     # --------------------------------------------------
 
-    st.info(build_competitive_summary(df))
+    executive_brief(
+        build_competitive_summary(df).replace("**", ""),
+        label="Market intelligence brief",
+    )
 
     # --------------------------------------------------
     # MARKET SNAPSHOT
     # --------------------------------------------------
 
-    st.markdown("### Market Competitive Snapshot")
+    st.markdown('<div class="analysis-panel-title">Market snapshot</div>', unsafe_allow_html=True)
+    st.markdown('<div class="analysis-panel-caption">The strongest, most discussed and highest-risk brands in the current dataset.</div>', unsafe_allow_html=True)
 
     strongest = leaderboard.iloc[0]
 
@@ -61,32 +72,16 @@ def render(
     k1, k2, k3, k4 = st.columns(4)
 
     with k1:
-        st.metric(
-            "Sentiment Leader",
-            strongest["brand"],
-            f"{strongest['avg_positive']}% positive",
-        )
+        kpi_tile("Sentiment leader", strongest["brand"], "↑")
 
     with k2:
-        st.metric(
-            "Review Coverage Leader",
-            review_leader["brand"],
-            f"{int(review_leader['reviews']):,} reviews",
-        )
+        kpi_tile("Coverage leader", review_leader["brand"], "◎")
 
     with k3:
-        st.metric(
-            "Highest Negative Sentiment",
-            risk_brand["brand"],
-            f"{risk_brand['avg_negative']}% negative",
-        )
+        kpi_tile("Highest risk", risk_brand["brand"], "!")
 
     with k4:
-        st.metric(
-            "Brands Benchmarked",
-            leaderboard["brand"].nunique(),
-            f"{df['phone_id'].nunique()} phones",
-        )
+        kpi_tile("Brands benchmarked", leaderboard["brand"].nunique(), "▣")
 
     # --------------------------------------------------
     # POSITIONING MAP
@@ -118,6 +113,8 @@ def render(
             "reviews": "Reviews",
         },
         size_max=55,
+        color="avg_positive",
+        color_continuous_scale=["#334155", "#60a5fa", "#67e8f9"],
     )
 
     position_fig.update_traces(
@@ -128,11 +125,18 @@ def render(
         height=520,
         margin=dict(l=20, r=20, t=30, b=20),
         legend_title_text="Brand",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(7,10,18,0.35)",
+        font=dict(color="#cbd5e1"),
+        coloraxis_showscale=False,
     )
+
+    position_fig.update_xaxes(gridcolor="rgba(148,163,184,0.10)", zeroline=False)
+    position_fig.update_yaxes(gridcolor="rgba(148,163,184,0.10)", zeroline=False)
 
     st.plotly_chart(
         position_fig,
-        use_container_width=True,
+        width="stretch",
     )
 
     # --------------------------------------------------
@@ -166,7 +170,7 @@ def render(
 
     st.dataframe(
         leaderboard_table,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
         column_config={
             "Rank": st.column_config.NumberColumn(
@@ -218,7 +222,7 @@ def render(
 
         for col, (_, row) in zip(cols, batch.iterrows()):
             with col:
-                with st.container(border=True):
+                with st.container(key=f"brand_scorecard_{start}_{row['brand']}", border=True):
 
                     st.markdown(f"### {row['brand']}")
 
@@ -278,15 +282,15 @@ def render(
 
         segment_cols = st.columns(len(segments))
 
-        for col, (_, row) in zip(
+        for segment_index, (col, (_, row)) in enumerate(zip(
             segment_cols,
             segments.iterrows(),
-        ):
+        )):
             with col:
 
                 with st.container(
+                    key=f"segment_leader_{segment_index}",
                     border=True,
-                    height=280,
                 ):
                     segment_name = segment_label(
                         row["segment"]
@@ -314,7 +318,10 @@ def render(
                     )
 
                     # Brand card
-                    with st.container(border=True):
+                    with st.container(
+                        key=f"segment_leader_brand_{segment_index}",
+                        border=True,
+                    ):
 
                         st.caption("Leading Brand")
 
@@ -357,8 +364,11 @@ def render(
         )
 
     else:
-        for _, row in opportunities.iterrows():
-            with st.container(border=True):
+        for opportunity_index, (_, row) in enumerate(opportunities.iterrows()):
+            with st.container(
+                key=f"opportunity_card_{opportunity_index}",
+                border=True,
+            ):
 
                 c1, c2 = st.columns([1, 4])
 
@@ -381,27 +391,28 @@ def render(
     brand_options = sorted(leaderboard["brand"].dropna().unique().tolist())
 
     if len(brand_options) >= 2:
-        col_a, col_b = st.columns(2)
+        with st.container(key="brand_compare_controls"):
+            col_a, col_b = st.columns(2)
 
-        with col_a:
-            brand_a = st.selectbox(
-                "Your Brand",
-                brand_options,
-                index=0,
-                key="compare_brand_a",
-            )
+            with col_a:
+                brand_a = st.selectbox(
+                    "Reference brand",
+                    brand_options,
+                    index=0,
+                    key="compare_brand_a",
+                )
 
-        remaining_brands = [
-            brand for brand in brand_options if brand != brand_a
-        ]
+            remaining_brands = [
+                brand for brand in brand_options if brand != brand_a
+            ]
 
-        with col_b:
-            brand_b = st.selectbox(
-                "Competitor",
-                remaining_brands,
-                index=0,
-                key="compare_brand_b",
-            )
+            with col_b:
+                brand_b = st.selectbox(
+                    "Comparison brand",
+                    remaining_brands,
+                    index=0,
+                    key="compare_brand_b",
+                )
 
         comparison = compare_brands(
             df,
@@ -421,7 +432,7 @@ def render(
             left, right = st.columns(2)
 
             with left:
-                with st.container(border=True):
+                with st.container(key="brand_compare_card_left", border=True):
                     st.markdown(f"### {a['brand']}")
 
                     st.metric(
@@ -445,7 +456,7 @@ def render(
                     st.write(a["top_concern"])
 
             with right:
-                with st.container(border=True):
+                with st.container(key="brand_compare_card_right", border=True):
                     st.markdown(f"### {b['brand']}")
 
                     st.metric(
@@ -506,7 +517,7 @@ def render(
 
             st.markdown("#### Strategic Recommendation")
 
-            with st.container(border=True):
+            with st.container(key="brand_compare_recommendation", border=True):
                 st.write(
                     build_competitive_recommendation(comparison)
                 )

@@ -25,6 +25,6 @@ def chart_card(title, fig):
         st.markdown(f"### {title}")
         st.plotly_chart(
             fig,
-            use_container_width=True,
+            width="stretch",
             config={"displayModeBar": False, "responsive": True},
         )

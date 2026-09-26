@@ -26,7 +26,7 @@ st.set_page_config(
 
 load_css()
 
-navbar()
+navbar("finder")
 
 
 phone_finder(

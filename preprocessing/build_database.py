@@ -185,6 +185,9 @@ def build_database():
 
 def save_outputs(phones_df, reviews_df):
 
+    if any((PROCESSED_DATA / name).exists() for name in ("phones_master.csv", "reviews_master.csv")):
+        raise RuntimeError("Legacy bootstrap cannot replace existing phone/review IDs. Use the verified catalog overlay; review imports are frozen.")
+
     phones_path = PROCESSED_DATA / "phones_master.csv"
 
     reviews_path = PROCESSED_DATA / "reviews_master.csv"

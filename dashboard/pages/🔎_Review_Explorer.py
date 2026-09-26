@@ -22,7 +22,7 @@ st.set_page_config(
 
 load_css()
 
-navbar()
+navbar("reviews")
 
 review_explorer(
     get_review_dataset,

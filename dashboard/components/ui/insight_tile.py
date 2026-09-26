@@ -1,8 +1,10 @@
 import streamlit as st
 
 
-def insight_tile(title, summary, meta=None, icon=""):
-    with st.container(border=True):
+def insight_tile(title, summary, meta=None, icon="", key=None):
+    container_key = f"insight_card_{key}" if key else None
+
+    with st.container(key=container_key, border=True):
         st.markdown(f"### {icon} {title}")
 
         if meta:
@@ -11,8 +13,10 @@ def insight_tile(title, summary, meta=None, icon=""):
         st.write(summary)
 
 
-def list_insight_tile(title, items, icon="•"):
-    with st.container(border=True):
+def list_insight_tile(title, items, icon="•", key=None):
+    container_key = f"insight_card_{key}" if key else None
+
+    with st.container(key=container_key, border=True):
         st.markdown(f"### {title}")
 
         if not items:

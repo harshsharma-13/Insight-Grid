@@ -1,3 +1,5 @@
+from html import escape
+
 import streamlit as st
 
 from components.ui.section import section_title
@@ -16,31 +18,27 @@ def render(pain_df, love_df):
     left, right = st.columns(2)
 
     with left:
-        with st.container(border=True):
-            st.markdown("### ⚠️ Top Complaints")
-
-            for idx, row in pain_top.iterrows():
-                st.markdown(f"**{idx + 1}. {row['issue']}**")
-                st.caption(
-                    f"{int(row['estimated_negative_reviews'])} estimated mentions | "
-                    f"{row['phones_affected']} phones"
-                )
-
-                if idx < len(pain_top) - 1:
-                    st.divider()
+        rows = "".join(
+            f'<div class="signal-row"><span class="signal-rank">{idx + 1:02d}</span>'
+            f'<div><strong>{escape(str(row["issue"]))}</strong>'
+            f'<small>{int(row["estimated_negative_reviews"]):,} mentions · {row["phones_affected"]} phones</small></div></div>'
+            for idx, row in pain_top.iterrows()
+        )
+        st.markdown(
+            f'<div class="signal-panel signal-panel-risk"><div class="signal-panel-label">Top friction</div>{rows}</div>',
+            unsafe_allow_html=True,
+        )
 
     with right:
-        with st.container(border=True):
-            st.markdown("### 💚 Top Praises")
-
-            for idx, row in love_top.iterrows():
-                st.markdown(f"**{idx + 1}. {row['feature']}**")
-                st.caption(
-                    f"{int(row['estimated_positive_reviews'])} estimated mentions | "
-                    f"{row['phones_affected']} phones"
-                )
-
-                if idx < len(love_top) - 1:
-                    st.divider()
+        rows = "".join(
+            f'<div class="signal-row"><span class="signal-rank">{idx + 1:02d}</span>'
+            f'<div><strong>{escape(str(row["feature"]))}</strong>'
+            f'<small>{int(row["estimated_positive_reviews"]):,} mentions · {row["phones_affected"]} phones</small></div></div>'
+            for idx, row in love_top.iterrows()
+        )
+        st.markdown(
+            f'<div class="signal-panel signal-panel-positive"><div class="signal-panel-label">Top advocacy</div>{rows}</div>',
+            unsafe_allow_html=True,
+        )
 
     st.divider()

@@ -15,6 +15,8 @@ DB = PROJECT_ROOT / "data" / "acip.db"
 PROCESSED = PROJECT_ROOT / "data" / "processed"
 
 FILES = {
+    "review_sentiment": PROCESSED / "reviews_sentiment.csv",
+    "reviews_aspects": PROCESSED / "reviews_aspects.csv",
     "phone_summary": PROCESSED / "phone_summary.csv",
     "platform_summary": PROCESSED / "platform_summary.csv",
     "aspect_summary": PROCESSED / "aspect_summary.csv",
@@ -47,6 +49,7 @@ def sync_table(connection, table_name, csv_file):
 
 
 def main():
+    raise RuntimeError("Full-table legacy sync is disabled during catalog repair. Use scripts/export_web_snapshot.py --catalog-only; existing reviews must remain unchanged.")
 
     print("=" * 55)
     print("Consumer Intelligence Platform")
@@ -58,9 +61,31 @@ def main():
     for table, file in FILES.items():
         sync_table(conn, table, file)
 
-    conn.commit()
-
     cursor = conn.cursor()
+
+    cursor.execute("""
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_review_sentiment_review_id
+        ON review_sentiment(review_id)
+    """)
+    cursor.execute("""
+        CREATE INDEX IF NOT EXISTS idx_reviews_aspects_review_id
+        ON reviews_aspects(review_id)
+    """)
+    cursor.execute("""
+        CREATE INDEX IF NOT EXISTS idx_reviews_aspects_aspect
+        ON reviews_aspects(aspect)
+    """)
+    cursor.execute("""
+        UPDATE reviews
+        SET is_duplicate = COALESCE(
+            (SELECT review_sentiment.is_duplicate
+             FROM review_sentiment
+             WHERE review_sentiment.review_id = reviews.review_id),
+            reviews.is_duplicate
+        )
+    """)
+    cursor.execute("PRAGMA optimize")
+    conn.commit()
 
     print("\n===================================")
     print("DATABASE TABLES")

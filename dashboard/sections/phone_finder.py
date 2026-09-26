@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from components.ui.section import section_title
+from components.ui.page_header import executive_brief, page_header
 from dashboard_data import segment_label
 
 
@@ -58,14 +58,17 @@ def _result_card(
     get_phone_warning,
     use_case=None,
 ):
-    with st.container(border=True):
+    with st.container(
+        key=f"ranked_result_{score_column}_{rank}",
+        border=True,
+    ):
         img_col, info_col, score_col = st.columns([1.2, 4, 1.4])
 
         with img_col:
             image = _image_path(row.get("image_local_path"))
 
             if image:
-                st.image(image, use_container_width=True)
+                st.image(image, width="stretch")
             else:
                 st.info("No image")
 
@@ -111,7 +114,7 @@ def _result_card(
             if st.button(
                 "View Details",
                 key=f"finder_view_{row['phone_id']}_{rank}_{score_column}",
-                use_container_width=True,
+                width="stretch",
             ):
                 _go_to_details(row)
 
@@ -125,12 +128,18 @@ def render(
     build_use_case_summary,
     build_budget_summary,
 ):
-    section_title(
-        "🎯 Phone Finder",
-        "Find the strongest phones for a specific use case or within your budget.",
-    )
-
     df = get_phone_finder_dataset()
+
+    page_header(
+        "Decision workspace",
+        "Phone Finder",
+        "Move from a broad need to a defensible shortlist using sentiment, specifications and evidence strength.",
+        context=[
+            f"{len(df)} candidates",
+            f"{df['brand'].nunique()} brands" if not df.empty else "",
+            "Evidence-weighted ranking",
+        ],
+    )
 
     if df.empty:
         st.info("Phone recommendation data is not available.")
@@ -138,27 +147,24 @@ def render(
 
     tab1, tab2 = st.tabs(
         [
-            "🎮 Best Phone by Use Case",
-            "💰 Budget Recommendations",
+            "Use-case match",
+            "Budget shortlist",
         ]
     )
 
     with tab1:
-        st.markdown("### Find the Best Phone for Your Needs")
+        st.markdown('<div class="analysis-panel-title">Define the decision</div>', unsafe_allow_html=True)
+        st.markdown('<div class="analysis-panel-caption">Choose the job the phone needs to perform and optionally constrain the budget.</div>', unsafe_allow_html=True)
 
-        st.caption(
-            "Recommendations combine use-case relevance, customer sentiment, "
-            "negative sentiment risk and review evidence."
-        )
+        with st.container(key="finder_controls"):
+            c1, c2 = st.columns(2)
 
-        c1, c2 = st.columns(2)
-
-        with c1:
-            use_case = st.selectbox(
-                "What matters most to you?",
-                USE_CASES,
-                key="finder_use_case",
-            )
+            with c1:
+                use_case = st.selectbox(
+                    "Primary use case",
+                    USE_CASES,
+                    key="finder_use_case",
+                )
 
         valid_prices = df["launch_price"].dropna().astype(float)
 
@@ -180,7 +186,7 @@ def render(
 
         with c2:
             budget_choice = st.selectbox(
-                "Maximum Budget",
+                "Maximum budget",
                 budget_options,
                 index=0,
                 key="finder_use_case_budget",
@@ -206,12 +212,16 @@ def render(
             limit=5,
         )
 
-        st.info(build_use_case_summary(results, use_case))
+        executive_brief(
+            build_use_case_summary(results, use_case).replace("**", ""),
+            label="Recommendation logic",
+        )
 
         if results.empty:
             st.warning("No matching phones found. Try increasing the budget.")
         else:
-            st.markdown("### Top Recommendations")
+            st.markdown('<div class="analysis-panel-title">Ranked recommendations</div>', unsafe_allow_html=True)
+            st.markdown('<div class="analysis-panel-caption">Ordered by match quality, customer reception and supporting evidence.</div>', unsafe_allow_html=True)
 
             for index, (_, row) in enumerate(results.iterrows(), start=1):
                 _result_card(
@@ -224,36 +234,33 @@ def render(
                 )
 
     with tab2:
-        st.markdown("### Best Phones Within Your Budget")
+        st.markdown('<div class="analysis-panel-title">Set the price window</div>', unsafe_allow_html=True)
+        st.markdown('<div class="analysis-panel-caption">Build a shortlist optimized for value, sentiment and complaint risk.</div>', unsafe_allow_html=True)
 
-        st.caption(
-            "Phones are ranked using positive sentiment, complaint risk "
-            "and the strength of available review evidence."
-        )
+        with st.container(key="finder_budget_controls"):
+            b1, b2 = st.columns(2)
 
-        b1, b2 = st.columns(2)
+            with b1:
+                min_budget = st.number_input(
+                    "Minimum price",
+                    min_value=0,
+                    max_value=max(maximum_available, 50000),
+                    value=0,
+                    step=1000,
+                    key="finder_min_budget",
+                )
 
-        with b1:
-            min_budget = st.number_input(
-                "Minimum Price",
-                min_value=0,
-                max_value=max(maximum_available, 50000),
-                value=0,
-                step=1000,
-                key="finder_min_budget",
-            )
+            with b2:
+                default_max = min(25000, max(maximum_available, 25000))
 
-        with b2:
-            default_max = min(25000, max(maximum_available, 25000))
-
-            max_budget = st.number_input(
-                "Maximum Price",
-                min_value=1000,
-                max_value=max(maximum_available, 50000),
-                value=default_max,
-                step=1000,
-                key="finder_max_budget",
-            )
+                max_budget = st.number_input(
+                    "Maximum price",
+                    min_value=1000,
+                    max_value=max(maximum_available, 50000),
+                    value=default_max,
+                    step=1000,
+                    key="finder_max_budget",
+                )
 
         if min_budget > max_budget:
             st.warning("Minimum price cannot be greater than maximum price.")
@@ -266,12 +273,15 @@ def render(
             limit=10,
         )
 
-        st.info(build_budget_summary(budget_results, max_budget))
+        executive_brief(
+            build_budget_summary(budget_results, max_budget).replace("**", ""),
+            label="Value readout",
+        )
 
         if budget_results.empty:
             st.warning("No phones were found in this price range.")
         else:
-            st.markdown("### Recommended Phones")
+            st.markdown('<div class="analysis-panel-title">Value-ranked shortlist</div>', unsafe_allow_html=True)
 
             for index, (_, row) in enumerate(
                 budget_results.head(10).iterrows(),

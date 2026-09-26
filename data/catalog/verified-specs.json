@@ -1,0 +1,2443 @@
+{
+  "schema_version": 1,
+  "preferred_source": "Exact manufacturer or Smartprix India product pages",
+  "phones": {
+    "PH015": {
+      "phone_name": "Redmi A7 4G",
+      "accepted_names": [
+        "Redmi A7",
+        "Xiaomi Redmi A7 4G",
+        "Redmi A7 4G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.mi.com/in/product/redmi-a7/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only. Manufacturer India identifies this as the 4G model; historical unsuffixed name retained as an alias.",
+      "fields": {
+        "processor": "UNISOC T7250",
+        "ram": "3 GB",
+        "storage": "64 GB",
+        "display": "6.88-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1640",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "5200 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "reverse_charging_w": 7.5,
+        "rear_camera": "13 MP",
+        "front_camera": "8 MP",
+        "supports_5g": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.2",
+        "weight": "193 g",
+        "dimensions": "171.79 × 79.77 × 8.26 mm",
+        "ip_rating": "IP52"
+      },
+      "variants": [
+        {
+          "ram": "3 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH018": {
+      "phone_name": "Vivo Y05",
+      "accepted_names": [
+        "Vivo Y05"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.vivo.com/in/products/param/y05",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "UNISOC T7225",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.74-inch LCD",
+        "display_type": "LCD",
+        "resolution": "1600 × 720",
+        "refresh_rate": 120,
+        "battery": "6500 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "8 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 16",
+        "supports_5g": "No",
+        "weight": "209 g",
+        "ip_rating": "IP65"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH020": {
+      "phone_name": "Vivo T5 Pro",
+      "accepted_names": [
+        "Vivo T5 Pro 5G",
+        "Vivo T5 Pro"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.vivo.com/in/products/param/t5-pro-5g",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Snapdragon 7s Gen 4",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.83-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "2800 × 1260",
+        "refresh_rate": 144,
+        "battery": "9020 mAh",
+        "charging": "90 W wired",
+        "charging_w": 90,
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "32 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "weight": "213 g",
+        "ip_rating": "IP68 & IP69"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        },
+        {
+          "ram": "12 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH022": {
+      "phone_name": "Ai+ Nova 2 Ultra",
+      "accepted_names": [
+        "Ai+ Nova 2 Ultra 5G",
+        "Ai+ Nova 2 Ultra"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/ai-nova-2-ultra-ppd1hlvx6m0g",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Mediatek 7400",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.78-inch AMOLED",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "rear_camera": "50 MP + 8 MP",
+        "front_camera": "13 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "display_type": "AMOLED",
+        "charging": "Fast charging (wattage unverified)",
+        "ip_rating": "IP68"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH023": {
+      "phone_name": "Ai+ Nova 2",
+      "accepted_names": [
+        "Ai+ Nova 2 5G",
+        "Ai+ Nova 2"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/ai-nova-2-ppd1i8rdcplq",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Unisoc T8200",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.74-inch IPS",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "display_type": "IPS",
+        "charging": "18 W wired",
+        "charging_w": 18,
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH025": {
+      "phone_name": "Lava Bold N2 Lite",
+      "accepted_names": [
+        "Lava Bold N2 Lite"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/lava-bold-n2-lite-ppd1ewkb36sc",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Unisoc SC9863A",
+        "ram": "3 GB",
+        "storage": "64 GB",
+        "display": "6.75-inch IPS",
+        "refresh_rate": 90,
+        "battery": "5000 mAh",
+        "rear_camera": "13 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 15 Go Edition",
+        "supports_5g": "No",
+        "display_type": "IPS",
+        "charging": "10 W wired",
+        "charging_w": 10,
+        "ip_rating": "IP54"
+      },
+      "variants": [
+        {
+          "ram": "3 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH026": {
+      "phone_name": "Tecno Spark 50 5G",
+      "accepted_names": [
+        "Tecno Spark 50 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/tecno-spark-50-ppd1v1623nbx",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Mediatek 6400",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.78-inch IPS",
+        "refresh_rate": 120,
+        "battery": "6500 mAh",
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "display_type": "IPS",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH027": {
+      "phone_name": "Redmi 15A 5G",
+      "accepted_names": [
+        "Redmi 15A 5G",
+        "Xiaomi Redmi 15A 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.mi.com/in/product/redmi-15a-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only. Smartprix reports 33 W, but Xiaomi India says 15 W; the manufacturer value is used.",
+      "fields": {
+        "processor": "UNISOC T8300",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.9-inch LCD",
+        "display_type": "LCD",
+        "resolution": "HD+",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "6300 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "reverse_charging_w": 7.5,
+        "rear_camera": "32 MP",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "210 g",
+        "dimensions": "171.56 × 79.47 × 8.15 mm",
+        "ip_rating": "IP52"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH028": {
+      "phone_name": "Vivo Y11 5G",
+      "accepted_names": [
+        "Vivo Y11 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.vivo.com/in/products/param/y11-5g",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.74-inch LCD",
+        "display_type": "LCD",
+        "resolution": "1600 × 720",
+        "refresh_rate": 120,
+        "battery": "6500 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "13 MP + 0.08 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "weight": "209 g",
+        "ip_rating": "IP65"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH029": {
+      "phone_name": "Vivo Y21 5G",
+      "accepted_names": [
+        "Vivo Y21 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.vivo.com/in/products/param/y21-5g",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.74-inch LCD",
+        "display_type": "LCD",
+        "resolution": "1600 × 720",
+        "refresh_rate": 120,
+        "battery": "6500 mAh",
+        "charging": "44 W wired",
+        "charging_w": 44,
+        "rear_camera": "50 MP + 0.08 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "weight": "209 g",
+        "ip_rating": "IP65"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH032": {
+      "phone_name": "Samsung Galaxy M17e 5G",
+      "accepted_names": [
+        "Samsung Galaxy M17e 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.samsung.com/in/smartphones/galaxy-m/galaxy-m17e-5g-blitz-blue-128gb-sm-m076blbains/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact Samsung India 4 GB/128 GB product page checked. Samsung does not name the chipset or charging wattage on this page, so those fields remain unverified. Smartprix API served only as an identity cross-check.",
+      "fields": {
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.7-inch PLS LCD",
+        "display_type": "PLS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "199 g",
+        "dimensions": "167.4 × 77.4 × 8.2 mm",
+        "launch_date": "2026-03-17"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH033": {
+      "phone_name": "Vivo T5x 5G",
+      "accepted_names": [
+        "Vivo T5x 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.vivo.com/in/products/param/t5x",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7400-Turbo",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.76-inch LCD",
+        "display_type": "LCD",
+        "resolution": "2344 × 1080",
+        "refresh_rate": 120,
+        "battery": "7200 mAh",
+        "charging": "44 W wired",
+        "charging_w": 44,
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "32 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "weight": "219 g",
+        "ip_rating": "IP68 & IP69"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH035": {
+      "phone_name": "Lava Bold 2 5G",
+      "accepted_names": [
+        "LAVA Bold 2 5G",
+        "Lava Bold 2 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/lava-bold-2-ppd12dj4kdtl",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Mediatek 7060",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.67-inch AMOLED",
+        "refresh_rate": 120,
+        "battery": "5000 mAh",
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 15",
+        "supports_5g": "Yes",
+        "display_type": "AMOLED",
+        "charging": "33 W wired",
+        "charging_w": 33,
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH036": {
+      "phone_name": "iQOO Z11x",
+      "accepted_names": [
+        "iQOO Z11x 5G",
+        "iQOO Z11x"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.iqoo.com/in/products/param/z11x",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7400-Turbo",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.76-inch LCD",
+        "display_type": "LCD",
+        "resolution": "2344 × 1080",
+        "battery": "7200 mAh",
+        "charging": "44 W wired",
+        "charging_w": 44,
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "32 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "219 g"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH037": {
+      "phone_name": "Vivo Y51 Pro",
+      "accepted_names": [
+        "Vivo Y51 Pro"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.vivo.com/in/products/param/y51-pro-5g",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7360-Turbo",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch LCD",
+        "display_type": "LCD",
+        "resolution": "1570 × 720",
+        "refresh_rate": 120,
+        "battery": "7200 mAh",
+        "charging": "44 W wired",
+        "charging_w": 44,
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "weight": "219 g",
+        "ip_rating": "IP68 & IP69"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH038": {
+      "phone_name": "Poco C85x",
+      "accepted_names": [
+        "Poco C85x 5G",
+        "Poco C85x"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/poco-c85x-ppd1hf7smzlw",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Unisoc T8300",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.9-inch IPS",
+        "refresh_rate": 120,
+        "battery": "6300 mAh",
+        "rear_camera": "32 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "display_type": "IPS",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "ip_rating": "IP52"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH039": {
+      "phone_name": "itel Zeno 100",
+      "accepted_names": [
+        "Itel Zeno 100",
+        "itel Zeno 100"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/itel-zeno-100-ppd191303ucd",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Unisoc T7100",
+        "ram": "3 GB",
+        "storage": "64 GB",
+        "display": "6.6-inch IPS",
+        "refresh_rate": 90,
+        "battery": "5000 mAh",
+        "rear_camera": "8 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 15",
+        "supports_5g": "No",
+        "display_type": "IPS",
+        "charging": "Fast charging (wattage unverified)"
+      },
+      "variants": [
+        {
+          "ram": "3 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH042": {
+      "phone_name": "Realme Narzo Power 5G",
+      "accepted_names": [
+        "Realme Narzo Power 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.realme.com/in/realme-narzo-power-5g/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only. Battery capacity is corroborated by the matching manufacturer overview page.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7400 Ultra",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.8-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "1280 × 2800",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 240,
+        "battery": "10001 mAh",
+        "charging": "80 W wired",
+        "charging_w": 80,
+        "rear_camera": "50 MP + 8 MP ultra-wide",
+        "front_camera": "16 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "weight": "219 g",
+        "dimensions": "162.26 × 76.15 × 9.08 mm"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH043": {
+      "phone_name": "Ai+ Pulse 2",
+      "accepted_names": [
+        "Ai+ Pulse 2"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/ai-pulse-2-ppd1bla1zgt4",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Unisoc T7250",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.75-inch display",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "No",
+        "charging": "10 W wired",
+        "charging_w": 10,
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH044": {
+      "phone_name": "Infinix Note Edge 5G",
+      "accepted_names": [
+        "Infinix Note Edge 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://infinixmobiles.in/products/note-edge",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7100",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.78-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "1208 × 2644",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "pwm_hz": 2160,
+        "battery": "6500 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "reverse_charging_w": 10,
+        "rear_camera": "50 MP",
+        "front_camera": "13 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "nfc": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "ip_rating": "IP65",
+        "model_code": "X6887"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH045": {
+      "phone_name": "Tecno Pova Curve 2",
+      "accepted_names": [
+        "Tecno Pova Curve 2"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/tecno-pova-curve-2-ppd1628rzej3",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Mediatek 7100",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.78-inch AMOLED",
+        "refresh_rate": 144,
+        "battery": "8000 mAh",
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "13 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "display_type": "AMOLED",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH046": {
+      "phone_name": "Lava Yuva Star 3",
+      "accepted_names": [
+        "Lava Yuva Star 3"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open. Parse Bot API skipped this phone because the historical CSV shares PH047's Lava link; this is the exact Yuva Star 3 page and PH047 remains OPPO.",
+      "fields": {
+        "processor": "UNISOC 9863a",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.75-inch IPS",
+        "refresh_rate": 90,
+        "battery": "5000 mAh",
+        "rear_camera": "13 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 15 Go",
+        "supports_5g": "No",
+        "display_type": "IPS",
+        "charging": "10 W wired",
+        "charging_w": 10
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH050": {
+      "phone_name": "Redmi Note 15 Pro 5G",
+      "accepted_names": [
+        "Redmi Note 15 Pro",
+        "Xiaomi Redmi Note 15 Pro 5G",
+        "Redmi Note 15 Pro 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.mi.com/in/product/redmi-note-15-pro-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Exact India manufacturer product/specification page checked. Only fields shown on this source are promoted; Smartprix API was used for identity cross-check only. Manufacturer India identifies this as the 5G model; historical unsuffixed name retained as an alias.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7400-Ultra",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.83-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "2772 × 1280",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 480,
+        "pwm_hz": 3840,
+        "battery": "6580 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "200 MP + 8 MP ultra-wide",
+        "front_camera": "20 MP",
+        "supports_5g": "Yes",
+        "weight": "210 g",
+        "dimensions": "163.61 × 78.09 × 7.96 mm"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH052": {
+      "phone_name": "Lava Blaze Duo 3 5G",
+      "accepted_names": [
+        "Lava Blaze Duo 3 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/lava-blaze-duo-3-ppd1o5e6uwhh",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "MediaTek 7060",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.67-inch AMOLED",
+        "refresh_rate": 120,
+        "battery": "5000 mAh",
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 15",
+        "supports_5g": "Yes",
+        "display_type": "AMOLED",
+        "charging": "33 W wired",
+        "charging_w": 33,
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH055": {
+      "phone_name": "Poco M8",
+      "accepted_names": [
+        "Poco M8"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/poco-m8-ppd1t4l0hpfr",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix exact India product page checked as a source. Additional variants remain open; Parse Bot API was used for identity cross-check only.",
+      "fields": {
+        "processor": "Qualcomm 6 Gen3",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.77-inch AMOLED",
+        "refresh_rate": 120,
+        "battery": "5520 mAh",
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "20 MP",
+        "android_version": "Android 15",
+        "supports_5g": "Yes",
+        "display_type": "AMOLED",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "ip_rating": "IP65/IP66"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH004": {
+      "phone_name": "Lava Bold N2 5G",
+      "accepted_names": [
+        "LAVA Bold N2",
+        "Lava Bold N2 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix India is the checked source because an exact Lava specification page was not located. It identifies the historical link as Bold N2 5G; the old name remains an alias. The phone ID and reviews are unchanged.",
+      "fields": {
+        "processor": "Unisoc T8200",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.75-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "charging": "18 W wired",
+        "charging_w": 18,
+        "rear_camera": "13 MP dual camera",
+        "front_camera": "5 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.0",
+        "weight": "210 g",
+        "dimensions": "76.8 × 165.85 × 8.75 mm",
+        "launch_date": "2026-06-03",
+        "model_code": "N2 5G",
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH005": {
+      "phone_name": "Lava Shark 2 5G",
+      "accepted_names": [
+        "LAVA Shark 2 5G",
+        "Lava Shark 2 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Smartprix India is the checked source because an exact Lava specification page was not located. The page confirms the listed 4/64 GB configuration but does not provide a usable variant list; other variants remain unverified.",
+      "fields": {
+        "processor": "Unisoc T8200",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.75-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "charging": "18 W wired",
+        "charging_w": 18,
+        "rear_camera": "13 MP dual camera",
+        "front_camera": "5 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.0",
+        "weight": "210 g",
+        "dimensions": "76.8 × 165.85 × 8.75 mm",
+        "launch_date": "2026-05-26",
+        "model_code": "Shark 2",
+        "ip_rating": "IP64"
+      }
+    },
+    "PH001": {
+      "phone_name": "Tecno Pova 8 5G",
+      "accepted_names": [
+        "Tecno Pova 8 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d",
+      "checked_at": "2026-09-20",
+      "evidence_note": "TECNO India's page confirms the Pova 8 5G model but exposes no usable specifications in page text. Smartprix's exact India product page is the source for the 6/128 GB configuration and lists an 8/128 GB variant. Wattage, IP rating, update promises, and prices are omitted pending stronger evidence or resolution of page inconsistencies. Specifications are attributed to Smartprix.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7100",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.76-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "1080 × 2344",
+        "refresh_rate": 144,
+        "battery": "8000 mAh",
+        "charging": "Fast charging (wattage unverified)",
+        "reverse_charging_w": 10,
+        "rear_camera": "50 MP dual camera",
+        "front_camera": "13 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "nfc": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "225 g"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH009": {
+      "phone_name": "Motorola Moto G37 Power 5G",
+      "accepted_names": [
+        "Moto G37 Power",
+        "Motorola Moto G37 Power 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/motorola-moto-g37-power-ppd1w91daysx",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Motorola India's moto g family page confirms g37 power and 4/64, 4/128, 8/128 GB choices but its exact product page exposed no usable specification details. Smartprix's matching India product page supplies the listed fields. Historical shorter name is an alias; not the separate g37 model. Prices withheld.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6400",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.67-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1604",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 120,
+        "battery": "7000 mAh",
+        "charging": "30 W TurboPower",
+        "charging_w": 30,
+        "reverse_charging_w": 6,
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "215 g",
+        "dimensions": "76.5 × 166.23 × 8.89 mm",
+        "model_code": "PBCB0010IN",
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH010": {
+      "phone_name": "Motorola Moto G37",
+      "accepted_names": [
+        "Moto G37",
+        "Motorola Moto G37"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/motorola-moto-g37-ppd1va77lc8s",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Motorola India's moto g family page confirms the exact g37 and 4/64 GB listing. Its product page exposed no usable specification details, so Smartprix's matching India page supplies the listed fields. Kept separate from g37 power; prices withheld.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6400",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.67-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1604",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 120,
+        "battery": "5200 mAh",
+        "charging": "20 W TurboPower supported; 10 W charger included",
+        "charging_w": 20,
+        "reverse_charging_w": 6,
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "191 g",
+        "dimensions": "76.5 × 166.23 × 7.85 mm",
+        "model_code": "PBCM0005IN",
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH011": {
+      "phone_name": "Itel Zeno 200",
+      "accepted_names": [
+        "Itel Zeno 200"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/itel-zeno-200-ppd1mnsjgm39",
+      "checked_at": "2026-09-20",
+      "evidence_note": "An exact itel India specification page was not located. Smartprix's India product page and API agree on the model, but the API supplied no usable variant list. Selfie resolution and charging wattage are absent from the page and remain unknown; prices withheld.",
+      "fields": {
+        "processor": "Unisoc T7100",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "5000 mAh",
+        "charging": "Fast charging (wattage unverified)",
+        "rear_camera": "13 MP",
+        "android_version": "Android 15",
+        "supports_5g": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.0",
+        "weight": "185 g",
+        "ip_rating": "IP65"
+      }
+    },
+    "PH012": {
+      "phone_name": "OnePlus Nord CE6 Lite",
+      "accepted_names": [
+        "Oneplus Nord CE 6 Lite",
+        "OnePlus Nord CE 6 Lite",
+        "OnePlus Nord CE6 Lite"
+      ],
+      "market": "India manufacturer product page; partial fields",
+      "source_url": "https://www.oneplus.in/nord-ce6-lite",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OnePlus India's exact Nord CE6 Lite product page. It confirms chipset, battery, 45 W charging, 144 Hz FHD display, 50 MP + 2 MP rear and 8 MP front cameras, OxygenOS 16, 5G, and IP64. RAM/storage pairing and Android base version are withheld because this official page does not establish them; Smartprix and API show candidate variants for later field-level sourcing. Prices withheld.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7400 Apex",
+        "display": "6.72-inch FHD display",
+        "refresh_rate": 144,
+        "battery": "7000 mAh",
+        "charging": "45 W SUPERVOOC",
+        "charging_w": 45,
+        "rear_camera": "50 MP main + 2 MP depth-assist",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "ip_rating": "IP64"
+      }
+    },
+    "PH014": {
+      "phone_name": "POCO C81x",
+      "accepted_names": [
+        "Poco C81x",
+        "POCO C81x"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/poco-c81x-ppd1lq32d6ze",
+      "checked_at": "2026-09-20",
+      "evidence_note": "POCO India's C81x product page identifies the model but exposed no usable specification text. Smartprix's matching India product page supplies the 3/64 GB fields. No additional variants were confirmed by the API; prices withheld.",
+      "fields": {
+        "processor": "Unisoc T7250",
+        "ram": "3 GB",
+        "storage": "64 GB",
+        "display": "6.88-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1640",
+        "refresh_rate": 120,
+        "battery": "5200 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "reverse_charging_w": 7.5,
+        "rear_camera": "13 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 15",
+        "supports_5g": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.2",
+        "weight": "193 g",
+        "dimensions": "77.8 × 171.79 × 8.26 mm",
+        "model_code": "MZB0O3FIN",
+        "ip_rating": "IP52"
+      },
+      "variants": [
+        {
+          "ram": "3 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH007": {
+      "phone_name": "Realme 16T 5G",
+      "accepted_names": [
+        "Realme 16T 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/realme-16t-5g-ppd18kz6oazl",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Checked the product identity and the listed fields on Smartprix. Unlisted fields remain unknown; these fields are attributed to Smartprix.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.8-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 180,
+        "battery": "8000 mAh",
+        "charging": "45 W wired; 10 W reverse",
+        "charging_w": 45,
+        "reverse_charging_w": 10,
+        "rear_camera": "50 MP main + 2 MP monochrome",
+        "front_camera": "16 MP",
+        "android_version": "Android 16 / realme UI 7",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "224 g",
+        "dimensions": "78.23 × 166.4 × 8.8 mm",
+        "launch_date": "2026-05-22"
+      }
+    },
+    "PH013": {
+      "phone_name": "Poco C81",
+      "accepted_names": [
+        "Poco C81"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/poco-c81-ppd16td5skp4",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Checked the product identity and the listed fields on Smartprix. Unlisted fields remain unknown; these fields are attributed to Smartprix.",
+      "fields": {
+        "processor": "Unisoc T7250",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.9-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "6300 mAh",
+        "charging": "15 W wired; 7.5 W reverse",
+        "charging_w": 15,
+        "reverse_charging_w": 7.5,
+        "rear_camera": "13 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "wifi": "Yes",
+        "bluetooth": "5.2",
+        "weight": "208 g",
+        "dimensions": "79.47 × 171.56 × 8.15 mm",
+        "launch_date": "2026-04-23",
+        "model_code": "MZB0NKWIN / C81",
+        "ip_rating": "IP52"
+      }
+    },
+    "PH017": {
+      "phone_name": "Tecno Pop X 5G",
+      "accepted_names": [
+        "Tecno Pop X 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/tecno-pop-x-5g-ppd1gj0661me",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Checked the product identity and the listed fields on Smartprix. Unlisted fields remain unknown; these fields are attributed to Smartprix.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6400",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.78-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1576",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "6500 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "13 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "weight": "210 g",
+        "launch_date": "2026-04-20",
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH024": {
+      "phone_name": "Redmi Note 15 SE 5G",
+      "accepted_names": [
+        "Redmi Note 15 SE 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-5g-special-edition-ppd103v7vlm2",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Checked the product identity and the listed fields on Smartprix. Unlisted fields remain unknown; these fields are attributed to Smartprix.",
+      "fields": {
+        "processor": "Snapdragon 6 Gen 3",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.77-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "2392 × 1080",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "pwm_hz": 3840,
+        "battery": "5800 mAh",
+        "charging": "45 W wired; 18 W reverse",
+        "charging_w": 45,
+        "reverse_charging_w": 18,
+        "rear_camera": "50 MP main + 2 MP depth",
+        "front_camera": "20 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.1",
+        "weight": "182 g",
+        "dimensions": "75.42 × 164 × 7.82 mm",
+        "launch_date": "2026-04-02",
+        "model_code": "MZB0NT3IN / Note 15 SE 5G",
+        "ip_rating": "IP65 / IP66",
+        "os_updates": "4 years (source claim)",
+        "security_updates": "6 years (source claim)"
+      }
+    },
+    "PH041": {
+      "phone_name": "Motorola Edge 70 Fusion",
+      "accepted_names": [
+        "Motorola Edge 70 Fusion"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/motorola-edge-70-fusion-ppd1ktx4v2b3",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Checked the product identity and the listed fields on Smartprix. Unlisted fields remain unknown; these fields are attributed to Smartprix.",
+      "fields": {
+        "processor": "Snapdragon 7s Gen 4",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.8-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "1272 × 2772",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 1500,
+        "battery": "7000 mAh",
+        "charging": "68 W wired; reverse charging supported",
+        "charging_w": 68,
+        "rear_camera": "50 MP main (OIS) + 13 MP ultrawide; auxiliary light sensor",
+        "front_camera": "32 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "6.0",
+        "nfc": "Yes",
+        "weight": "193 g",
+        "dimensions": "75.6 × 162.76 × 7.99 mm",
+        "launch_date": "2026-03-06",
+        "model_code": "XT2605-1 / XT2605-2",
+        "ip_rating": "IP68 / IP69"
+      }
+    },
+    "PH047": {
+      "phone_name": "Oppo K14x 5G",
+      "accepted_names": [
+        "Oppo K14x 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/oppo-k14x-5g-ppd1259g0jtq",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Corrected the source mapping: the historical URL belonged to Lava Yuva Star 3. Specs below belong to OPPO K14x; phone ID and reviews are unchanged.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "6500 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "50 MP main + 2 MP depth",
+        "front_camera": "5 MP",
+        "android_version": "Android 15 / ColorOS 15",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "212 g",
+        "dimensions": "78.5 × 166.6 × 8.6 mm",
+        "launch_date": "2026-02-10",
+        "model_code": "CPH2871",
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH053": {
+      "phone_name": "Tecno Spark Go 3",
+      "accepted_names": [
+        "Tecno Spark Go 3"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/tecno-spark-go-3-ppd14d94on3z",
+      "checked_at": "2026-09-03",
+      "evidence_note": "Checked the product identity and the listed fields on Smartprix. Unlisted fields remain unknown; these fields are attributed to Smartprix.",
+      "fields": {
+        "processor": "Unisoc T7250",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.74-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "5000 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "13 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 15 / HiOS",
+        "wifi": "Yes",
+        "ip_rating": "IP64"
+      }
+    },
+    "PH056": {
+      "phone_name": "Redmi Note 15 5G",
+      "accepted_names": [
+        "Redmi Note 15",
+        "Redmi Note 15 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-ppd1nya0l7ja",
+      "checked_at": "2026-09-03",
+      "evidence_note": "The existing URL identifies the 5G model. Connectivity details and release date vary between the Smartprix listing and Xiaomi India; disputed Bluetooth/NFC/date fields are withheld. Historical image shared with the Pro model is withheld.",
+      "fields": {
+        "processor": "Snapdragon 6 Gen 3",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.77-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "1080 × 2392",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "pwm_hz": 3840,
+        "battery": "5520 mAh",
+        "charging": "45 W wired; 18 W reverse",
+        "charging_w": 45,
+        "reverse_charging_w": 18,
+        "rear_camera": "108 MP main + 8 MP ultrawide",
+        "front_camera": "20 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "weight": "178 g",
+        "dimensions": "75.4 × 164 × 7.35 mm"
+      }
+    },
+    "PH002": {
+      "phone_name": "Realme P4R 5G",
+      "accepted_names": [
+        "Realme P4R 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.realme.com/in/realme-p4r-5g/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked realme India's exact P4R 5G specification page. Android version is omitted because the specification page does not state it. Prices remain unverified.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.8-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 180,
+        "battery": "8000 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "50 MP",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "nfc": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "224 g"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH003": {
+      "phone_name": "Infinix Smart 20",
+      "accepted_names": [
+        "Infinix SMART 20",
+        "Infinix Smart 20"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://infinixmobiles.in/products/smart-20",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked Infinix India's Smart 20 (X6840) product specifications and 4/64 GB and 4/128 GB variants. The page specifies 15 W charging support but a 10 W charger in the box; prices are not verified.",
+      "fields": {
+        "processor": "MediaTek Helio G81 Ultimate",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.78-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1576",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "5200 mAh",
+        "charging": "15 W supported; 10 W charger included",
+        "charging_w": 15,
+        "reverse_charging_w": 5,
+        "rear_camera": "8 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16 (XOS 16)",
+        "supports_5g": "No",
+        "nfc": "No",
+        "wifi": "Yes",
+        "bluetooth": "Yes",
+        "dimensions": "167.7 × 78.8 × 7.7 mm",
+        "model_code": "X6840",
+        "ip_rating": "IP64"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH006": {
+      "phone_name": "OPPO A6c",
+      "accepted_names": [
+        "Oppo A6c",
+        "OPPO A6c"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.oppo.com/in/smartphones/series-a/a6c/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OPPO India's A6c (CPH2895) specification page and its two listed storage variants. No Android version is stated.",
+      "fields": {
+        "processor": "UNISOC T7250",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.75-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "7000 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "13 MP",
+        "front_camera": "5 MP",
+        "supports_5g": "No",
+        "nfc": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.2",
+        "weight": "215 g",
+        "model_code": "CPH2895"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH008": {
+      "phone_name": "HMD Vibe2 5G",
+      "accepted_names": [
+        "HMD Vibe 2 5G",
+        "HMD Vibe2 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.hmd.com/en_in/hmd-vibe2-5g/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "HMD India's exact model page lists 128 GB storage, not the legacy 64 GB. The historical 4/64 GB configuration is withheld; review identity and phone ID are unchanged.",
+      "fields": {
+        "processor": "Unisoc T8200",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch IPS LCD",
+        "display_type": "IPS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "charging": "18 W wired",
+        "charging_w": 18,
+        "rear_camera": "50 MP AI dual camera",
+        "front_camera": "8 MP",
+        "android_version": "Android 16",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.0",
+        "weight": "210 g",
+        "dimensions": "168 × 77.7 × 8.6 mm",
+        "security_updates": "2 years quarterly"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH016": {
+      "phone_name": "Redmi A7 Pro 5G",
+      "accepted_names": [
+        "Redmi A7 Pro",
+        "Redmi A7 Pro 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.mi.com/in/product/redmi-a7-pro-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Xiaomi India's exact page identifies the 5G model; the historical name omitted 5G. Existing ID and review assignment are unchanged.",
+      "fields": {
+        "processor": "T8300 5G",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.9-inch HD+ display",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "6300 mAh",
+        "charging": "15 W wired; 7.5 W reverse",
+        "charging_w": 15,
+        "reverse_charging_w": 7.5,
+        "rear_camera": "32 MP",
+        "front_camera": "8 MP",
+        "android_version": "Android 16 / HyperOS 3",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "210 g",
+        "dimensions": "171.56 × 79.47 × 8.15 mm",
+        "ip_rating": "IP52",
+        "os_updates": "4 years",
+        "security_updates": "6 years"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH021": {
+      "phone_name": "Realme Narzo 100 Lite 5G",
+      "accepted_names": [
+        "Realme Narzo 100 Lite 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.realme.com/in/realme-narzo-100-lite-5g/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked realme India's exact Narzo 100 Lite 5G specification page. It names realme UI 7.0 but does not explicitly state an Android base version.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.8-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 180,
+        "battery": "7000 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "13 MP",
+        "front_camera": "5 MP",
+        "supports_5g": "Yes",
+        "nfc": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "212 g"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH030": {
+      "phone_name": "Realme P4 Lite 5G",
+      "accepted_names": [
+        "Realme P4 Lite 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.realme.com/in/realme-p4-lite-5g/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked the 5G model's own India specification page, not the separate 4G P4 Lite. Android base version is not stated on this page.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.8-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 180,
+        "battery": "7000 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "13 MP",
+        "front_camera": "5 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "212 g"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        },
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH040": {
+      "phone_name": "Realme C83 5G",
+      "accepted_names": [
+        "Realme C83 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.realme.com/in/realme-c83/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked realme India's C83 5G specification page. The published memory and storage ranges support the historical entry-level combination; additional exact combinations are not asserted.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "display": "6.8-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 180,
+        "battery": "7000 mAh",
+        "charging": "15 W wired",
+        "charging_w": 15,
+        "rear_camera": "13 MP",
+        "front_camera": "5 MP",
+        "android_version": "Android 16 / realme UI 7",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "weight": "212 g",
+        "dimensions": "166.3 × 78.1 × 8.4 mm"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "64 GB"
+        }
+      ]
+    },
+    "PH049": {
+      "phone_name": "Realme P4 Power 5G",
+      "accepted_names": [
+        "Realme P4 Power",
+        "Realme P4 Power 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.realme.com/in/realme-p4-power-5g/specs",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked realme India's exact P4 Power 5G page. The historical name omitted 5G; existing phone ID and reviews remain attached.",
+      "fields": {
+        "processor": "MediaTek Dimensity 7400 Ultra",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.8-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "1280 × 2800",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 240,
+        "battery": "10001 mAh",
+        "charging": "80 W wired",
+        "charging_w": 80,
+        "rear_camera": "50 MP main with OIS + 8 MP ultrawide",
+        "front_camera": "16 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "weight": "219 g",
+        "dimensions": "162.26 × 76.15 × 9.08 mm"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        },
+        {
+          "ram": "12 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH048": {
+      "phone_name": "Samsung Galaxy F70e 5G",
+      "accepted_names": [
+        "Samsung Galaxy F70e 5G"
+      ],
+      "market": "India 4 GB / 128 GB manufacturer variant",
+      "source_url": "https://www.samsung.com/in/smartphones/galaxy-f/galaxy-f70e-5g-spotlight-blue-128gb-sm-e076bdbains/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked Samsung India's exact 4 GB / 128 GB variant. Samsung lists an octa-core CPU but not a chipset name or charging wattage on this page, so both remain unknown.",
+      "fields": {
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.7-inch PLS LCD",
+        "display_type": "PLS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "199 g",
+        "dimensions": "167.4 × 77.4 × 8.2 mm",
+        "launch_date": "2026-02-09"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH054": {
+      "phone_name": "Samsung Galaxy A07 5G",
+      "accepted_names": [
+        "Samsung Galaxy A07 5G"
+      ],
+      "market": "India 4 GB / 128 GB manufacturer variant",
+      "source_url": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a07-5g-black-128gb-sm-a076bzkbins/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked Samsung India's exact 4 GB / 128 GB variant. Samsung's page does not name the chipset or charging wattage; those are withheld.",
+      "fields": {
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.7-inch PLS LCD",
+        "display_type": "PLS LCD",
+        "resolution": "720 × 1600",
+        "refresh_rate": 120,
+        "battery": "6000 mAh",
+        "rear_camera": "50 MP + 2 MP",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.3",
+        "weight": "199 g",
+        "dimensions": "167.4 × 77.4 × 8.2 mm",
+        "ip_rating": "IP54",
+        "os_updates": "6 generations",
+        "security_updates": "6 years"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH019": {
+      "phone_name": "OPPO F33 5G",
+      "accepted_names": [
+        "Oppo F33 5G",
+        "OPPO F33 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.oppo.com/in/smartphones/series-f/f33-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OPPO India's F33 5G specification page; listed capacities and processor are for this model, not F33 Pro.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6360 MAX",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.57-inch AMOLED",
+        "display_type": "AMOLED",
+        "resolution": "1080 × 2372",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "7000 mAh",
+        "charging": "80 W wired",
+        "charging_w": 80,
+        "rear_camera": "50 MP + 2 MP monochrome",
+        "front_camera": "16 MP",
+        "supports_5g": "Yes",
+        "nfc": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "189 g"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH031": {
+      "phone_name": "OPPO A6s 5G",
+      "accepted_names": [
+        "Oppo A6s 5G",
+        "OPPO A6s 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.oppo.com/in/smartphones/series-a/a6s-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OPPO India's exact A6s 5G (CPH2889) page; the similar A6 and A6 Pro models are not used as evidence.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "6500 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "50 MP + 2 MP monochrome",
+        "front_camera": "5 MP",
+        "supports_5g": "Yes",
+        "nfc": "No",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "212 g",
+        "model_code": "CPH2889"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ]
+    },
+    "PH034": {
+      "phone_name": "OPPO K14 5G",
+      "accepted_names": [
+        "Oppo K14 5G",
+        "OPPO K14 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.oppo.com/in/smartphones/series-k/k14-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OPPO India's exact K14 5G (CPH2869) page, separate from the K14x.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "7000 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "50 MP + 2 MP monochrome",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "216 g",
+        "model_code": "CPH2869"
+      },
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "256 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH051": {
+      "phone_name": "OPPO A6 5G",
+      "accepted_names": [
+        "Oppo A6 5G",
+        "OPPO A6 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.oppo.com/in/smartphones/series-a/a6-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OPPO India's A6 5G (CPH2785) page, not the A6c or A6s.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "7000 mAh",
+        "charging": "45 W wired",
+        "charging_w": 45,
+        "rear_camera": "50 MP + 2 MP monochrome",
+        "front_camera": "8 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "216 g",
+        "model_code": "CPH2785"
+      },
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PH057": {
+      "phone_name": "OPPO A6 Pro 5G",
+      "accepted_names": [
+        "Oppo A6 Pro 5G",
+        "OPPO A6 Pro 5G"
+      ],
+      "market": "India manufacturer specification",
+      "source_url": "https://www.oppo.com/in/smartphones/series-a/a6-pro-5g/specs/",
+      "checked_at": "2026-09-20",
+      "evidence_note": "Checked OPPO India's A6 Pro 5G (CPH2827) page and its 8 GB storage variants.",
+      "fields": {
+        "processor": "MediaTek Dimensity 6300",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.75-inch LCD",
+        "display_type": "LCD",
+        "resolution": "720 × 1570",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "battery": "7000 mAh",
+        "charging": "80 W wired",
+        "charging_w": 80,
+        "rear_camera": "50 MP + 2 MP monochrome",
+        "front_camera": "16 MP",
+        "supports_5g": "Yes",
+        "wifi": "Yes",
+        "bluetooth": "5.4",
+        "weight": "216 g",
+        "model_code": "CPH2827"
+      },
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ]
+    },
+    "PHONE-8cad1880d68b077f": {
+      "phone_name": "iQOO Z11xA 5G",
+      "brand": "iQOO",
+      "accepted_names": [
+        "iQOO Z11xA 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/iqoo-z11xa-5g-ppd1ptbld75o",
+      "image_source_url": "https://cdn1.smartprix.com/rx-iiJeXsGIp-w420-h420/iqoo-z11xa-5g.webp",
+      "image_filename": "iqoo-z11xa-5g.webp",
+      "image_local_path": "assets/phone_images/iqoo-z11xa-5g.webp",
+      "launch_source_url": "https://www.smartprix.com/mobiles/iqoo-z11xa-5g-ppd1ptbld75o",
+      "checked_at": "2026-09-21",
+      "evidence_note": "Exact Smartprix India product page reviewed for iQOO Z11xA 5G. Only populated fields are proposed.",
+      "variants": [
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        }
+      ],
+      "fields": {
+        "processor": "Mediatek Dimensity 7400 Turbo",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "display": "6.76 inches, 1080 x 2344 pixels, 120 Hz",
+        "display_type": "Color LCD Screen",
+        "resolution": "1080 x 2344 pixels",
+        "rear_camera": "50 MP (Wide Angle); 2 MP (Depth Sensor)",
+        "front_camera": "32 MP ƒ/2.45 (Wide Angle); Punch Hole, Screen Flash",
+        "battery": "7200 mAh, Li-ion Battery",
+        "charging": "Yes, 44W Flash Charge",
+        "android_version": "Android v16",
+        "os_updates": "2 years",
+        "security_updates": "4 years",
+        "bluetooth": "Yes, v5.4",
+        "weight": "219 g",
+        "dimensions": "78.43 x 166.64 x 8.39 mm",
+        "ip_rating": "IP68 & IP69+",
+        "launch_date": "2026-09-07",
+        "refresh_rate": 120,
+        "charging_w": 44,
+        "supports_5g": "Yes",
+        "wifi": "Yes"
+      },
+      "launch_price": 28999,
+      "amazon_price": 28999,
+      "flipkart_price": null,
+      "price_observed_at": "2026-09-21"
+    },
+    "PHONE-ecb7c6b75788a710": {
+      "phone_name": "Poco X8 5G",
+      "brand": "Poco",
+      "accepted_names": [
+        "Poco X8 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/poco-x8-5g-ppd1og1cd04s",
+      "image_source_url": "https://cdn1.smartprix.com/rx-isdImymZY-w420-h420/poco-x8-5g.webp",
+      "image_filename": "poco-x8-5g.webp",
+      "image_local_path": "assets/phone_images/poco-x8-5g.webp",
+      "launch_source_url": "https://www.smartprix.com/mobiles/poco-x8-5g-ppd1og1cd04s",
+      "checked_at": "2026-09-21",
+      "evidence_note": "Exact Smartprix India product page reviewed for Poco X8 5G. Only populated fields are proposed.",
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "256 GB"
+        }
+      ],
+      "fields": {
+        "processor": "Qualcomm Snapdragon 6s Gen4",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.83 inches, 1280 x 2772 pixels, 120 Hz",
+        "display_type": "Color AMOLED Screen (1B Colors)",
+        "resolution": "1280 x 2772 pixels",
+        "rear_camera": "50 MP ƒ/1.8 (Wide Angle); 2 MP (Ultra Wide)",
+        "front_camera": "16 MP ƒ/2.4 (Wide Angle); Punch Hole, Screen Flash",
+        "battery": "9000 mAh",
+        "charging": "Yes, 67W",
+        "android_version": "Android v16",
+        "bluetooth": "Yes, v5.1",
+        "weight": "226 g",
+        "dimensions": "78.3 x 163.45 x 8.6 mm",
+        "ip_rating": "IP66/68/69/69K",
+        "launch_date": "2026-09-04",
+        "refresh_rate": 120,
+        "charging_w": 67,
+        "reverse_charging_w": 22.5,
+        "supports_5g": "Yes",
+        "nfc": "Yes",
+        "wifi": "Yes"
+      },
+      "launch_price": 29999,
+      "amazon_price": null,
+      "flipkart_price": 29999,
+      "price_observed_at": "2026-09-21"
+    },
+    "PHONE-858c043339aaf903": {
+      "phone_name": "Xiaomi Redmi 17 5G",
+      "brand": "Xiaomi",
+      "accepted_names": [
+        "Xiaomi Redmi 17 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-17-5g-ppd10zr7em55",
+      "image_source_url": "https://cdn1.smartprix.com/rx-iXariER8c-w420-h420/xiaomi-redmi-17-5g.webp",
+      "image_filename": "xiaomi-redmi-17-5g.webp",
+      "image_local_path": "assets/phone_images/xiaomi-redmi-17-5g.webp",
+      "launch_source_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-17-5g-ppd10zr7em55",
+      "checked_at": "2026-09-21",
+      "evidence_note": "Exact Smartprix India product page reviewed for Xiaomi Redmi 17 5G. Only populated fields are proposed.",
+      "variants": [
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "8 GB",
+          "storage": "128 GB"
+        }
+      ],
+      "fields": {
+        "processor": "Qualcomm Snapdragon 4 Gen5",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "display": "6.9 inches, 720 x 1600 pixels, 120 Hz",
+        "display_type": "Color IPS Screen (16M Colors)",
+        "resolution": "720 x 1600 pixels",
+        "rear_camera": "50 MP ƒ/1.8 (Wide Angle); 5P lens, f/1.8; (Auxiliary lens)",
+        "front_camera": "8 MP ƒ/2.1 (Wide Angle); Punch Hole, Screen Flash",
+        "battery": "7900 mAh, Si/C Li-Ion",
+        "charging": "Yes, 45W",
+        "android_version": "Android v16",
+        "bluetooth": "Yes, v5.1, A2DP, LE",
+        "weight": "232 g",
+        "dimensions": "78.42 x 170.12 x 8.8 mm",
+        "ip_rating": "IP64",
+        "launch_date": "2026-09-03",
+        "refresh_rate": 120,
+        "touch_sampling_hz": 240,
+        "charging_w": 45,
+        "reverse_charging_w": 22.5,
+        "supports_5g": "Yes",
+        "nfc": "Yes",
+        "wifi": "Yes"
+      },
+      "launch_price": 23999,
+      "amazon_price": 23999,
+      "flipkart_price": null,
+      "price_observed_at": "2026-09-21"
+    },
+    "PHONE-15e2234dab423bb6": {
+      "phone_name": "Poco M8x 5G",
+      "brand": "Poco",
+      "accepted_names": [
+        "Poco M8x 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/poco-m8x-5g-ppd118hqniep",
+      "image_source_url": "https://cdn1.smartprix.com/rx-iNpoqeKSN-w420-h420/poco-m8x-5g.webp",
+      "image_filename": "poco-m8x-5g.webp",
+      "image_local_path": "assets/phone_images/poco-m8x-5g.webp",
+      "launch_source_url": "https://www.smartprix.com/mobiles/poco-m8x-5g-ppd118hqniep",
+      "checked_at": "2026-09-21",
+      "evidence_note": "Exact Smartprix India product page reviewed for Poco M8x 5G. Only populated fields are proposed.",
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        }
+      ],
+      "fields": {
+        "processor": "Snapdragon 4 Gen5",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.9 inches, 720 x 1600 pixels, 120 Hz",
+        "display_type": "Color IPS LCD Screen (16M Colors)",
+        "resolution": "720 x 1600 pixels",
+        "rear_camera": "50 MP (Main)",
+        "front_camera": "8 MP (Wide Angle); Punch Hole",
+        "battery": "7900 mAh",
+        "charging": "Yes, 45W",
+        "android_version": "Android v16",
+        "os_updates": "4 years",
+        "security_updates": "6 years",
+        "bluetooth": "Yes, v5.1, A2DP, LE",
+        "weight": "232 g",
+        "dimensions": "78.43 x 170.12 x 8.8 mm",
+        "ip_rating": "IP64",
+        "launch_date": "2026-08-21",
+        "refresh_rate": 120,
+        "charging_w": 45,
+        "reverse_charging_w": 22.5,
+        "supports_5g": "Yes",
+        "wifi": "Yes"
+      },
+      "launch_price": 20999,
+      "amazon_price": 19876,
+      "flipkart_price": 20999,
+      "price_observed_at": "2026-09-21"
+    },
+    "PHONE-67ad65b69d86a6d9": {
+      "phone_name": "Realme 16x 5G",
+      "brand": "Realme",
+      "accepted_names": [
+        "Realme 16x 5G"
+      ],
+      "market": "India Smartprix source check",
+      "source_url": "https://www.smartprix.com/mobiles/realme-16x-5g-ppd1uai67blb",
+      "image_source_url": "https://cdn1.smartprix.com/rx-itesFVt9Z-w420-h420/realme-16x-5g.webp",
+      "image_filename": "realme-16x-5g.webp",
+      "image_local_path": "assets/phone_images/realme-16x-5g.webp",
+      "launch_source_url": "https://www.smartprix.com/mobiles/realme-16x-5g-ppd1uai67blb",
+      "checked_at": "2026-09-21",
+      "evidence_note": "Exact Smartprix India product page reviewed for Realme 16x 5G. Only populated fields are proposed.",
+      "variants": [
+        {
+          "ram": "4 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "128 GB"
+        },
+        {
+          "ram": "6 GB",
+          "storage": "256 GB"
+        }
+      ],
+      "fields": {
+        "processor": "Mediatek Dimensity 6300",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "display": "6.81 inches, 1570 x 720 pixels, 144 Hz",
+        "display_type": "Color LCD Screen (16.7 m)",
+        "resolution": "1570 x 720 pixels",
+        "rear_camera": "50 MP ƒ/1.8; 50MP; f/1.8; FOV 75°; 5P lens; AF Supported",
+        "front_camera": "8 MP ƒ/2.4 (Wide Angle); F/2.0; FOV 80°; 4P lens; Punch Hole",
+        "battery": "7000 mAh",
+        "charging": "Yes, 45W SUPERVOOC Charge",
+        "android_version": "Android v16",
+        "os_updates": "2 years",
+        "security_updates": "3 years",
+        "bluetooth": "Yes, v5.3, SBC, AAC, LDAC, aptX, aptX HD, LHDC 5.0",
+        "weight": "217 g",
+        "dimensions": "78.2 x 166.47 x 8.88 mm",
+        "ip_rating": "IP65",
+        "launch_date": "2026-08-12",
+        "refresh_rate": 144,
+        "touch_sampling_hz": 180,
+        "charging_w": 45,
+        "reverse_charging_w": 6.5,
+        "supports_5g": "Yes",
+        "wifi": "Yes"
+      },
+      "launch_price": 25999,
+      "amazon_price": 22599,
+      "flipkart_price": 25999,
+      "price_observed_at": "2026-09-21"
+    }
+  }
+}

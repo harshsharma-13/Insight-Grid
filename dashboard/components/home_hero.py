@@ -5,7 +5,7 @@ def render_home_hero():
     st.markdown(
         """
         <div class="hero-card">
-            <h1>AI Consumer Intelligence Platform</h1>
+            <h1>Insight Grid</h1>
             <p>
                 Search, compare and analyze smartphones using product specifications,
                 review sentiment, platform performance and local AI-generated insights.

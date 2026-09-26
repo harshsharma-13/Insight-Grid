@@ -1,3 +1,5 @@
+from html import escape
+
 import streamlit as st
 
 from components.ui.section import section_title
@@ -26,16 +28,6 @@ SEGMENT_PROFILE = {
         "icon": "🚀",
     },
 }
-
-
-def _metric(label, value):
-    st.markdown(
-        f"""
-**{label}**
-
-{value}
-"""
-    )
 
 
 def render(market_df, get_segment_overview):
@@ -69,48 +61,22 @@ def render(market_df, get_segment_overview):
         title = SEGMENT_DISPLAY.get(segment, segment)
 
         with col:
-
-            with st.container(border=True):
-
-                st.markdown(
-                    f"## {profile['icon']} {title}"
-                )
-
-                st.metric(
-                    "Average Positive Sentiment",
-                    f"{row['avg_positive']}%",
-                )
-
-                st.divider()
-
-                _metric(
-                    "👤 Typical Buyer",
-                    profile["buyer"],
-                )
-
-                _metric(
-                    "⭐ Purchase Priority",
-                    profile["priority"],
-                )
-
-                _metric(
-                    "📱 Phones Analysed",
-                    row["phones"],
-                )
-
-                _metric(
-                    "👍 Top Strength",
-                    row["top_strength"],
-                )
-
-                _metric(
-                    "⚠️ Biggest Concern",
-                    row["top_concern"],
-                )
-
-                _metric(
-                    "🏆 Leading Brand",
-                    row["leading_brand"],
-                )
+            st.markdown(
+                f"""
+                <div class="segment-card-v2">
+                    <div class="segment-card-kicker">{escape(profile['buyer'])}</div>
+                    <h3>{escape(title)}</h3>
+                    <div class="segment-sentiment"><strong>{row['avg_positive']}%</strong><span>positive sentiment</span></div>
+                    <div class="segment-facts">
+                        <div><span>Purchase priority</span><b>{escape(profile['priority'])}</b></div>
+                        <div><span>Phones analysed</span><b>{row['phones']}</b></div>
+                        <div><span>Leading brand</span><b>{escape(str(row['leading_brand']))}</b></div>
+                        <div><span>Top strength</span><b>{escape(str(row['top_strength']))}</b></div>
+                        <div><span>Primary concern</span><b>{escape(str(row['top_concern']))}</b></div>
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     st.divider()

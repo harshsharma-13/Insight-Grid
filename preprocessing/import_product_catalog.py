@@ -36,28 +36,8 @@ def find_image(phone_name):
         if image_slug == phone_slug:
             return image.name, "Exact"
 
-    # Stage 2: contains match
-    for image in images:
-        image_slug = slugify(image.stem)
-        if phone_slug in image_slug or image_slug in phone_slug:
-            return image.name, "Contains"
-
-    # Stage 3: fuzzy match
-    best_image = ""
-    best_score = 0
-
-    for image in images:
-        image_slug = slugify(image.stem)
-        score = similarity(phone_slug, image_slug)
-
-        if score > best_score:
-            best_score = score
-            best_image = image.name
-
-    if best_score >= 0.82:
-        return best_image, f"Fuzzy {best_score:.2f}"
-
-    return "", "Missing"
+    # Similar names are not evidence that two model images are interchangeable.
+    return "", "Needs image verification"
 
 
 def main():
@@ -87,7 +67,13 @@ def main():
         })
 
     output = pd.DataFrame(rows)
-    output.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
+    if OUTPUT_FILE.exists():
+        existing = pd.read_csv(OUTPUT_FILE)
+        extras = [key for key in existing.columns if key not in output.columns and key != "phone_id"]
+        output = output.merge(existing[["phone_id", *extras]], on="phone_id", how="left", validate="one_to_one")
+    # Legacy link files are not source-verified. Save candidates only.
+    staged_file = OUTPUT_FILE.with_name("phones_product_catalog.candidate.csv")
+    output.to_csv(staged_file, index=False, encoding="utf-8-sig")
 
     print(f"Phones processed : {len(output)}")
 
@@ -105,7 +91,7 @@ def main():
             print(f"- {row['phone_id']} | {row['phone_name']}")
 
     print("\nCreated:")
-    print(OUTPUT_FILE)
+    print(staged_file)
 
 
 if __name__ == "__main__":

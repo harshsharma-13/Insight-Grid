@@ -14,7 +14,7 @@ st.set_page_config(
 
 load_css()
 
-navbar() 
+navbar("actions")
 
 product_action_center(
     get_action_dataset,

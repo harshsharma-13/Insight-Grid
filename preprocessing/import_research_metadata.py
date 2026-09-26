@@ -1,9 +1,11 @@
 from pathlib import Path
 import pandas as pd
-from datetime import date
+import sys
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+from intelligence.catalog import normalize_date
 
 RAW_FILE = PROJECT_ROOT / "data" / "raw" / "Smartphones research data.xlsx"
 TEMPLATE_FILE = PROJECT_ROOT / "data" / "processed" / "phones_enrichment_template.csv"
@@ -18,6 +20,18 @@ def clean_value(value):
 
 def parse_research_file():
     df = pd.read_excel(RAW_FILE, sheet_name="Smartphone Data", header=None)
+    master = pd.read_csv(PROJECT_ROOT / "data/processed/phones_master.csv")
+    names = master["phone_name"].str.strip().str.casefold()
+    if names.duplicated().any() or master["phone_id"].duplicated().any():
+        raise ValueError("Ambiguous master identity")
+    identity = dict(zip(names, master["phone_id"]))
+    verified = __import__("intelligence.catalog", fromlist=["load_verified_catalog"]).load_verified_catalog()
+    for phone_id, entry in verified["phones"].items():
+        for alias in entry["accepted_names"]:
+            existing = identity.get(alias.strip().casefold())
+            if existing and existing != phone_id:
+                raise ValueError("Ambiguous alias")
+            identity[alias.strip().casefold()] = phone_id
 
     start_rows = []
     for i, row in df.iterrows():
@@ -30,8 +44,10 @@ def parse_research_file():
     for index, start in enumerate(start_rows, start=1):
         block = df.iloc[start:start + 19]
 
-        phone_id = f"PH{index:03d}"
         phone_name = clean_value(df.iloc[start, 1])
+        phone_id = identity.get(phone_name.casefold())
+        if not phone_id:
+            raise ValueError(f"Unmatched phone name: {phone_name}; refusing row-order ID assignment")
 
         launch_date = ""
         amazon_price = ""
@@ -43,7 +59,7 @@ def parse_research_file():
             label = clean_value(row[1]).lower()
 
             if label == "launch date":
-                launch_date = clean_value(row[4])
+                launch_date = normalize_date(row[4]) or ""
 
             if label == "price (₹)":
                 amazon_price = clean_value(row[4])
@@ -61,7 +77,7 @@ def parse_research_file():
             "flipkart_price": flipkart_price,
             "amazon_rating": amazon_rating,
             "flipkart_rating": flipkart_rating,
-            "price_last_updated": str(date.today()),
+            "price_last_updated": "",
             "spec_source_url": "Smartphones research data.xlsx",
         })
 
@@ -69,6 +85,7 @@ def parse_research_file():
 
 
 def update_template(metadata_df):
+    raise RuntimeError("Unverified workbook metadata may be inspected but cannot overwrite active files. Stage and source-check fields in data/catalog first.")
     template = pd.read_csv(TEMPLATE_FILE)
 
     updated = template.merge(

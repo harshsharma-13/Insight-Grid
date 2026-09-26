@@ -13,7 +13,7 @@ def render_market_snapshot(verdict_df, brand_df, top_df):
             y="count",
             text="count",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
     with right:
         st.subheader("Brand Portfolio")
@@ -22,7 +22,7 @@ def render_market_snapshot(verdict_df, brand_df, top_df):
             names="brand",
             values="count",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
     st.subheader("Top Performing Smartphones")
-    st.dataframe(top_df, use_container_width=True)
+    st.dataframe(top_df, width="stretch")

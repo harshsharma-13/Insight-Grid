@@ -85,7 +85,7 @@ def render(market_df, get_brand_landscape):
         elif rank == 3:
             medal = "🥉"
 
-        with st.container(border=True):
+        with st.container(key=f"landscape_brand_card_{rank}", border=True):
 
             left, middle, right = st.columns(
                 [3, 1.3, 2]
@@ -131,7 +131,7 @@ def render(market_df, get_brand_landscape):
         .head(3)
     )
 
-    with st.container(border=True):
+    with st.container(key="landscape_observations", border=True):
 
         st.markdown(
             f"""

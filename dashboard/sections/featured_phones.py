@@ -82,7 +82,7 @@ def render(get_featured_phones):
                 key_prefix=f"featured_{index}",
             )
 
-            with st.container(border=True):
+            with st.container(key=f"trend_card_{index}", border=True):
 
                 st.markdown("##### 🤖 Why it's Trending")
 

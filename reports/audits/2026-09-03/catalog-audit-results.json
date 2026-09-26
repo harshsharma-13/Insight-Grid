@@ -1,0 +1,1378 @@
+{
+  "scope": "Local source files, read-only SQLite, and local website snapshot. External factual spot checks are documented separately in the report; hosted state was not inspected.",
+  "csv_files": {
+    "phones_enriched": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "launch_date",
+        "display",
+        "processor",
+        "battery",
+        "camera",
+        "ram",
+        "storage",
+        "os",
+        "flipkart_price",
+        "amazon_price",
+        "flipkart_rating",
+        "amazon_rating",
+        "price_last_updated",
+        "image_url",
+        "image_local_path",
+        "smartprix_url",
+        "spec_source_url",
+        "enrichment_status",
+        "last_updated",
+        "notes"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "launch_date": 57,
+        "display": 0,
+        "processor": 0,
+        "battery": 0,
+        "camera": 0,
+        "ram": 0,
+        "storage": 0,
+        "os": 0,
+        "flipkart_price": 55,
+        "amazon_price": 48,
+        "flipkart_rating": 50,
+        "amazon_rating": 35,
+        "price_last_updated": 57,
+        "image_url": 0,
+        "image_local_path": 0,
+        "smartprix_url": 0,
+        "spec_source_url": 57,
+        "enrichment_status": 57,
+        "last_updated": 0,
+        "notes": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_enrichment_template": {
+      "rows": 59,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "launch_date",
+        "display",
+        "processor",
+        "battery",
+        "camera",
+        "ram",
+        "storage",
+        "os",
+        "flipkart_price",
+        "amazon_price",
+        "flipkart_rating",
+        "amazon_rating",
+        "price_last_updated",
+        "image_url",
+        "image_local_path",
+        "smartprix_url",
+        "spec_source_url",
+        "enrichment_status",
+        "last_updated",
+        "notes"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "launch_date": 57,
+        "display": 0,
+        "processor": 0,
+        "battery": 0,
+        "camera": 0,
+        "ram": 0,
+        "storage": 0,
+        "os": 0,
+        "flipkart_price": 55,
+        "amazon_price": 48,
+        "flipkart_rating": 50,
+        "amazon_rating": 35,
+        "price_last_updated": 57,
+        "image_url": 0,
+        "image_local_path": 0,
+        "smartprix_url": 0,
+        "spec_source_url": 57,
+        "enrichment_status": 57,
+        "last_updated": 0,
+        "notes": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_master": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "flipkart_review_count",
+        "amazon_review_count",
+        "total_review_count"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "flipkart_review_count": 57,
+        "amazon_review_count": 57,
+        "total_review_count": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_product_catalog": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "smartprix_link",
+        "image_filename",
+        "image_local_path",
+        "image_status",
+        "image_match_type",
+        "launch_price"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "smartprix_link": 57,
+        "image_filename": 57,
+        "image_local_path": 57,
+        "image_status": 57,
+        "image_match_type": 57,
+        "launch_price": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_product_intelligence": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "launch_date",
+        "launch_price",
+        "display",
+        "processor",
+        "battery",
+        "camera",
+        "ram",
+        "storage",
+        "os",
+        "flipkart_price",
+        "amazon_price",
+        "flipkart_rating",
+        "amazon_rating",
+        "price_last_updated",
+        "image_url",
+        "image_local_path",
+        "smartprix_url",
+        "spec_source_url",
+        "enrichment_status",
+        "last_updated",
+        "notes",
+        "price_segment",
+        "chipset_brand",
+        "battery_segment",
+        "display_type",
+        "refresh_rate",
+        "supports_5g"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "launch_date": 57,
+        "launch_price": 57,
+        "display": 0,
+        "processor": 0,
+        "battery": 0,
+        "camera": 0,
+        "ram": 0,
+        "storage": 0,
+        "os": 0,
+        "flipkart_price": 55,
+        "amazon_price": 48,
+        "flipkart_rating": 50,
+        "amazon_rating": 35,
+        "price_last_updated": 57,
+        "image_url": 0,
+        "image_local_path": 0,
+        "smartprix_url": 0,
+        "spec_source_url": 57,
+        "enrichment_status": 57,
+        "last_updated": 0,
+        "notes": 57,
+        "price_segment": 57,
+        "chipset_brand": 0,
+        "battery_segment": 0,
+        "display_type": 0,
+        "refresh_rate": 0,
+        "supports_5g": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_specifications": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "smartprix_link",
+        "image_filename",
+        "image_local_path",
+        "launch_date",
+        "display",
+        "display_type",
+        "refresh_rate",
+        "resolution",
+        "processor",
+        "ram",
+        "storage",
+        "battery",
+        "charging",
+        "rear_camera",
+        "front_camera",
+        "android_version",
+        "supports_5g",
+        "nfc",
+        "bluetooth",
+        "wifi",
+        "weight",
+        "spec_status"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "smartprix_link": 57,
+        "image_filename": 57,
+        "image_local_path": 57,
+        "launch_date": 0,
+        "display": 57,
+        "display_type": 57,
+        "refresh_rate": 57,
+        "resolution": 57,
+        "processor": 57,
+        "ram": 57,
+        "storage": 57,
+        "battery": 57,
+        "charging": 54,
+        "rear_camera": 57,
+        "front_camera": 57,
+        "android_version": 57,
+        "supports_5g": 57,
+        "nfc": 57,
+        "bluetooth": 57,
+        "wifi": 57,
+        "weight": 54,
+        "spec_status": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_link": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "smartprix_link"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "smartprix_link": 57
+      },
+      "duplicate_phone_ids": {}
+    }
+  },
+  "identity": {
+    "phones_enriched": {
+      "missing_master_ids": [],
+      "extra_ids": [],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    },
+    "phones_enrichment_template": {
+      "missing_master_ids": [],
+      "extra_ids": [
+        ""
+      ],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    },
+    "phones_master": {
+      "missing_master_ids": [],
+      "extra_ids": [],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    },
+    "phones_product_catalog": {
+      "missing_master_ids": [],
+      "extra_ids": [],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    },
+    "phones_product_intelligence": {
+      "missing_master_ids": [],
+      "extra_ids": [],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    },
+    "phones_specifications": {
+      "missing_master_ids": [],
+      "extra_ids": [],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    },
+    "phones_link": {
+      "missing_master_ids": [],
+      "extra_ids": [],
+      "name_mismatches": [],
+      "duplicate_names": {}
+    }
+  },
+  "raw_spec_brands": {
+    "Tecno": 5,
+    "Realme": 7,
+    "Infinix": 2,
+    "LAVA": 3,
+    "Oppo": 7,
+    "HMD": 1,
+    "Moto": 2,
+    "Itel": 2,
+    "Oneplus": 1,
+    "Poco": 4,
+    "Redmi": 6,
+    "Vivo": 6,
+    "Ai+": 3,
+    "Lava": 3,
+    "Samsung": 3,
+    "iQOO": 1,
+    "Motorola": 1
+  },
+  "spec_status": {
+    "Extracted": 57
+  },
+  "enrichment_status": {
+    "Pending": 57
+  },
+  "duplicate_spec_urls": {
+    "https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba": [
+      "PH046",
+      "PH047"
+    ]
+  },
+  "duplicate_images": {
+    "motorola-moto-g37-power.jpg": [
+      "PH009",
+      "PH010"
+    ],
+    "samsung-galaxy-a07-5g.jpg": [
+      "PH048",
+      "PH054"
+    ],
+    "xiaomi-redmi-note-15-pro.jpg": [
+      "PH050",
+      "PH056"
+    ]
+  },
+  "core_coverage_distribution": {
+    "7": 3,
+    "8": 54
+  },
+  "spec_gaps": [
+    {
+      "phone_id": "PH005",
+      "phone_name": "LAVA Shark 2 5G",
+      "missing": [
+        "charging"
+      ]
+    },
+    {
+      "phone_id": "PH017",
+      "phone_name": "Tecno Pop X 5G",
+      "missing": [
+        "charging"
+      ]
+    },
+    {
+      "phone_id": "PH053",
+      "phone_name": "Tecno Spark Go 3",
+      "missing": [
+        "charging"
+      ]
+    }
+  ],
+  "spec_values": {
+    "supports_5g": {
+      "Yes": 44,
+      "No": 13
+    },
+    "nfc": {
+      "Yes": 7,
+      "No": 50
+    },
+    "wifi": {
+      "Yes": 57
+    },
+    "refresh_rate": {
+      "90": 4,
+      "120": 38,
+      "144": 10,
+      "180": 1,
+      "240": 1,
+      "500": 1,
+      "840": 2
+    },
+    "charging": {
+      "Fast Charging; 10W Reverse Charging": 1,
+      "45W Fast Charging; 27W Reverse Charging": 1,
+      "15W Fast Charging; 5W Reverse Charging": 2,
+      "18W Fast Charging": 3,
+      "": 3,
+      "15W Fast Charging": 2,
+      "45W Fast Charging; 10W Reverse Charging": 2,
+      "30W TurboPower Fast Charging; 6W Reverse Charging": 1,
+      "20W TurboPower (in-box 10W) Fast Charging; 6W Reverse Charging": 1,
+      "Fast Charging": 1,
+      "45W SUPERVOOC Charging; 10W Reverse Charging": 1,
+      "15W Fast Charging; 7.5W Reverse Charging": 4,
+      "15W Fast Charging; Reverse Charging": 3,
+      "80 W SUPERVOOC Fast Charging; Reverse Charging": 1,
+      "90W Fast Charging; Reverse Charging": 1,
+      "5W Reverse Charging": 1,
+      "Fast Charging; Fast Charging Yes; Fast Charging Yes": 1,
+      "45W Turbo Charging; 18W Reverse Charging": 1,
+      "10W Fast Charging; USB Features USB Tethering, USB on-the-go, USB Charging, USB Storage; Fast Charging Yes, 10W Fast Charging; USB Features USB Tethering, USB on-the-go, USB Charging, USB Storage; Fast Charging Yes, 10W Fast Charging": 1,
+      "45W Fast Charging": 3,
+      "33W Fast Charging; 15W Reverse Charging • 7.5 Reverse Wireless Charging": 1,
+      "44W Fast Charging; Reverse Charging": 1,
+      "Reverse Charging": 3,
+      "25W Fast Charging": 3,
+      "45W Fast Charging; Reverse Charging": 1,
+      "33W Fast Charging": 2,
+      "44W Fast Charging": 1,
+      "10 Fast Charging": 1,
+      "68W TurboPower Fast Charging; Reverse Charging": 1,
+      "27W Reverse Charging": 2,
+      "10W Fast Charging": 1,
+      "10W Fast Charging; Reverse Charging": 2,
+      "22.5W Reverse Charging": 1,
+      "45W Fast Charging; 18W Reverse Charging": 2,
+      "80W Fast Charging; Reverse Charging": 1
+    }
+  },
+  "price_dates": {
+    "29-06-2026": 57
+  },
+  "spec_sources": {
+    "Smartphones research data.xlsx": 57
+  },
+  "launch_dates": [
+    {
+      "phone_id": "PH001",
+      "date": "18-Jun-26"
+    },
+    {
+      "phone_id": "PH002",
+      "date": "10-Jun-26"
+    },
+    {
+      "phone_id": "PH003",
+      "date": "08-Jun-26"
+    },
+    {
+      "phone_id": "PH004",
+      "date": "03-Jun-26"
+    },
+    {
+      "phone_id": "PH005",
+      "date": "10-Jun-26"
+    },
+    {
+      "phone_id": "PH006",
+      "date": "26-May-26"
+    },
+    {
+      "phone_id": "PH007",
+      "date": "26-May-26"
+    },
+    {
+      "phone_id": "PH008",
+      "date": "21-May-26"
+    },
+    {
+      "phone_id": "PH009",
+      "date": "19-May-26"
+    },
+    {
+      "phone_id": "PH010",
+      "date": "19-May-26"
+    },
+    {
+      "phone_id": "PH011",
+      "date": "08-May-26"
+    },
+    {
+      "phone_id": "PH012",
+      "date": "07-May-26"
+    },
+    {
+      "phone_id": "PH013",
+      "date": "25-Apr-26"
+    },
+    {
+      "phone_id": "PH014",
+      "date": "25-Apr-26"
+    },
+    {
+      "phone_id": "PH015",
+      "date": "23-Apr-26"
+    },
+    {
+      "phone_id": "PH016",
+      "date": "23-Apr-26"
+    },
+    {
+      "phone_id": "PH017",
+      "date": "22-Apr-26"
+    },
+    {
+      "phone_id": "PH018",
+      "date": "18-Apr-26"
+    },
+    {
+      "phone_id": "PH019",
+      "date": "17-Apr-26"
+    },
+    {
+      "phone_id": "PH020",
+      "date": "17-Apr-26"
+    },
+    {
+      "phone_id": "PH021",
+      "date": "16-Apr-26"
+    },
+    {
+      "phone_id": "PH022",
+      "date": "09-Apr-26"
+    },
+    {
+      "phone_id": "PH023",
+      "date": "09-Apr-26"
+    },
+    {
+      "phone_id": "PH024",
+      "date": "07-Apr-26"
+    },
+    {
+      "phone_id": "PH025",
+      "date": "46135"
+    },
+    {
+      "phone_id": "PH026",
+      "date": "46115"
+    },
+    {
+      "phone_id": "PH027",
+      "date": "46093"
+    },
+    {
+      "phone_id": "PH028",
+      "date": "24-Mar-26"
+    },
+    {
+      "phone_id": "PH029",
+      "date": "24-Mar-26"
+    },
+    {
+      "phone_id": "PH030",
+      "date": "20-Mar-26"
+    },
+    {
+      "phone_id": "PH031",
+      "date": "18-Mar-26"
+    },
+    {
+      "phone_id": "PH032",
+      "date": "18-Mar-26"
+    },
+    {
+      "phone_id": "PH033",
+      "date": "17-Mar-26"
+    },
+    {
+      "phone_id": "PH034",
+      "date": "18-Mar-26"
+    },
+    {
+      "phone_id": "PH035",
+      "date": "13-Mar-26"
+    },
+    {
+      "phone_id": "PH036",
+      "date": "13-Mar-26"
+    },
+    {
+      "phone_id": "PH037",
+      "date": "12-Mar-26"
+    },
+    {
+      "phone_id": "PH038",
+      "date": "11-Mar-26"
+    },
+    {
+      "phone_id": "PH039",
+      "date": "07-Mar-26"
+    },
+    {
+      "phone_id": "PH040",
+      "date": "07-Mar-26"
+    },
+    {
+      "phone_id": "PH041",
+      "date": "07-Mar-26"
+    },
+    {
+      "phone_id": "PH042",
+      "date": "06-Mar-26"
+    },
+    {
+      "phone_id": "PH043",
+      "date": "03-Mar-26"
+    },
+    {
+      "phone_id": "PH044",
+      "date": "10-Feb-26"
+    },
+    {
+      "phone_id": "PH045",
+      "date": "04-Feb-26"
+    },
+    {
+      "phone_id": "PH046",
+      "date": "03-Feb-26"
+    },
+    {
+      "phone_id": "PH047",
+      "date": "01-Feb-26"
+    },
+    {
+      "phone_id": "PH048",
+      "date": "31-Jan-26"
+    },
+    {
+      "phone_id": "PH049",
+      "date": "29-Jan-26"
+    },
+    {
+      "phone_id": "PH050",
+      "date": "29-Jan-26"
+    },
+    {
+      "phone_id": "PH051",
+      "date": "11-Jan-26"
+    },
+    {
+      "phone_id": "PH052",
+      "date": "10-Jan-26"
+    },
+    {
+      "phone_id": "PH053",
+      "date": "07-Jan-26"
+    },
+    {
+      "phone_id": "PH054",
+      "date": "05-Feb-26"
+    },
+    {
+      "phone_id": "PH055",
+      "date": "08-Jan-26"
+    },
+    {
+      "phone_id": "PH056",
+      "date": "06-Jan-26"
+    },
+    {
+      "phone_id": "PH057",
+      "date": "06-Jan-26"
+    }
+  ],
+  "missing_price_fields": {
+    "amazon_price": [
+      "PH005",
+      "PH007",
+      "PH008",
+      "PH022",
+      "PH037",
+      "PH039",
+      "PH042",
+      "PH044",
+      "PH046"
+    ],
+    "flipkart_price": [
+      "PH005",
+      "PH025"
+    ],
+    "launch_price": []
+  },
+  "price_segments": {
+    "Upper Mid Range": 15,
+    "Lower Mid Range": 13,
+    "Budget": 21,
+    "Premium": 5,
+    "Entry": 3
+  },
+  "high_refresh_rate_flags": [
+    {
+      "phone_id": "PH007",
+      "phone_name": "Realme 16T 5G",
+      "refresh_rate": "180"
+    },
+    {
+      "phone_id": "PH013",
+      "phone_name": "Poco C81",
+      "refresh_rate": "240"
+    },
+    {
+      "phone_id": "PH024",
+      "phone_name": "Redmi Note 15 SE 5G",
+      "refresh_rate": "840"
+    },
+    {
+      "phone_id": "PH041",
+      "phone_name": "Motorola Edge 70 Fusion",
+      "refresh_rate": "500"
+    },
+    {
+      "phone_id": "PH056",
+      "phone_name": "Redmi Note 15",
+      "refresh_rate": "840"
+    }
+  ],
+  "charging_without_forward_wattage": [
+    {
+      "phone_id": "PH001",
+      "phone_name": "Tecno Pova 8 5G",
+      "charging": "Fast Charging; 10W Reverse Charging"
+    },
+    {
+      "phone_id": "PH005",
+      "phone_name": "LAVA Shark 2 5G",
+      "charging": ""
+    },
+    {
+      "phone_id": "PH011",
+      "phone_name": "Itel Zeno 200",
+      "charging": "Fast Charging"
+    },
+    {
+      "phone_id": "PH017",
+      "phone_name": "Tecno Pop X 5G",
+      "charging": ""
+    },
+    {
+      "phone_id": "PH021",
+      "phone_name": "Realme Narzo 100 Lite 5G",
+      "charging": "5W Reverse Charging"
+    },
+    {
+      "phone_id": "PH022",
+      "phone_name": "Ai+ Nova 2 Ultra 5G",
+      "charging": "Fast Charging; Fast Charging Yes; Fast Charging Yes"
+    },
+    {
+      "phone_id": "PH031",
+      "phone_name": "Oppo A6s 5G",
+      "charging": "Reverse Charging"
+    },
+    {
+      "phone_id": "PH033",
+      "phone_name": "Vivo T5x 5G",
+      "charging": "Reverse Charging"
+    },
+    {
+      "phone_id": "PH036",
+      "phone_name": "iQOO Z11x 5G",
+      "charging": "Reverse Charging"
+    },
+    {
+      "phone_id": "PH039",
+      "phone_name": "Itel Zeno 100",
+      "charging": "10 Fast Charging"
+    },
+    {
+      "phone_id": "PH042",
+      "phone_name": "Realme Narzo Power 5G",
+      "charging": "27W Reverse Charging"
+    },
+    {
+      "phone_id": "PH049",
+      "phone_name": "Realme P4 Power",
+      "charging": "27W Reverse Charging"
+    },
+    {
+      "phone_id": "PH050",
+      "phone_name": "Redmi Note 15 Pro",
+      "charging": "22.5W Reverse Charging"
+    },
+    {
+      "phone_id": "PH053",
+      "phone_name": "Tecno Spark Go 3",
+      "charging": ""
+    }
+  ],
+  "spec_content_duplicates": {
+    "('6.76 inch, LCD Screen', 'Mediatek Dimensity 7400 Turbo', '6 GB', '128 GB', '7200 mAh Battery', 'Reverse Charging', '50 MP + 2 MP Dual Rear Camera', '32 MP Front Camera', '120', '219 g', 'Android v16', 'No')": [
+      "PH033",
+      "PH036"
+    ],
+    "('6.8 inch, AMOLED Screen', 'Mediatek Dimensity 7400 Ultra', '8 GB', '128 GB', '10001 mAh Battery', '27W Reverse Charging', '50 MP + 8 MP Dual Rear Camera with OIS', '16 MP Front Camera', '144', '219 g', 'Android v16', 'No')": [
+      "PH042",
+      "PH049"
+    ],
+    "('6.75 inch, IPS Screen', 'UNISOC 9863a', '4 GB', '64 GB', '5000 mAh Battery', '10W Fast Charging; Reverse Charging', '13 MP Dual Rear Camera', '5 MP Front Camera', '90', '193.7 g', 'Android v15', 'No')": [
+      "PH046",
+      "PH047"
+    ]
+  },
+  "raw_workbooks": {
+    "smartphones_list.xlsx": {
+      "sheets": [
+        "list",
+        "template"
+      ],
+      "dimensions": {
+        "list": [
+          74,
+          4
+        ],
+        "template": [
+          24,
+          1
+        ]
+      },
+      "header_claims": [
+        "Smartphones Launched in India",
+        "December 2025 – June 2026  |  Launch Price ≤ Rs. 30,000",
+        "Total models: 69  |  Period: Dec 1, 2025 – Jun 22, 2026"
+      ],
+      "actual_model_rows": 63,
+      "names_not_exactly_in_master": [
+        "Tecno Pova 8",
+        "Lava Bold N2 5G",
+        "OnePlus Nord CE 6",
+        "Redmi A7 Pro 5G",
+        "Lava Bold N2 Pro",
+        "Tecno Pop X",
+        "Realme P4 Lite 4G"
+      ],
+      "duplicate_serial_numbers": {
+        "4": 2,
+        "45": 2,
+        "46": 2
+      }
+    },
+    "Smartphones research data.xlsx": {
+      "sheets": [
+        "Smartphone Data"
+      ],
+      "dimensions": {
+        "Smartphone Data": [
+          1084,
+          15
+        ]
+      },
+      "phone_blocks": 57,
+      "master_order_mismatches": [
+        {
+          "position": 4,
+          "research": "Lava Bold N2 5G",
+          "master": "LAVA Bold N2"
+        }
+      ],
+      "header_claim": "SMARTPHONE MARKET RESEARCH (JAN 2026 – JUN 2026) | LAUNCH PRICE ≤ ₹30,000 | 58 MODELS | DATE OF CAPTURE: 23 JUNE 2026",
+      "capture_dates": {
+        "23-Jun-2026": 57
+      }
+    },
+    "comments_data.xlsx": {
+      "sheets": [
+        "Tecno Pova 8 5G",
+        "Realme P4R 5G",
+        "Infinix SMART 20",
+        "LAVA Bold N2",
+        "LAVA Shark 2 5G",
+        "Oppo A6c",
+        "Realme 16T 5G",
+        "HMD Vibe 2 5G",
+        "Moto G37 Power",
+        "Moto G37",
+        "Itel Zeno 200",
+        "Oneplus Nord CE 6 Lite",
+        "Poco C81",
+        "Poco C81x",
+        "Redmi A7",
+        "Redmi A7 Pro",
+        "Tecno Pop X 5G",
+        "Vivo Y05",
+        "Oppo F33 5G",
+        "Vivo T5 Pro 5G",
+        "Realme Narzo 100 Lite 5G",
+        "Ai+ Nova 2 Ultra 5G",
+        "Ai+ Nova 2 5G",
+        "Redmi Note 15 SE 5G",
+        "Lava Bold N2 Lite",
+        "Tecno Spark 50 5G",
+        "Redmi 15A 5G",
+        "Vivo Y11 5G",
+        "Vivo Y21 5G",
+        "Realme P4 Lite 5G",
+        "Oppo A6s 5G",
+        "Samsung Galaxy M17e 5G",
+        "Vivo T5x 5G",
+        "Oppo K14 5G",
+        "LAVA Bold 2 5G",
+        "iQOO Z11x 5G",
+        "Vivo Y51 Pro",
+        "Poco C85x 5G",
+        "Itel Zeno 100",
+        "Realme C83 5G",
+        "Motorola Edge 70 Fusion",
+        "Realme Narzo Power 5G",
+        "Ai+ Pulse 2",
+        "Infinix Note Edge 5G",
+        "Tecno Pova Curve 2",
+        "Lava Yuva Star 3",
+        "Oppo K14x 5G",
+        "Samsung Galaxy F70e 5G",
+        "Realme P4 Power",
+        "Redmi Note 15 Pro",
+        "Oppo A6 5G",
+        "Lava Blaze Duo 3 5G",
+        "Tecno Spark Go 3",
+        "Samsung Galaxy A07 5G",
+        "Poco M8",
+        "Redmi Note 15",
+        "Oppo A6 Pro 5G"
+      ],
+      "master_order_mismatches": []
+    }
+  },
+  "database_integrity": [
+    "ok"
+  ],
+  "database_tables": {
+    "phones": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "flipkart_review_count",
+        "amazon_review_count",
+        "total_review_count"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "flipkart_review_count": 57,
+        "amazon_review_count": 57,
+        "total_review_count": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_specifications": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "smartprix_link",
+        "image_filename",
+        "image_local_path",
+        "launch_date",
+        "display",
+        "display_type",
+        "refresh_rate",
+        "resolution",
+        "processor",
+        "ram",
+        "storage",
+        "battery",
+        "charging",
+        "rear_camera",
+        "front_camera",
+        "android_version",
+        "supports_5g",
+        "nfc",
+        "bluetooth",
+        "wifi",
+        "weight",
+        "spec_status"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "smartprix_link": 57,
+        "image_filename": 57,
+        "image_local_path": 57,
+        "launch_date": 0,
+        "display": 57,
+        "display_type": 57,
+        "refresh_rate": 57,
+        "resolution": 57,
+        "processor": 57,
+        "ram": 57,
+        "storage": 57,
+        "battery": 57,
+        "charging": 54,
+        "rear_camera": 57,
+        "front_camera": 57,
+        "android_version": 57,
+        "supports_5g": 57,
+        "nfc": 57,
+        "bluetooth": 57,
+        "wifi": 57,
+        "weight": 54,
+        "spec_status": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_product_intelligence": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "launch_date",
+        "launch_price",
+        "display",
+        "processor",
+        "battery",
+        "camera",
+        "ram",
+        "storage",
+        "os",
+        "flipkart_price",
+        "amazon_price",
+        "flipkart_rating",
+        "amazon_rating",
+        "price_last_updated",
+        "image_url",
+        "image_local_path",
+        "smartprix_url",
+        "spec_source_url",
+        "enrichment_status",
+        "last_updated",
+        "notes",
+        "price_segment",
+        "chipset_brand",
+        "battery_segment",
+        "display_type",
+        "refresh_rate",
+        "supports_5g"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "launch_date": 57,
+        "launch_price": 57,
+        "display": 0,
+        "processor": 0,
+        "battery": 0,
+        "camera": 0,
+        "ram": 0,
+        "storage": 0,
+        "os": 0,
+        "flipkart_price": 55,
+        "amazon_price": 48,
+        "flipkart_rating": 50,
+        "amazon_rating": 35,
+        "price_last_updated": 57,
+        "image_url": 0,
+        "image_local_path": 0,
+        "smartprix_url": 0,
+        "spec_source_url": 57,
+        "enrichment_status": 57,
+        "last_updated": 0,
+        "notes": 57,
+        "price_segment": 57,
+        "chipset_brand": 0,
+        "battery_segment": 0,
+        "display_type": 0,
+        "refresh_rate": 0,
+        "supports_5g": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "phones_product_catalog": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "smartprix_link",
+        "image_filename",
+        "image_local_path",
+        "image_status",
+        "image_match_type",
+        "launch_price"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "smartprix_link": 57,
+        "image_filename": 57,
+        "image_local_path": 57,
+        "image_status": 57,
+        "image_match_type": 57,
+        "launch_price": 57
+      },
+      "duplicate_phone_ids": {}
+    }
+  },
+  "database_csv_differences": {
+    "phones": [],
+    "phones_specifications": [],
+    "phones_product_intelligence": [],
+    "phones_product_catalog": []
+  },
+  "review_linkage_only": {
+    "rows": 3031,
+    "nonduplicate_rows": 2813,
+    "orphan_reviews": 0,
+    "summary_phones": 51
+  },
+  "snapshot": {
+    "generated_at": "2026-08-19T15:19:17.854773+00:00",
+    "overview_metrics": {
+      "phones": 57,
+      "reviews": 3031,
+      "usable_reviews": 2813,
+      "brands": 14,
+      "aspects": 717,
+      "positive_percent": 65
+    },
+    "phone_data": {
+      "rows": 57,
+      "columns": [
+        "phone_id",
+        "phone_name",
+        "brand",
+        "processor",
+        "ram",
+        "storage",
+        "battery",
+        "charging",
+        "display",
+        "refresh_rate",
+        "rear_camera",
+        "front_camera",
+        "image_filename",
+        "image_local_path",
+        "price_segment",
+        "launch_price",
+        "amazon_price",
+        "flipkart_price",
+        "amazon_rating",
+        "flipkart_rating",
+        "review_count",
+        "positive_percent",
+        "negative_percent",
+        "avg_confidence",
+        "consumer_verdict",
+        "insight_confidence",
+        "top_strengths",
+        "top_pain_points",
+        "executive_summary",
+        "recommendation",
+        "segment_label",
+        "best_price",
+        "evidence_score",
+        "strengths",
+        "pain_points",
+        "image_url"
+      ],
+      "populated": {
+        "phone_id": 57,
+        "phone_name": 57,
+        "brand": 57,
+        "processor": 57,
+        "ram": 57,
+        "storage": 57,
+        "battery": 57,
+        "charging": 54,
+        "display": 57,
+        "refresh_rate": 57,
+        "rear_camera": 57,
+        "front_camera": 57,
+        "image_filename": 57,
+        "image_local_path": 57,
+        "price_segment": 57,
+        "launch_price": 57,
+        "amazon_price": 48,
+        "flipkart_price": 55,
+        "amazon_rating": 35,
+        "flipkart_rating": 50,
+        "review_count": 57,
+        "positive_percent": 57,
+        "negative_percent": 57,
+        "avg_confidence": 51,
+        "consumer_verdict": 51,
+        "insight_confidence": 51,
+        "top_strengths": 51,
+        "top_pain_points": 51,
+        "executive_summary": 51,
+        "recommendation": 51,
+        "segment_label": 57,
+        "best_price": 57,
+        "evidence_score": 57,
+        "strengths": 57,
+        "pain_points": 57,
+        "image_url": 57
+      },
+      "duplicate_phone_ids": {}
+    },
+    "brands": {
+      "OnePlus": 1,
+      "Motorola": 3,
+      "Tecno": 5,
+      "Realme": 7,
+      "HMD": 1,
+      "Infinix": 2,
+      "Poco": 4,
+      "Oppo": 7,
+      "Lava": 6,
+      "iQOO": 1,
+      "Redmi": 6,
+      "Vivo": 6,
+      "Ai+": 3,
+      "Samsung": 3,
+      "Itel": 2
+    },
+    "review_backed_brands": [
+      "Ai+",
+      "HMD",
+      "Infinix",
+      "Lava",
+      "Motorola",
+      "OnePlus",
+      "Oppo",
+      "Poco",
+      "Realme",
+      "Redmi",
+      "Samsung",
+      "Tecno",
+      "Vivo",
+      "iQOO"
+    ],
+    "zero_review_phones": [
+      {
+        "phone_id": "PH001",
+        "phone_name": "Tecno Pova 8 5G",
+        "brand": "Tecno"
+      },
+      {
+        "phone_id": "PH004",
+        "phone_name": "LAVA Bold N2",
+        "brand": "Lava"
+      },
+      {
+        "phone_id": "PH005",
+        "phone_name": "LAVA Shark 2 5G",
+        "brand": "Lava"
+      },
+      {
+        "phone_id": "PH011",
+        "phone_name": "Itel Zeno 200",
+        "brand": "Itel"
+      },
+      {
+        "phone_id": "PH039",
+        "phone_name": "Itel Zeno 100",
+        "brand": "Itel"
+      },
+      {
+        "phone_id": "PH046",
+        "phone_name": "Lava Yuva Star 3",
+        "brand": "Lava"
+      }
+    ],
+    "missing_master_ids": []
+  },
+  "snapshot_spec_differences": [],
+  "spec_fields_not_exported": [
+    "smartprix_link",
+    "launch_date",
+    "display_type",
+    "resolution",
+    "android_version",
+    "supports_5g",
+    "nfc",
+    "bluetooth",
+    "wifi",
+    "weight",
+    "spec_status"
+  ],
+  "metadata_fields_not_exported": [
+    "launch_date",
+    "camera",
+    "os",
+    "price_last_updated",
+    "smartprix_url",
+    "spec_source_url",
+    "enrichment_status",
+    "last_updated",
+    "notes",
+    "chipset_brand",
+    "battery_segment",
+    "display_type",
+    "supports_5g"
+  ],
+  "images_missing_on_disk": [],
+  "images_missing_web": [],
+  "synthetic_parser_probes": {
+    "empty_page_connectivity": {
+      "supports_5g": "No",
+      "nfc": "No",
+      "wifi": "No"
+    },
+    "explicit_no_nfc": "Yes",
+    "pwm_before_refresh": "840",
+    "touch_before_refresh": "500"
+  },
+  "hashes": {
+    "data\\acip.db": "be45b532d5de6f75ce3f5f16dfaa05e5312bf2d9e5a668e6923db67ef93f8083",
+    "data\\processed\\aspect_summary.csv": "f199d4f73710332978958b7d4353170dc0c1c19116322bdbfbcff3f43a063ff9",
+    "data\\processed\\consumer_intelligence.csv": "f3e9b05a6088fc0baef05ad94177f40b579e2de574695ea7116fccffb4d3740f",
+    "data\\processed\\consumer_intelligence.db": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data\\processed\\phone_ai_insights.csv": "234566b2e12fff3b8c650c46d1983f496e1a46b2415730a3b111ae9e80c206ce",
+    "data\\processed\\phone_summary.csv": "1d3bc6a044e3938cb7c26766a286495ed5a4586dd9c0c0844e42ee89c17c492d",
+    "data\\processed\\phones_enriched.csv": "8f75f83e778fd9470bcaa05d0ee68cb6b0a2aa5e0e9e359bc0650399e6fbbba9",
+    "data\\processed\\phones_enrichment_template.csv": "edad91483eb36caf6fed1e534b3f2360389a4077b9d54a9d6dfafbd833393389",
+    "data\\processed\\phones_master.csv": "7c1dd797fa1d283daadd5308940f40e40d859312bfa6c0cec571a5dfd7b94869",
+    "data\\processed\\phones_product_catalog.csv": "c06f054e7d61018c825396933ba66f1f64355dd6d3f06ef2af981d0761c3c08d",
+    "data\\processed\\phones_product_intelligence.csv": "76efba7975a7fccd6952f6acce1752b7fa89ffed31acda82fd25a6b3cb7c2b34",
+    "data\\processed\\phones_specifications.csv": "a3b8af8b8c82fb69fc583a2522569694d0864590d495b0cc8be2ef9221c7739b",
+    "data\\processed\\platform_summary.csv": "40f5a39ace6e6059b61c6240259066628edf065ada9cf0f8a73acd9215a2f412",
+    "data\\processed\\reviews_aspects.csv": "72d642f4020473f0cf65ccf35b0d56967288808a4d4316e656f5f3d087abad36",
+    "data\\processed\\reviews_clean.csv": "30db77a78d0ce23b4e877bf5490bd05ac752fd96eadb565a1c528dc91ca79e20",
+    "data\\processed\\reviews_master.csv": "7f5bdcd8a93c234450542213ca19865fccd12ee685d03bfff7c0121e8eb1c18e",
+    "data\\processed\\reviews_sentiment.csv": "b0dc63ae74b637b4f3440763380f16ae2fe4efc3afdcd02874c6c502f62b9598",
+    "data\\raw\\comments_data.xlsx": "834c13629052a45124131965cc6067c1af9da3f4c3853bf120c154b9af9193e2",
+    "data\\raw\\phones_link.csv": "4c1c8099beac0c2c305181e912d40bb516ad4f035909e2e710593f257d198991",
+    "data\\raw\\Smartphones research data.xlsx": "4b08b7a377b39f14a9a4508bb030f6f5386377208ea32cebf02a7369af97667b",
+    "data\\raw\\smartphones_list.xlsx": "066f72fe2cf689cd9d5066b261e82cf58dcd2ac95ce9da3e9d6ee9e7294180a3",
+    "web\\app\\data\\platform-data.json": "f3d8b70e5809c8d0597ad91d7ae24ad5539a1a0e9cc0accc98d221897a0b1bf8",
+    "web\\public\\data\\reviews.json": "c5283593ac83dbe987f51d97ce429012f12cb92456a7b39bf837dc06902e9127"
+  },
+  "source_hashes_unchanged_during_audit": true
+}

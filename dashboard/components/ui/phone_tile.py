@@ -34,11 +34,14 @@ def phone_tile(phone, key_prefix="phone"):
     reviews = phone.get("review_count", None)
     phone_id = phone.get("phone_id", phone_name)
 
-    with st.container(border=True):
+    with st.container(
+        key=f"phone_card_{key_prefix}_{phone_id}",
+        border=True,
+    ):
         image = load_card_image(image_path)
 
         if image is not None:
-            st.image(image, use_container_width=True)
+            st.image(image, width="stretch")
 
         st.markdown(f"### {phone_name}")
         st.caption(brand)
@@ -54,8 +57,8 @@ def phone_tile(phone, key_prefix="phone"):
 
         if st.button(
             "View Details",
-            use_container_width=True,
-            key=f"view_{phone_id}",
+            width="stretch",
+            key=f"{key_prefix}_view_{phone_id}",
         ):
             st.session_state["selected_phone_id"] = phone_id
             st.session_state["selected_phone_name"] = phone_name

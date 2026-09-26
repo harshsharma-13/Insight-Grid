@@ -4,6 +4,7 @@ import streamlit as st
 
 from components.style_loader import load_css
 from components.ui.navbar import navbar
+from components.ui.page_header import page_header
 from ai_compare import build_context, compare_question
 from dashboard_data import (
     get_phone_options,
@@ -17,7 +18,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 st.set_page_config(page_title="Compare Phones", page_icon="⚖️", layout="wide")
 load_css()
 
-navbar()
+navbar("compare")
 
 
 def clean(value):
@@ -145,8 +146,9 @@ def ai_verdict(phone_1, phone_2, data_1, data_2):
         margin = 0
         reasons = []
 
-    with st.container(border=True):
-        st.markdown("## 🤖 AI Verdict")
+    with st.container(key="comparison_verdict", border=True):
+        st.caption("DECISION READOUT")
+        st.markdown("## Comparative verdict")
 
         if winner == "Tie":
             st.info("Both smartphones perform similarly based on the available data.")
@@ -159,7 +161,7 @@ def ai_verdict(phone_1, phone_2, data_1, data_2):
         else:
             confidence = "Low"
 
-        st.success(f"🏆 Recommended: **{winner}**")
+        st.success(f"Recommended: **{winner}**")
 
         st.markdown(
             f"""
@@ -171,20 +173,17 @@ Based on overall consumer sentiment, review quality and marketplace data,
         )
 
         if reasons:
-            st.markdown("### Why?")
+            st.markdown("### Why it leads")
             for reason in reasons[:3]:
                 st.markdown(f"• {reason}")
 
 
-def phone_header(phone_name, data):
+def phone_header(phone_name, data, key):
     catalog = data["catalog"]
     insight = data["insight"]
     summary = data["summary"]
 
-    with st.container(
-        border=True,
-        height=780,
-    ):
+    with st.container(key=f"comparison_phone_card_{key}", border=True):
         # ----------------------------------
         # IMAGE AREA
         # ----------------------------------
@@ -304,8 +303,8 @@ def comparison_row(label, left_value, right_value):
         st.write(clean(right_value))
 
 
-def list_block(title, items):
-    with st.container(border=True):
+def list_block(title, items, key):
+    with st.container(key=f"comparison_list_card_{key}", border=True):
         st.markdown(f"#### {title}")
 
         if not items:
@@ -315,33 +314,39 @@ def list_block(title, items):
             st.caption(f"• {item}")
 
 
-st.markdown("## ⚖️ Compare Smartphones")
-st.caption("Compare specs, sentiment and AI-generated consumer intelligence.")
-
 phones = get_phone_options()
 phone_names = phones["phone_name"].tolist()
 phone_map = dict(zip(phones["phone_name"], phones["phone_id"]))
 
-select_left, select_right = st.columns(2)
+page_header(
+    "Decision workspace",
+    "Compare Phones",
+    "Place two devices side by side and surface the differences that materially affect a buying decision.",
+    context=[f"{len(phone_names)} phones", "Evidence-aware verdict", "Specification parity"],
+)
 
-with select_left:
-    phone_1 = st.selectbox(
-        "Phone 1",
-        phone_names,
-        key="compare_phone_1",
-    )
+with st.container(key="compare_controls"):
+    st.markdown('<div class="filter-label">Comparison set</div>', unsafe_allow_html=True)
+    select_left, select_right = st.columns(2)
 
-phone_2_options = [name for name in phone_names if name != phone_1]
+    with select_left:
+        phone_1 = st.selectbox(
+            "Reference phone",
+            phone_names,
+            key="compare_phone_1",
+        )
 
-if "compare_phone_2" not in st.session_state or st.session_state["compare_phone_2"] == phone_1:
-    st.session_state["compare_phone_2"] = phone_2_options[0]
+    phone_2_options = [name for name in phone_names if name != phone_1]
 
-with select_right:
-    phone_2 = st.selectbox(
-        "Phone 2",
-        phone_2_options,
-        key="compare_phone_2",
-    )
+    if "compare_phone_2" not in st.session_state or st.session_state["compare_phone_2"] == phone_1:
+        st.session_state["compare_phone_2"] = phone_2_options[0]
+
+    with select_right:
+        phone_2 = st.selectbox(
+            "Comparison phone",
+            phone_2_options,
+            key="compare_phone_2",
+        )
 
 data_1 = get_rows(phone_map[phone_1])
 data_2 = get_rows(phone_map[phone_2])
@@ -351,21 +356,20 @@ catalog_2 = data_2["catalog"]
 insight_1 = data_1["insight"]
 insight_2 = data_2["insight"]
 
-st.divider()
-
 left, right = st.columns(2)
 
 with left:
-    phone_header(phone_1, data_1)
+    phone_header(phone_1, data_1, "left")
 
 with right:
-    phone_header(phone_2, data_2)
+    phone_header(phone_2, data_2, "right")
 
 st.divider()
 
 ai_verdict(phone_1, phone_2, data_1, data_2)
 
-st.markdown("### 🤖 Ask AI About These Two Phones")
+st.markdown('<div class="analysis-panel-title">Ask the comparison</div>', unsafe_allow_html=True)
+st.markdown('<div class="analysis-panel-caption">Interrogate this pair for a specific use case or trade-off.</div>', unsafe_allow_html=True)
 
 question = st.text_input(
     "Ask a comparison question",
@@ -379,14 +383,15 @@ if question:
 
     answer = compare_question(question, context_1, context_2)
 
-    with st.container(border=True):
+    with st.container(key="comparison_answer", border=True):
         st.markdown(answer)
 
 st.divider()
 
-st.markdown("### Specification Comparison")
+st.markdown('<div class="analysis-panel-title">Specification matrix</div>', unsafe_allow_html=True)
+st.markdown('<div class="analysis-panel-caption">A direct field-by-field view of the hardware differences.</div>', unsafe_allow_html=True)
 
-with st.container(border=True):
+with st.container(key="comparison_matrix", border=True):
     comparison_row("Display", catalog_1.get("display") if catalog_1 is not None else "", catalog_2.get("display") if catalog_2 is not None else "")
     comparison_row("Refresh Rate", catalog_1.get("refresh_rate") if catalog_1 is not None else "", catalog_2.get("refresh_rate") if catalog_2 is not None else "")
     comparison_row("Processor", catalog_1.get("processor") if catalog_1 is not None else "", catalog_2.get("processor") if catalog_2 is not None else "")
@@ -399,17 +404,17 @@ with st.container(border=True):
 
 st.divider()
 
-st.markdown("### AI Insight Comparison")
+st.markdown('<div class="analysis-panel-title">Consumer intelligence comparison</div>', unsafe_allow_html=True)
 
 ai_left, ai_right = st.columns(2)
 
 with ai_left:
-    with st.container(border=True):
+    with st.container(key="comparison_summary_left", border=True):
         st.markdown(f"#### {phone_1}")
         st.caption(clean(insight_1.get("executive_summary")) if insight_1 is not None else "No summary available")
 
 with ai_right:
-    with st.container(border=True):
+    with st.container(key="comparison_summary_right", border=True):
         st.markdown(f"#### {phone_2}")
         st.caption(clean(insight_2.get("executive_summary")) if insight_2 is not None else "No summary available")
 
@@ -419,12 +424,14 @@ with strength_left:
     list_block(
         f"✅ {phone_1} Strengths",
         split_items(insight_1.get("top_strengths")) if insight_1 is not None else [],
+        "strengths_left",
     )
 
 with strength_right:
     list_block(
         f"✅ {phone_2} Strengths",
         split_items(insight_2.get("top_strengths")) if insight_2 is not None else [],
+        "strengths_right",
     )
 
 pain_left, pain_right = st.columns(2)
@@ -433,10 +440,12 @@ with pain_left:
     list_block(
         f"⚠️ {phone_1} Pain Points",
         split_items(insight_1.get("top_pain_points")) if insight_1 is not None else [],
+        "pain_left",
     )
 
 with pain_right:
     list_block(
         f"⚠️ {phone_2} Pain Points",
         split_items(insight_2.get("top_pain_points")) if insight_2 is not None else [],
+        "pain_right",
     )

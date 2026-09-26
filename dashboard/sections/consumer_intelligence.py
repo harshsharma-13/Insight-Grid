@@ -1,5 +1,8 @@
+from html import escape
+
 import streamlit as st
 
+from components.ui.page_header import executive_brief
 from components.ui.section import section_title
 
 
@@ -27,82 +30,44 @@ def render(
         feature_df,
     )
 
-    st.info(brief)
+    executive_brief(brief.replace("**", ""), label="Consumer signal brief")
 
-    st.markdown("### 🚨 Top Customer Concerns")
+    st.markdown('<div class="analysis-panel-title">Priority friction signals</div>', unsafe_allow_html=True)
 
-    for _, row in pain_df.head(5).iterrows():
+    pain_cols = st.columns(2)
+    for index, (_, row) in enumerate(pain_df.head(4).iterrows()):
 
-        with st.container(border=True):
+        with pain_cols[index % 2]:
+            st.markdown(
+                f"""
+                <div class="signal-detail-card signal-detail-risk">
+                    <div class="signal-detail-top"><span>{escape(str(row['severity']))} priority</span><strong>{int(row['mentions']):,}</strong></div>
+                    <h3>{escape(str(row['issue']))}</h3>
+                    <p>{row['phones']} phones · {row['brands']} brands</p>
+                    <div class="signal-detail-copy"><b>Recommended move</b>{escape(str(row['recommendation']))}</div>
+                    <small>{escape(str(row['affected_brands']))}</small>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
-            left, right = st.columns([4, 1])
+    st.markdown('<div class="analysis-panel-title">Customer advocacy signals</div>', unsafe_allow_html=True)
 
-            with left:
+    feature_cols = st.columns(2)
+    for index, (_, row) in enumerate(feature_df.head(4).iterrows()):
 
-                st.markdown(f"### {row['issue']}")
-
-                st.caption(
-                    f"{row['phones']} phones • {row['brands']} brands"
-                )
-
-                st.write(
-                    f"**Affected brands:** {row['affected_brands']}"
-                )
-        
-
-                st.write(
-                    f"**Recommendation:** {row['recommendation']}"
-                )
-
-                st.caption(
-                    f"Example phones: {row['example_phones']}"
-                )
-
-            with right:
-
-                st.metric(
-                    "Mentions",
-                    row["mentions"],
-                )
-
-                st.metric(
-                    "Severity",
-                    row["severity"],
-                )
-
-    st.markdown("### 💚 What Customers Appreciate")
-
-    for _, row in feature_df.head(5).iterrows():
-
-        with st.container(border=True):
-
-            left, right = st.columns([4, 1])
-
-            with left:
-
-                st.markdown(f"### {row['feature']}")
-
-                st.caption(
-                    f"{row['phones']} phones • {row['brands']} brands"
-                )
-
-                st.write(
-                    f"**Best performing brand:** {row['best_brand']}"
-                )
-
-                st.write(
-                    f"**Opportunity:** {row['opportunity']}"
-                )
-
-                st.caption(
-                    f"Example phones: {row['example_phones']}"
-                )
-
-            with right:
-
-                st.metric(
-                    "Mentions",
-                    row["mentions"],
-                )
+        with feature_cols[index % 2]:
+            st.markdown(
+                f"""
+                <div class="signal-detail-card signal-detail-positive">
+                    <div class="signal-detail-top"><span>Advocacy</span><strong>{int(row['mentions']):,}</strong></div>
+                    <h3>{escape(str(row['feature']))}</h3>
+                    <p>{row['phones']} phones · {row['brands']} brands · led by {escape(str(row['best_brand']))}</p>
+                    <div class="signal-detail-copy"><b>Commercial opportunity</b>{escape(str(row['opportunity']))}</div>
+                    <small>{escape(str(row['example_phones']))}</small>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     st.divider()

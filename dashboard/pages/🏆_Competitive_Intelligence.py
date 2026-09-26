@@ -27,7 +27,7 @@ st.set_page_config(
 
 load_css()
 
-navbar()
+navbar("intelligence")
 
 
 competitive_intelligence(

@@ -1,18 +1,21 @@
 import math
+from html import escape
+
 import streamlit as st
 
-from components.ui.section import section_title
+from components.ui.kpi_tile import kpi_tile
+from components.ui.page_header import executive_brief, page_header
 
 
-def sentiment_badge(row):
+def sentiment_style(row):
     positive = float(row.get("positive_percent", 0) or 0)
     negative = float(row.get("negative_percent", 0) or 0)
 
     if positive >= 70 and positive >= negative:
-        return "🟢 Positive"
+        return "Positive", "positive"
     if negative >= 25:
-        return "🔴 Risky"
-    return "🟡 Mixed"
+        return "Risk signal", "risky"
+    return "Mixed", "mixed"
 
 
 def aspect_takeaway(aspect, review):
@@ -42,12 +45,18 @@ def render(
     build_review_summary,
     theme_cluster_reviews,
 ):
-    section_title(
-        "🔎 Review Explorer",
-        "Search and inspect real customer reviews behind every insight.",
-    )
-
     df = get_review_dataset()
+
+    page_header(
+        "Evidence workspace",
+        "Review Explorer",
+        "Search, segment and inspect the customer evidence behind every market signal.",
+        context=[
+            f"{len(df):,} review records",
+            f"{df['brand'].nunique()} brands",
+            "Source-level evidence",
+        ],
+    )
 
     brands = ["All"] + sorted(df["brand"].dropna().unique().tolist())
     platforms = ["All"] + sorted(df["platform"].dropna().unique().tolist())
@@ -66,24 +75,26 @@ def render(
         "Build Quality",
     ]
 
-    c1, c2, c3, c4 = st.columns(4)
+    with st.container(key="filter_toolbar"):
+        st.markdown('<div class="filter-label">Evidence filters</div>', unsafe_allow_html=True)
+        c1, c2, c3, c4 = st.columns(4)
 
-    with c1:
-        brand = st.selectbox("Brand", brands, key="review_brand")
+        with c1:
+            brand = st.selectbox("Brand", brands, key="review_brand")
 
-    with c2:
-        phone = st.selectbox("Phone", phones, key="review_phone")
+        with c2:
+            phone = st.selectbox("Phone", phones, key="review_phone")
 
-    with c3:
-        platform = st.selectbox("Platform", platforms, key="review_platform")
+        with c3:
+            platform = st.selectbox("Platform", platforms, key="review_platform")
 
-    with c4:
-        aspect = st.selectbox("Aspect", aspects, key="review_aspect")
+        with c4:
+            aspect = st.selectbox("Aspect", aspects, key="review_aspect")
 
-    query = st.text_input(
-        "Search reviews",
-        placeholder="battery drain, heating, lag, camera blur...",
-    )
+        query = st.text_input(
+            "Search review evidence",
+            placeholder="Try: battery drain, heating, lag or camera blur",
+        )
 
     filtered = filter_reviews(
         df,
@@ -101,20 +112,24 @@ def render(
     s1, s2, s3, s4 = st.columns(4)
 
     with s1:
-        st.metric("Reviews Found", stats["reviews"])
+        kpi_tile("Evidence found", f"{stats['reviews']:,}", "◫")
 
     with s2:
-        st.metric("Phones Covered", stats["phones"])
+        kpi_tile("Phones covered", stats["phones"], "▣")
 
     with s3:
-        st.metric("Brands Covered", stats["brands"])
+        kpi_tile("Brands covered", stats["brands"], "◎")
 
     with s4:
-        st.metric("Platforms", stats["platforms"])
+        kpi_tile("Sources", stats["platforms"], "↗")
 
-    st.info(build_review_summary(filtered, aspect))
+    executive_brief(
+        build_review_summary(filtered, aspect).replace("**", ""),
+        label="Evidence readout",
+    )
 
-    st.markdown("### 🧩 Review Theme Clusters")
+    st.markdown('<div class="analysis-panel-title">Theme clusters</div>', unsafe_allow_html=True)
+    st.markdown('<div class="analysis-panel-caption">Recurring topics detected in the current evidence set.</div>', unsafe_allow_html=True)
 
     if themes.empty:
         st.caption("No dominant themes detected.")
@@ -123,41 +138,49 @@ def render(
 
         for idx, (_, row) in enumerate(themes.head(6).iterrows()):
             with cols[idx % 3]:
-                with st.container(border=True):
-                    st.markdown(f"### {row['theme']}")
-                    st.metric("Reviews", row["reviews"])
-                    st.caption(f"{row['phones']} phones • {row['brands']} brands")
+                example = str(row["example_review"])
+                example = example[:140] + "…" if len(example) > 140 else example
+                st.markdown(
+                    f"""
+                    <article class="theme-card">
+                        <div class="theme-count">{int(row['reviews']):,}</div>
+                        <div class="theme-name">{escape(str(row['theme']))}</div>
+                        <div class="theme-meta">{int(row['phones'])} phones · {int(row['brands'])} brands</div>
+                        <div class="theme-example">“{escape(example)}”</div>
+                    </article>
+                    """,
+                    unsafe_allow_html=True,
+                )
 
-                    example = str(row["example_review"])
-                    st.caption(example[:120] + "..." if len(example) > 120 else example)
-
-    st.markdown("### Evidence Reviews")
+    st.markdown('<div class="analysis-panel-title">Evidence stream</div>', unsafe_allow_html=True)
+    st.markdown('<div class="analysis-panel-caption">Individual customer reviews with source context and an analytical takeaway.</div>', unsafe_allow_html=True)
 
     if filtered.empty:
         st.warning("No reviews found.")
         return
 
-    p1, p2 = st.columns([2, 1])
+    with st.container(key="review_pagination"):
+        p1, p2 = st.columns([2, 1])
 
-    with p1:
-        page_size = st.selectbox(
-            "Reviews per page",
-            [25, 50, 100],
-            index=0,
-            key="review_page_size",
-        )
+        with p1:
+            page_size = st.selectbox(
+                "Reviews per page",
+                [10, 25, 50],
+                index=0,
+                key="review_page_size",
+            )
 
-    total_pages = max(1, math.ceil(len(filtered) / page_size))
+        total_pages = max(1, math.ceil(len(filtered) / page_size))
 
-    with p2:
-        page = st.number_input(
-            "Page",
-            min_value=1,
-            max_value=total_pages,
-            value=1,
-            step=1,
-            key="review_page",
-        )
+        with p2:
+            page = st.number_input(
+                "Page",
+                min_value=1,
+                max_value=total_pages,
+                value=1,
+                step=1,
+                key="review_page",
+            )
 
     start = (page - 1) * page_size
     end = start + page_size
@@ -170,33 +193,30 @@ def render(
     for index, (_, row) in enumerate(display_df.iterrows(), start=start + 1):
         review = row["review_text"] if row["review_text"] else row["clean_review"]
 
-        with st.container(border=True):
-            top_left, top_right = st.columns([4, 1])
-
-            with top_left:
-                st.markdown(f"### {index}. {row['phone_name']}")
-                st.caption(
-                    f"{row['brand']} • {row['platform']} • {row.get('price_segment', 'Segment unavailable')}"
-                )
-
-            with top_right:
-                st.markdown(f"**{sentiment_badge(row)}**")
-
-            st.markdown("**Review Evidence**")
-            st.write(review)
-
-            st.markdown("**AI Takeaway**")
-            st.caption(aspect_takeaway(aspect, review))
-
-            meta1, meta2, meta3 = st.columns(3)
-
-            with meta1:
-                st.metric("Phone Positive %", f"{row['positive_percent']}%")
-
-            with meta2:
-                st.metric("Phone Negative %", f"{row['negative_percent']}%")
-
-            with meta3:
-                st.metric("Words", int(row["word_count"]) if row["word_count"] else 0)
+        sentiment_label, sentiment_class = sentiment_style(row)
+        takeaway = aspect_takeaway(aspect, review).replace("**", "")
+        word_count = int(row["word_count"]) if row["word_count"] else 0
+        st.markdown(
+            f"""
+            <article class="evidence-card">
+                <div class="evidence-top">
+                    <div>
+                        <div class="evidence-rank">EVIDENCE {index:03d}</div>
+                        <div class="evidence-phone">{escape(str(row['phone_name']))}</div>
+                        <div class="evidence-source">{escape(str(row['brand']))} · {escape(str(row['platform']))} · {escape(str(row.get('price_segment', 'Segment unavailable')))}</div>
+                    </div>
+                    <span class="sentiment-pill sentiment-{sentiment_class}">{sentiment_label}</span>
+                </div>
+                <div class="evidence-quote">“{escape(str(review))}”</div>
+                <div class="evidence-takeaway"><strong>Analyst takeaway</strong> · {escape(takeaway)}</div>
+                <div class="evidence-footer">
+                    <span class="evidence-meta">{row['positive_percent']}% phone positive</span>
+                    <span class="evidence-meta">{row['negative_percent']}% phone negative</span>
+                    <span class="evidence-meta">{word_count} words</span>
+                </div>
+            </article>
+            """,
+            unsafe_allow_html=True,
+        )
 
     st.divider()

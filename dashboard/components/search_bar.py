@@ -13,12 +13,12 @@ def launchpad_search():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.button("Best battery phones", use_container_width=True)
+        st.button("Best battery phones", width="stretch")
 
     with col2:
-        st.button("Compare Poco vs Redmi", use_container_width=True)
+        st.button("Compare Poco vs Redmi", width="stretch")
 
     with col3:
-        st.button("Phones with camera complaints", use_container_width=True)
+        st.button("Phones with camera complaints", width="stretch")
 
     return query

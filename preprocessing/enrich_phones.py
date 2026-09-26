@@ -30,6 +30,7 @@ ENRICHMENT_COLUMNS = [
 
     # Static specifications
     "launch_date",
+    "launch_price",
     "display",
     "processor",
     "battery",
@@ -129,8 +130,10 @@ def load_or_update_template(phones_df: pd.DataFrame) -> pd.DataFrame:
             if column not in template_df.columns:
                 template_df[column] = ""
 
-        # Remove old/deprecated columns by selecting only current schema
-        template_df = template_df[ENRICHMENT_COLUMNS]
+        # Preserve manual fields and discard only completely empty physical rows.
+        template_df = template_df.dropna(how="all")
+        if template_df["phone_id"].isna().any() or template_df["phone_id"].duplicated().any():
+            raise ValueError("Template has missing or duplicate persistent IDs")
 
         existing_ids = set(template_df["phone_id"])
         master_ids = set(phones_df["phone_id"])
@@ -158,9 +161,10 @@ def build_enriched_phones(
     """Merge master phone counts with enrichment fields."""
 
     enriched_df = phones_df.merge(
-        template_df,
-        on=["phone_id", "phone_name"],
-        how="left"
+        template_df.drop(columns=["phone_name"]),
+        on="phone_id",
+        how="left",
+        validate="one_to_one"
     )
 
     return enriched_df

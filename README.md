@@ -1,14 +1,26 @@
-# AI Consumer Intelligence Platform
+# Insight Grid · Consumer Intelligence
 
 An end-to-end consumer intelligence and decision-support platform for the smartphone market, built using customer reviews, product specifications, pricing data, sentiment analysis, and AI-generated insights.
 
 The platform transforms fragmented smartphone review data into structured insights for product teams, market researchers, competitive intelligence teams, and consumers.
 
+## Insight Grid
+
+The project now includes a portfolio-ready web experience in `web/` alongside the original Streamlit prototype. Insight Grid is organized as seven persistent ribbon tabs—Overview, Phones, Reviews, Finder, Compare, Intelligence, and Actions—and uses one shared evidence and scoring layer rather than page-specific calculations.
+
+The v2 architecture has three parts:
+
+- `intelligence/`: normalized queries, transparent scoring, evidence confidence, competitive aggregation, and action prioritization
+- `api/`: a versioned FastAPI read API for health, products, reviews, recommendations, comparisons, brand intelligence, and actions
+- `web/`: a responsive Vinext/React platform with command search and a portable data snapshot generated from the same intelligence engine
+
+The Streamlit application remains available as the original prototype and data exploration environment.
+
 ## Overview
 
 Smartphone brands and product teams receive large volumes of customer feedback across e-commerce platforms. Extracting meaningful insights manually is difficult because reviews are unstructured, repetitive, and distributed across multiple products and competitors.
 
-The AI Consumer Intelligence Platform converts this data into a structured intelligence system that supports:
+Insight Grid converts this data into a structured intelligence system that supports:
 
 - Market-level analysis
 - Product-level exploration
@@ -159,10 +171,13 @@ The dashboard uses modular SQL queries and analytical functions to transform the
 ## Technology Stack
 
 - Python
+- FastAPI
 - Streamlit
 - SQLite
 - Pandas
 - SQL
+- React and TypeScript
+- Vinext and Cloudflare Workers
 - Sentiment Analysis
 - AI-generated product intelligence
 - HTML and CSS for interface customization
@@ -172,6 +187,10 @@ The dashboard uses modular SQL queries and analytical functions to transform the
 ```text
 AI-Consumer-Intelligence-Platform/
 │
+├── api/                    # Versioned intelligence API
+├── intelligence/           # Shared analytical engine and taxonomy
+├── scripts/                # Data snapshot/export utilities
+├── web/                    # Insight Grid web platform
 ├── dashboard/
 │   ├── app.py
 │   ├── dashboard_data.py
@@ -213,6 +232,26 @@ Run the Streamlit application:
 
 ```bash
 streamlit run dashboard/app.py
+```
+
+Run the v2 intelligence API:
+
+```bash
+uvicorn api.main:app --reload --port 8000
+```
+
+Export a fresh portable web snapshot after changing the database:
+
+```bash
+python scripts/export_web_snapshot.py
+```
+
+Run the Insight Grid interface:
+
+```bash
+cd web
+pnpm install
+pnpm dev
 ```
 
 ## Navigation Structure

@@ -1,0 +1,15 @@
+# Manufacturer cross-check: first five phones — 20 September 2026
+
+The preceding Parse Bot trial matched the product name and Smartprix URL for PH001–PH005. Those matches identify product pages but do not certify specifications, India variants, prices, or images. API-derived fields were not copied into the approved catalog.
+
+| ID | Result | Manufacturer evidence / remaining issue |
+| --- | --- | --- |
+| PH001 Tecno Pova 8 5G | Manufacturer check inconclusive; exact Smartprix page source-checked in follow-up | [TECNO India's product page](https://www.tecno-mobile.in/products/mobile/pova-8-5g/) confirms the model is shown for India, but exposes no usable specifications in page text. A [Myanmar TECNO page](https://www.tecno-mobile.com/mm/phones/tech-specs/techspecs/pova-8-5g/) is regional evidence only and must not be substituted for the Indian variant. |
+| PH002 Realme P4R 5G | Existing manufacturer-checked record reconfirmed; no catalog edit | [realme India's specification page](https://www.realme.com/in/realme-p4r-5g/specs) lists 4/128, 6/128, and 6/256 GB configurations and matches the current checked fields. |
+| PH003 Infinix Smart 20 | Added a manufacturer-backed, partial verified profile | [Infinix India's product specification page](https://infinixmobiles.in/products/smart-20) explicitly identifies model X6840, 4/64 and 4/128 GB, 4G (not 5G), 5200 mAh battery, and 15 W charging support with a 10 W charger included. Only stated fields were recorded. |
+| PH004 Lava Bold N2 5G | Existing Smartprix-checked record retained | Exact India manufacturer specifications were not located during this pass. The API identity/URL match does not upgrade the source status. Avoid confusing Bold N2 5G with the separate 4G Bold N2 or other manufacturers' similarly named devices. |
+| PH005 Lava Shark 2 5G | Existing Smartprix-checked record retained | Exact India manufacturer specifications were not located during this pass. The API returned no usable variant list; the existing specification fields remain only Smartprix-checked. Do not confuse this phone with Lava's [Shark 5G](https://shop.lavamobiles.com/products/shark-5g), which has different specifications. |
+
+Follow-up source policy: an exact Smartprix India product page counts as a valid source check. [Smartprix's Pova 8 5G page](https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d) supports a partial PH001 entry. Its clearly listed model/6-128 GB variant and specification-grid fields were used, while charging wattage, IP rating, update promises, and prices were withheld. [Bold N2 5G](https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx) and [Shark 2 5G](https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44) remain source-checked from Smartprix with explicit source attribution and a few additional page-supported fields.
+
+The approved local catalog now has **27 partially source-checked phones** and **30 awaiting source verification**, out of the same 57 IDs. No phone IDs, review assignments, historical CSV rows, prices, or images changed. The hosted site has not been republished as part of this cross-check.

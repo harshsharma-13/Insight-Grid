@@ -26,6 +26,17 @@ Thumbs.db
 *.tmp
 *.bak
 
+# Local JavaScript dependencies and artifact helpers
+/node_modules/
+/analyze_assignments.mjs
+/chart_help.mjs
+/inspect_workbooks.mjs
+/solve_workbooks.mjs
+/verify_exports.mjs
+
+# The public React app is versioned in its own nested Git repository
+/web/
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -34,6 +45,9 @@ Thumbs.db
 
 # Local migration and temporary scripts
 import_launch_prices.py
+
+# Phone-import review candidates (promoted catalog records remain tracked)
+data/catalog/staging/
 
 # Excel temporary files
 ~$*.xlsx

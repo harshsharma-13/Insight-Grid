@@ -2,11 +2,11 @@ import sqlite3
 import pandas as pd
 
 BRAND_NORMALIZATION = {
-    "LAVA": "Lava",
     "lava": "Lava",
-    "Moto": "Motorola",
-    "MOTO": "Motorola",
     "moto": "Motorola",
+    "motorola": "Motorola",
+    "oneplus": "OnePlus",
+    "iqoo": "iQOO",
 }
 
 
@@ -19,7 +19,9 @@ def normalize_brands(df):
 
     df = df.copy()
     df["brand"] = df["brand"].astype(str).str.strip()
-    df["brand"] = df["brand"].replace(BRAND_NORMALIZATION)
+    df["brand"] = df["brand"].map(
+        lambda value: BRAND_NORMALIZATION.get(value.casefold(), value)
+    )
 
     return df
 
@@ -79,7 +81,10 @@ def get_kpis():
     ).iloc[0]["count"]
 
     avg_positive = read_sql(
-        "SELECT AVG(positive_percent) AS avg_positive FROM phone_summary"
+        """
+        SELECT SUM(positive_count) * 100.0 / NULLIF(SUM(review_count), 0) AS avg_positive
+        FROM phone_summary
+        """
     ).iloc[0]["avg_positive"]
 
     return {
@@ -114,12 +119,19 @@ def get_top_phones(limit=10):
 
 
 def get_brand_distribution():
-    return read_sql("""
+    distribution = read_sql("""
         SELECT brand, COUNT(*) AS count
         FROM phones_product_intelligence
         GROUP BY brand
         ORDER BY count DESC
     """)
+    distribution = normalize_brands(distribution)
+    return (
+        distribution.groupby("brand", as_index=False)["count"]
+        .sum()
+        .sort_values("count", ascending=False)
+        .reset_index(drop=True)
+    )
 
 def get_phone_options():
     return read_sql("""
@@ -130,7 +142,7 @@ def get_phone_options():
 
 
 def get_phone_catalog(phone_id):
-    return read_sql("""
+    return normalize_brands(read_sql("""
         SELECT
             c.phone_id,
             c.phone_name,
@@ -174,7 +186,7 @@ def get_phone_catalog(phone_id):
         LEFT JOIN phones_product_intelligence p
             ON c.phone_id = p.phone_id
         WHERE c.phone_id = ?
-    """, [phone_id])
+    """, [phone_id]))
 
 
 def get_phone_ai_insight(phone_id):
@@ -202,7 +214,7 @@ def get_phone_platform_summary(phone_id):
 
 
 def get_featured_phones(limit=4):
-    return read_sql("""
+    return normalize_brands(read_sql("""
         SELECT
             s.phone_id,
             s.phone_name,
@@ -221,4 +233,4 @@ def get_featured_phones(limit=4):
             ON s.phone_id = ai.phone_id
         ORDER BY s.positive_percent DESC, s.review_count DESC
         LIMIT ?
-    """, [limit])
+    """, [limit]))

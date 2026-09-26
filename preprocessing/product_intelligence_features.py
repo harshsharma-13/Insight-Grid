@@ -122,11 +122,8 @@ def refresh_rate(display):
 
 
 def supports_5g(name):
-
-    if "5g" in str(name).lower():
-        return "Yes"
-
-    return "No"
+    # Product names are not a verified connectivity source.
+    return ""
 
 
 def main():

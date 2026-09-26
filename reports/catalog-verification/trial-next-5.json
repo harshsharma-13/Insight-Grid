@@ -1,0 +1,1236 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-20T15:52:48.938284+00:00",
+  "mode": "api_cross_check",
+  "summary": {
+    "total": 57,
+    "source_checked_partial": 27,
+    "awaiting_source_verification": 30,
+    "flagged": 4,
+    "api_calls": 5
+  },
+  "phones": [
+    {
+      "phone_id": "PH001",
+      "historical_name": "Tecno Pova 8 5G",
+      "accepted_names": [
+        "Tecno Pova 8 5G"
+      ],
+      "brand": "Tecno",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d",
+      "checked_source_url": "https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/tecno-pova-8-5g-ppd1pk7ncy4d",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH002",
+      "historical_name": "Realme P4R 5G",
+      "accepted_names": [
+        "Realme P4R 5G"
+      ],
+      "brand": "Realme",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-p4r-5g-ppd11xf05zc2",
+      "checked_source_url": "https://www.realme.com/in/realme-p4r-5g/specs",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-p4r-5g-ppd11xf05zc2",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH003",
+      "historical_name": "Infinix SMART 20",
+      "accepted_names": [
+        "Infinix SMART 20",
+        "Infinix Smart 20"
+      ],
+      "brand": "Infinix",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/infinix-smart-20-ppd1hr2rwk9y",
+      "checked_source_url": "https://infinixmobiles.in/products/smart-20",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/infinix-smart-20-ppd1hr2rwk9y",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH004",
+      "historical_name": "LAVA Bold N2",
+      "accepted_names": [
+        "LAVA Bold N2",
+        "Lava Bold N2 5G"
+      ],
+      "brand": "LAVA",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx",
+      "checked_source_url": "https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/lava-bold-n2-ppd102mposnx",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH005",
+      "historical_name": "LAVA Shark 2 5G",
+      "accepted_names": [
+        "LAVA Shark 2 5G",
+        "Lava Shark 2 5G"
+      ],
+      "brand": "LAVA",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44",
+      "checked_source_url": "https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/lava-shark-2-5g-ppd1xdydzt44",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH006",
+      "historical_name": "Oppo A6c",
+      "accepted_names": [
+        "Oppo A6c",
+        "OPPO A6c"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oppo-a6c-ppd1b2vvn41l",
+      "checked_source_url": "https://www.oppo.com/in/smartphones/series-a/a6c/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-a6c-ppd1b2vvn41l",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH007",
+      "historical_name": "Realme 16T 5G",
+      "accepted_names": [
+        "Realme 16T 5G"
+      ],
+      "brand": "Realme",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-16t-5g-ppd18kz6oazl",
+      "checked_source_url": "https://www.smartprix.com/mobiles/realme-16t-5g-ppd18kz6oazl",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-16t-5g-ppd18kz6oazl",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH008",
+      "historical_name": "HMD Vibe 2 5G",
+      "accepted_names": [
+        "HMD Vibe 2 5G",
+        "HMD Vibe2 5G"
+      ],
+      "brand": "HMD",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/hmd-vibe-2-5g-ppd1vmboj6a8",
+      "checked_source_url": "https://www.hmd.com/en_in/hmd-vibe2-5g/specs",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/hmd-vibe-2-5g-ppd1vmboj6a8",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH009",
+      "historical_name": "Moto G37 Power",
+      "accepted_names": [
+        "Moto G37 Power"
+      ],
+      "brand": "Moto",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/motorola-moto-g37-power-ppd1w91daysx",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/motorola-moto-g37-power-ppd1w91daysx",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [
+        "api_identity_not_confirmed"
+      ],
+      "review_required": true,
+      "api_evidence": {
+        "returned_name": "Motorola Moto G37 Power 5G",
+        "identity": "mismatch",
+        "returned_url": "/mobiles/motorola-moto-g37-power-ppd1w91daysx",
+        "url_status": "match",
+        "reported_variants": [
+          {
+            "variant_text": "4GB RAM + 64GB"
+          },
+          {
+            "variant_text": "4GB+128GB"
+          },
+          {
+            "variant_text": "8GB+128GB"
+          }
+        ],
+        "reported_spec_keys": [],
+        "needs_manual_review": true
+      }
+    },
+    {
+      "phone_id": "PH010",
+      "historical_name": "Moto G37",
+      "accepted_names": [
+        "Moto G37"
+      ],
+      "brand": "Moto",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/motorola-moto-g37-ppd1va77lc8s",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/motorola-moto-g37-ppd1va77lc8s",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [
+        "api_identity_not_confirmed"
+      ],
+      "review_required": true,
+      "api_evidence": {
+        "returned_name": "Motorola Moto G37",
+        "identity": "mismatch",
+        "returned_url": "/mobiles/motorola-moto-g37-ppd1va77lc8s",
+        "url_status": "match",
+        "reported_variants": [],
+        "reported_spec_keys": [],
+        "needs_manual_review": true
+      }
+    },
+    {
+      "phone_id": "PH011",
+      "historical_name": "Itel Zeno 200",
+      "accepted_names": [
+        "Itel Zeno 200"
+      ],
+      "brand": "Itel",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/itel-zeno-200-ppd1mnsjgm39",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/itel-zeno-200-ppd1mnsjgm39",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": {
+        "returned_name": "Itel Zeno 200",
+        "identity": "match",
+        "returned_url": "/mobiles/itel-zeno-200-ppd1mnsjgm39",
+        "url_status": "match",
+        "reported_variants": [],
+        "reported_spec_keys": [],
+        "needs_manual_review": true
+      }
+    },
+    {
+      "phone_id": "PH012",
+      "historical_name": "Oneplus Nord CE 6 Lite",
+      "accepted_names": [
+        "Oneplus Nord CE 6 Lite"
+      ],
+      "brand": "Oneplus",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oneplus-nord-ce-6-lite-ppd1g3giwwva",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oneplus-nord-ce-6-lite-ppd1g3giwwva",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": {
+        "returned_name": "OnePlus Nord CE 6 Lite",
+        "identity": "match",
+        "returned_url": "/mobiles/oneplus-nord-ce-6-lite-ppd1g3giwwva",
+        "url_status": "match",
+        "reported_variants": [
+          {
+            "variant_text": "6GB RAM + 128 GB"
+          },
+          {
+            "variant_text": "8GB RAM + 128GB"
+          },
+          {
+            "variant_text": "8GB RAM + 256GB"
+          }
+        ],
+        "reported_spec_keys": [],
+        "needs_manual_review": true
+      }
+    },
+    {
+      "phone_id": "PH013",
+      "historical_name": "Poco C81",
+      "accepted_names": [
+        "Poco C81"
+      ],
+      "brand": "Poco",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/poco-c81-ppd16td5skp4",
+      "checked_source_url": "https://www.smartprix.com/mobiles/poco-c81-ppd16td5skp4",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/poco-c81-ppd16td5skp4",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH014",
+      "historical_name": "Poco C81x",
+      "accepted_names": [
+        "Poco C81x"
+      ],
+      "brand": "Poco",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/poco-c81x-ppd1lq32d6ze",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/poco-c81x-ppd1lq32d6ze",
+      "historical_variant_hint": {
+        "ram": "3 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": {
+        "returned_name": "POCO C81x",
+        "identity": "match",
+        "returned_url": "/mobiles/poco-c81x-ppd1lq32d6ze",
+        "url_status": "match",
+        "reported_variants": [],
+        "reported_spec_keys": [],
+        "needs_manual_review": true
+      }
+    },
+    {
+      "phone_id": "PH015",
+      "historical_name": "Redmi A7",
+      "accepted_names": [
+        "Redmi A7"
+      ],
+      "brand": "Redmi",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-a7-4g-ppd1hkpvjsoe",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-a7-4g-ppd1hkpvjsoe",
+      "historical_variant_hint": {
+        "ram": "3 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH016",
+      "historical_name": "Redmi A7 Pro",
+      "accepted_names": [
+        "Redmi A7 Pro",
+        "Redmi A7 Pro 5G"
+      ],
+      "brand": "Redmi",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-a7-pro-5g-ppd1cnmjcowe",
+      "checked_source_url": "https://www.mi.com/in/product/redmi-a7-pro-5g/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-a7-pro-5g-ppd1cnmjcowe",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH017",
+      "historical_name": "Tecno Pop X 5G",
+      "accepted_names": [
+        "Tecno Pop X 5G"
+      ],
+      "brand": "Tecno",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/tecno-pop-x-5g-ppd1gj0661me",
+      "checked_source_url": "https://www.smartprix.com/mobiles/tecno-pop-x-5g-ppd1gj0661me",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/tecno-pop-x-5g-ppd1gj0661me",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH018",
+      "historical_name": "Vivo Y05",
+      "accepted_names": [
+        "Vivo Y05"
+      ],
+      "brand": "Vivo",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/vivo-y05-ppd12gn69s3c",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/vivo-y05-ppd12gn69s3c",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH019",
+      "historical_name": "Oppo F33 5G",
+      "accepted_names": [
+        "Oppo F33 5G",
+        "OPPO F33 5G"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oppo-f33-ppd18kxqpob7",
+      "checked_source_url": "https://www.oppo.com/in/smartphones/series-f/f33-5g/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-f33-ppd18kxqpob7",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH020",
+      "historical_name": "Vivo T5 Pro 5G",
+      "accepted_names": [
+        "Vivo T5 Pro 5G"
+      ],
+      "brand": "Vivo",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/vivo-t5-pro-ppd1jr3xj863",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/vivo-t5-pro-ppd1jr3xj863",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH021",
+      "historical_name": "Realme Narzo 100 Lite 5G",
+      "accepted_names": [
+        "Realme Narzo 100 Lite 5G"
+      ],
+      "brand": "Realme",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-narzo-100-lite-ppd1pmwn763b",
+      "checked_source_url": "https://www.realme.com/in/realme-narzo-100-lite-5g/specs",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-narzo-100-lite-ppd1pmwn763b",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH022",
+      "historical_name": "Ai+ Nova 2 Ultra 5G",
+      "accepted_names": [
+        "Ai+ Nova 2 Ultra 5G"
+      ],
+      "brand": "Ai+",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/ai-nova-2-ultra-ppd1hlvx6m0g",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/ai-nova-2-ultra-ppd1hlvx6m0g",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH023",
+      "historical_name": "Ai+ Nova 2 5G",
+      "accepted_names": [
+        "Ai+ Nova 2 5G"
+      ],
+      "brand": "Ai+",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/ai-nova-2-ppd1i8rdcplq",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/ai-nova-2-ppd1i8rdcplq",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH024",
+      "historical_name": "Redmi Note 15 SE 5G",
+      "accepted_names": [
+        "Redmi Note 15 SE 5G"
+      ],
+      "brand": "Redmi",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-5g-special-edition-ppd103v7vlm2",
+      "checked_source_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-5g-special-edition-ppd103v7vlm2",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-5g-special-edition-ppd103v7vlm2",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH025",
+      "historical_name": "Lava Bold N2 Lite",
+      "accepted_names": [
+        "Lava Bold N2 Lite"
+      ],
+      "brand": "Lava",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-bold-n2-lite-ppd1ewkb36sc",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/lava-bold-n2-lite-ppd1ewkb36sc",
+      "historical_variant_hint": {
+        "ram": "3 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH026",
+      "historical_name": "Tecno Spark 50 5G",
+      "accepted_names": [
+        "Tecno Spark 50 5G"
+      ],
+      "brand": "Tecno",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/tecno-spark-50-ppd1v1623nbx",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/tecno-spark-50-ppd1v1623nbx",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH027",
+      "historical_name": "Redmi 15A 5G",
+      "accepted_names": [
+        "Redmi 15A 5G"
+      ],
+      "brand": "Redmi",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-15a-5g-ppd16k3r1eha",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-15a-5g-ppd16k3r1eha",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH028",
+      "historical_name": "Vivo Y11 5G",
+      "accepted_names": [
+        "Vivo Y11 5G"
+      ],
+      "brand": "Vivo",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/vivo-y11-5g-ppd1r02w1sdu",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/vivo-y11-5g-ppd1r02w1sdu",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH029",
+      "historical_name": "Vivo Y21 5G",
+      "accepted_names": [
+        "Vivo Y21 5G"
+      ],
+      "brand": "Vivo",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH030",
+      "historical_name": "Realme P4 Lite 5G",
+      "accepted_names": [
+        "Realme P4 Lite 5G"
+      ],
+      "brand": "Realme",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-p4-lite-5g-ppd1u3wmqsvk",
+      "checked_source_url": "https://www.realme.com/in/realme-p4-lite-5g/specs",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-p4-lite-5g-ppd1u3wmqsvk",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH031",
+      "historical_name": "Oppo A6s 5G",
+      "accepted_names": [
+        "Oppo A6s 5G",
+        "OPPO A6s 5G"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oppo-a6s-5g-ppd19g7fx6k4",
+      "checked_source_url": "https://www.oppo.com/in/smartphones/series-a/a6s-5g/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-a6s-5g-ppd19g7fx6k4",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH032",
+      "historical_name": "Samsung Galaxy M17e 5G",
+      "accepted_names": [
+        "Samsung Galaxy M17e 5G"
+      ],
+      "brand": "Samsung",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/samsung-galaxy-m17e-ppd159q5wrb0",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/samsung-galaxy-m17e-ppd159q5wrb0",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH033",
+      "historical_name": "Vivo T5x 5G",
+      "accepted_names": [
+        "Vivo T5x 5G"
+      ],
+      "brand": "Vivo",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/vivo-t5x-5g-ppd1rtf1u89r",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/vivo-t5x-5g-ppd1rtf1u89r",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH034",
+      "historical_name": "Oppo K14 5G",
+      "accepted_names": [
+        "Oppo K14 5G",
+        "OPPO K14 5G"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oppo-k14-ppd18o79qj03",
+      "checked_source_url": "https://www.oppo.com/in/smartphones/series-k/k14-5g/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-k14-ppd18o79qj03",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH035",
+      "historical_name": "LAVA Bold 2 5G",
+      "accepted_names": [
+        "LAVA Bold 2 5G"
+      ],
+      "brand": "LAVA",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-bold-2-ppd12dj4kdtl",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/lava-bold-2-ppd12dj4kdtl",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH036",
+      "historical_name": "iQOO Z11x 5G",
+      "accepted_names": [
+        "iQOO Z11x 5G"
+      ],
+      "brand": "iQOO",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/iqoo-z11x-ppd1ol60m05r",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/iqoo-z11x-ppd1ol60m05r",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH037",
+      "historical_name": "Vivo Y51 Pro",
+      "accepted_names": [
+        "Vivo Y51 Pro"
+      ],
+      "brand": "Vivo",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/vivo-y51-pro-ppd12ifxgzf9",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/vivo-y51-pro-ppd12ifxgzf9",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH038",
+      "historical_name": "Poco C85x 5G",
+      "accepted_names": [
+        "Poco C85x 5G"
+      ],
+      "brand": "Poco",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/poco-c85x-ppd1hf7smzlw",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/poco-c85x-ppd1hf7smzlw",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH039",
+      "historical_name": "Itel Zeno 100",
+      "accepted_names": [
+        "Itel Zeno 100"
+      ],
+      "brand": "Itel",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/itel-zeno-100-ppd191303ucd",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/itel-zeno-100-ppd191303ucd",
+      "historical_variant_hint": {
+        "ram": "3 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH040",
+      "historical_name": "Realme C83 5G",
+      "accepted_names": [
+        "Realme C83 5G"
+      ],
+      "brand": "Realme",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-c83-5g-ppd1867s4tap",
+      "checked_source_url": "https://www.realme.com/in/realme-c83/specs",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-c83-5g-ppd1867s4tap",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH041",
+      "historical_name": "Motorola Edge 70 Fusion",
+      "accepted_names": [
+        "Motorola Edge 70 Fusion"
+      ],
+      "brand": "Motorola",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/motorola-edge-70-fusion-ppd1ktx4v2b3",
+      "checked_source_url": "https://www.smartprix.com/mobiles/motorola-edge-70-fusion-ppd1ktx4v2b3",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/motorola-edge-70-fusion-ppd1ktx4v2b3",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH042",
+      "historical_name": "Realme Narzo Power 5G",
+      "accepted_names": [
+        "Realme Narzo Power 5G"
+      ],
+      "brand": "Realme",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-narzo-power-5g-ppd12xzlzeqo",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-narzo-power-5g-ppd12xzlzeqo",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH043",
+      "historical_name": "Ai+ Pulse 2",
+      "accepted_names": [
+        "Ai+ Pulse 2"
+      ],
+      "brand": "Ai+",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/ai-pulse-2-ppd1bla1zgt4",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/ai-pulse-2-ppd1bla1zgt4",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH044",
+      "historical_name": "Infinix Note Edge 5G",
+      "accepted_names": [
+        "Infinix Note Edge 5G"
+      ],
+      "brand": "Infinix",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/infinix-note-edge-ppd1kf4qybbv",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/infinix-note-edge-ppd1kf4qybbv",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH045",
+      "historical_name": "Tecno Pova Curve 2",
+      "accepted_names": [
+        "Tecno Pova Curve 2"
+      ],
+      "brand": "Tecno",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/tecno-pova-curve-2-ppd1628rzej3",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/tecno-pova-curve-2-ppd1628rzej3",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH046",
+      "historical_name": "Lava Yuva Star 3",
+      "accepted_names": [
+        "Lava Yuva Star 3"
+      ],
+      "brand": "Lava",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": null,
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [
+        "shared_historical_source_url"
+      ],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH047",
+      "historical_name": "Oppo K14x 5G",
+      "accepted_names": [
+        "Oppo K14x 5G"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-yuva-star-3-ppd1srzb84ba",
+      "checked_source_url": "https://www.smartprix.com/mobiles/oppo-k14x-5g-ppd1259g0jtq",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-k14x-5g-ppd1259g0jtq",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [
+        "shared_historical_source_url",
+        "historical_source_conflicts_with_checked_source"
+      ],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH048",
+      "historical_name": "Samsung Galaxy F70e 5G",
+      "accepted_names": [
+        "Samsung Galaxy F70e 5G"
+      ],
+      "brand": "Samsung",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/samaung-galaxy-f70e-ppd1z0fqsy0z",
+      "checked_source_url": "https://www.samsung.com/in/smartphones/galaxy-f/galaxy-f70e-5g-spotlight-blue-128gb-sm-e076bdbains/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/samaung-galaxy-f70e-ppd1z0fqsy0z",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH049",
+      "historical_name": "Realme P4 Power",
+      "accepted_names": [
+        "Realme P4 Power",
+        "Realme P4 Power 5G"
+      ],
+      "brand": "Realme",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/realme-p4-power-5g-ppd1g2rnb2hl",
+      "checked_source_url": "https://www.realme.com/in/realme-p4-power-5g/specs",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/realme-p4-power-5g-ppd1g2rnb2hl",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH050",
+      "historical_name": "Redmi Note 15 Pro",
+      "accepted_names": [
+        "Redmi Note 15 Pro"
+      ],
+      "brand": "Redmi",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-pro-ppd1qlloghfg",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-pro-ppd1qlloghfg",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH051",
+      "historical_name": "Oppo A6 5G",
+      "accepted_names": [
+        "Oppo A6 5G",
+        "OPPO A6 5G"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oppo-a6-5g-ppd1w8ogtisz",
+      "checked_source_url": "https://www.oppo.com/in/smartphones/series-a/a6-5g/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-a6-5g-ppd1w8ogtisz",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH052",
+      "historical_name": "Lava Blaze Duo 3 5G",
+      "accepted_names": [
+        "Lava Blaze Duo 3 5G"
+      ],
+      "brand": "Lava",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/lava-blaze-duo-3-ppd1o5e6uwhh",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/lava-blaze-duo-3-ppd1o5e6uwhh",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH053",
+      "historical_name": "Tecno Spark Go 3",
+      "accepted_names": [
+        "Tecno Spark Go 3"
+      ],
+      "brand": "Tecno",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/tecno-spark-go-3-ppd14d94on3z",
+      "checked_source_url": "https://www.smartprix.com/mobiles/tecno-spark-go-3-ppd14d94on3z",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/tecno-spark-go-3-ppd14d94on3z",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "64 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH054",
+      "historical_name": "Samsung Galaxy A07 5G",
+      "accepted_names": [
+        "Samsung Galaxy A07 5G"
+      ],
+      "brand": "Samsung",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/samsung-galaxy-a07-5g-ppd1l9e8wv61",
+      "checked_source_url": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a07-5g-black-128gb-sm-a076bzkbins/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/samsung-galaxy-a07-5g-ppd1l9e8wv61",
+      "historical_variant_hint": {
+        "ram": "4 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH055",
+      "historical_name": "Poco M8",
+      "accepted_names": [
+        "Poco M8"
+      ],
+      "brand": "Poco",
+      "status": "awaiting_source_verification",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/poco-m8-ppd1t4l0hpfr",
+      "checked_source_url": null,
+      "checked_at": null,
+      "api_candidate_url": "https://www.smartprix.com/mobiles/poco-m8-ppd1t4l0hpfr",
+      "historical_variant_hint": {
+        "ram": "6 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH056",
+      "historical_name": "Redmi Note 15",
+      "accepted_names": [
+        "Redmi Note 15",
+        "Redmi Note 15 5G"
+      ],
+      "brand": "Redmi",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-ppd1nya0l7ja",
+      "checked_source_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-ppd1nya0l7ja",
+      "checked_at": "2026-09-03",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/xiaomi-redmi-note-15-ppd1nya0l7ja",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    },
+    {
+      "phone_id": "PH057",
+      "historical_name": "Oppo A6 Pro 5G",
+      "accepted_names": [
+        "Oppo A6 Pro 5G",
+        "OPPO A6 Pro 5G"
+      ],
+      "brand": "Oppo",
+      "status": "source_checked_partial",
+      "historical_smartprix_url": "https://www.smartprix.com/mobiles/oppo-a6-pro-ppd14vheuq5t",
+      "checked_source_url": "https://www.oppo.com/in/smartphones/series-a/a6-pro-5g/specs/",
+      "checked_at": "2026-09-20",
+      "api_candidate_url": "https://www.smartprix.com/mobiles/oppo-a6-pro-ppd14vheuq5t",
+      "historical_variant_hint": {
+        "ram": "8 GB",
+        "storage": "128 GB"
+      },
+      "flags": [],
+      "review_required": true,
+      "api_evidence": null
+    }
+  ]
+}
