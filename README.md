@@ -77,7 +77,7 @@ The project has four main layers:
 | `data/` | Source, processed, catalog, and SQLite datasets |
 | `intelligence/` | Shared queries, scoring, aggregation, confidence, and recommendation logic |
 | `api/` | FastAPI endpoints for products, reviews, comparisons, recommendations, intelligence, and actions |
-| `web/` | Public React and TypeScript interface, maintained as its own nested Git project |
+| `web/` | Public React and TypeScript interface, including its tests and deployment configuration |
 
 The original Streamlit dashboard remains in `dashboard/` as the first working prototype and an additional local exploration interface.
 
@@ -104,7 +104,7 @@ AI-Consumer-Intelligence-Platform/
 ├── preprocessing/       # Data cleaning and catalog enrichment pipeline
 ├── reports/             # Dataset audits and catalog import records
 ├── scripts/             # Imports, exports, checks, and maintenance tools
-├── web/                 # Public React application (separate nested repository)
+├── web/                 # Public React application
 ├── requirements.txt
 └── README.md
 ```

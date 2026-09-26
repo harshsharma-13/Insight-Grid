@@ -34,8 +34,8 @@ Thumbs.db
 /solve_workbooks.mjs
 /verify_exports.mjs
 
-# The public React app is versioned in its own nested Git repository
-/web/
+# The public React app is also versioned in this repository.
+# Its own web/.gitignore excludes dependencies, builds and local environment files.
 
 # Jupyter
 .ipynb_checkpoints/
