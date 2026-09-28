@@ -12,9 +12,8 @@ const MAX_BYTES = 8 * 1024 * 1024;
 const runtime = env as unknown as RuntimeEnv;
 
 function ownerId(request: Request) {
-  const owner = request.headers.get("oai-authenticated-user-id");
-  if (owner) return owner;
-  return new URL(request.url).hostname === "localhost" ? "local-preview" : null;
+  const hostname = new URL(request.url).hostname;
+  return hostname === "localhost" || hostname === "127.0.0.1" || hostname === "[::1]" ? "local-preview" : null;
 }
 
 async function database() {

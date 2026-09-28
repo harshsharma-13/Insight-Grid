@@ -3,7 +3,7 @@ import "./globals.css";
 import { PlatformShell } from "@/app/components/PlatformShell";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pulse-consumer-intelligence.sharmaharsh0328.chatgpt.site"),
+  metadataBase: new URL("https://insight-grid.sharmaharsh0328.chatgpt.site"),
   title: { default: "Insight Grid · Consumer Intelligence", template: "%s · Insight Grid" },
   description: "An evidence-backed smartphone research platform for exploring customer reviews, product trade-offs, competitive signals and action priorities.",
   openGraph: {

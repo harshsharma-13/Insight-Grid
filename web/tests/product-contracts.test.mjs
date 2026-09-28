@@ -33,7 +33,9 @@ test("the published evidence snapshot keeps its core reliability contract", asyn
 
 test("navigation, accessibility, loading and failure states are present", async () => {
   const [shell, css, loading, error, notFound] = await Promise.all([read("app/components/PlatformShell.tsx"), read("app/globals.css"), read("app/loading.tsx"), read("app/error.tsx"), read("app/not-found.tsx")]);
-  assert.match(shell, /\["Data", "\/data", "08"\]/);
+  assert.doesNotMatch(shell, /\["Data", "\/data", "08"\]/);
+  assert.doesNotMatch(shell, /> Private</);
+  assert.match(shell, /62 devices/);
   assert.match(shell, /Skip to workspace/);
   assert.match(shell, /lazy\(\(\) => import/);
   assert.match(css, /prefers-reduced-motion/);
@@ -61,10 +63,13 @@ test("copilot keeps context, retrieves the review corpus and exposes citations",
   assert.match(copilot, /Compare Samsung and Motorola/);
 });
 
-test("dataset versions use private platform storage and quality gates", async () => {
-  const [hosting, route, migration, workspace] = await Promise.all([read(".openai/hosting.json"), read("app/api/datasets/route.ts"), read(".openai/drizzle/0000_dataset_versions.sql"), read("app/components/DataWorkspace.tsx")]);
+test("dataset versions stay local-only and use quality gates", async () => {
+  const [hosting, page, route, migration, workspace] = await Promise.all([read(".openai/hosting.json"), read("app/data/page.tsx"), read("app/api/datasets/route.ts"), read(".openai/drizzle/0000_dataset_versions.sql"), read("app/components/DataWorkspace.tsx")]);
   assert.deepEqual(JSON.parse(hosting), { project_id: "appgprj_6a833486a9908191b5086a778de3b16e", d1: "DB", r2: "UPLOADS" });
-  assert.match(route, /oai-authenticated-user-id/);
+  assert.match(page, /notFound\(\)/);
+  assert.match(page, /isLocalHost/);
+  assert.doesNotMatch(route, /oai-authenticated-user-id/);
+  assert.match(route, /local-preview/);
   assert.match(route, /duplicateCount/);
   assert.match(route, /qualityScore/);
   assert.match(migration, /idx_dataset_versions_owner_created/);
